@@ -16,15 +16,21 @@
 
 ---
 
-## 📥 Installation Instructions
+## 📦 Installation Instructions
 
-1. **Download the Plugin**: Download the plugin `.zip` archive from your repository or store account.
-2. **Upload to WordPress**:
-   - Log in to your WordPress Dashboard.
-   - Navigate to **Plugins > Add New > Upload Plugin**.
-   - Select the `AffiStyle-Affiliate-Card-Generator.zip` file and click **Install Now**.
-3. **Activate the Plugin**: Click **Activate Plugin** to complete the installation.
-4. **Access AffiStyle Menu**: A new **AffiStyle** item will appear in your admin sidebar.
+You can install AffiStyle automatically from your WordPress dashboard or upload it manually:
+
+### Method 1: Automatic Installation (Recommended via WordPress.org)
+1. Log in to your WordPress Admin Dashboard.
+2. Navigate to **Plugins > Add New**.
+3. In the search bar on the top right, type **"AffiStyle"**.
+4. Find **AffiStyle - Custom Affiliate Card Generator** and click **Install Now**.
+5. Once installed, click **Activate** to enable the plugin.
+
+### Method 2: Manual Installation (Via WordPress Dashboard)
+1. Download the `affistyle.zip` file from the official [WordPress.org Plugin Directory](https://wordpress.org/plugins/).
+2. Go to your WordPress Dashboard and navigate to **Plugins > Add New > Upload Plugin**.
+3. Choose the downloaded `affistyle.zip` file, click **Install Now**, and then click **Activate Plugin**.
 
 ---
 
