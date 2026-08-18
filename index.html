@@ -4,6 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AffiStyle - Advanced WordPress Affiliate Card & Comparison Builder</title>
+    <meta name="description" content="AffiStyle is a high-converting WordPress plugin for building responsive affiliate product cards, pros/cons boxes, and comparison showdown grids.">
+    
+    <!-- AI SEO / Generative Engine Optimization (JSON-LD Structured Data) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "AffiStyle",
+      "operatingSystem": "WordPress 5.8+",
+      "applicationCategory": "BusinessApplication",
+      "description": "High-converting WordPress affiliate card, pros/cons review box, and comparison grid builder plugin.",
+      "url": "https://affistyle.shop",
+      "offers": {
+        "@type": "Offer",
+        "price": "40.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "AffiStyle",
+          "email": "dreainno@gmail.com"
+        }
+      }
+    }
+    </script>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -78,7 +104,7 @@
 
         .nav-link:hover { color: #fff; }
 
-        /* Hero Section with Designer Glow */
+        /* Hero Section */
         .hero {
             position: relative;
             max-width: 900px;
@@ -157,7 +183,7 @@
             box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
         }
 
-        /* Features Bento Grid */
+        /* Features Grid */
         .features-container {
             max-width: 1100px;
             margin: 0 auto 100px auto;
@@ -229,7 +255,76 @@
             line-height: 1.5;
         }
 
-        /* Contact & Trust Section */
+        /* Pricing Section */
+        .pricing-section {
+            max-width: 900px;
+            margin: 0 auto 100px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .pricing-card {
+            background: linear-gradient(180deg, var(--bg-card) 0%, #0c1322 100%);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 20px;
+            padding: 45px 30px;
+            max-width: 460px;
+            margin: 0 auto;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 4px 14px;
+            border-radius: 100px;
+            letter-spacing: 0.5px;
+        }
+
+        .price-amount {
+            font-size: 48px;
+            font-weight: 800;
+            color: #fff;
+            margin: 15px 0 5px 0;
+        }
+
+        .price-sub {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+            text-align: left;
+        }
+
+        .feature-list li {
+            padding: 10px 0;
+            color: #cbd5e1;
+            font-size: 14px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feature-list li span {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+
+        /* Trust / Contact Section */
         .trust-section {
             max-width: 800px;
             margin: 0 auto 100px auto;
@@ -277,7 +372,7 @@
             display: none;
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(5, 8, 15, 0.8);
+            background: rgba(5, 8, 15, 0.85);
             backdrop-filter: blur(8px);
             z-index: 1000;
             justify-content: center;
@@ -369,6 +464,7 @@
         </a>
         <div class="nav-links">
             <a href="#features" class="nav-link">Features</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
             <a href="#contact" class="nav-link">Contact</a>
         </div>
     </header>
@@ -381,7 +477,7 @@
         <h1>High-Converting Affiliate Cards & Comparison Grids</h1>
         <p class="hero-desc">The ultimate toolkit designed for professional WordPress creators to build stunning affiliate boxes, run head-to-head product showdowns, and maximize revenues.</p>
         <div class="btn-group">
-            <a href="#contact" class="btn-primary">Get in Touch</a>
+            <a href="#pricing" class="btn-primary">View Pricing</a>
         </div>
     </section>
 
@@ -415,37 +511,60 @@
         </div>
     </section>
 
+    <!-- Transparent Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="grid-header">
+            <h2>Simple, Transparent Pricing</h2>
+            <p>No hidden fees. One clear license for high-performance monetization.</p>
+        </div>
+        <div class="pricing-card">
+            <div class="pricing-badge">Single Site License</div>
+            <div class="price-amount">$40</div>
+            <div class="price-sub">One-time / Standard annual software license</div>
+            <ul class="feature-list">
+                <li><span>✓</span> Full access to all 16 card & showdown layouts</li>
+                <li><span>✓</span> Geo-targeted affiliate link routing</li>
+                <li><span>✓</span> Instant digital delivery via Lemon Squeezy</li>
+                <li><span>✓</span> Automated license key activation</li>
+                <li><span>✓</span> 1 Year of updates & priority developer support</li>
+                <li><span>✓</span> 14-Day Money-Back Guarantee</li>
+            </ul>
+            <a href="#contact" class="btn-primary" style="display: block; width: 100%;">Get Pro License</a>
+        </div>
+    </section>
+
     <!-- Contact Card Section -->
     <section class="trust-section" id="contact">
         <div class="contact-card">
             <h3>Have Questions or Pre-Sale Inquiries?</h3>
-            <p>Our engineering and support team is ready to help you with integration or licensing information.</p>
+            <p>Our engineering and support team is ready to help you with integration, license keys, or technical queries.</p>
             <a href="mailto:dreainno@gmail.com" class="email-pill">dreainno@gmail.com</a>
         </div>
     </section>
 
-    <!-- Modern Footer -->
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <p>&copy; 2026 AffiStyle. All rights reserved.</p>
             <div class="footer-links">
                 <a href="#contact">Support</a>
+                <a id="open-pricing-link" href="#pricing">Pricing</a>
                 <a id="open-privacy-modal">Privacy Policy</a>
+                <a id="open-refund-modal">Refund Policy</a>
             </div>
         </div>
     </footer>
 
-    <!-- Professional Privacy Policy Modal -->
+    <!-- Privacy Policy Modal -->
     <div class="modal-overlay" id="privacy-modal">
         <div class="modal-content">
             <button class="close-modal" id="close-privacy-modal">&times;</button>
             <h2>Privacy Policy</h2>
             <p><strong>Effective Date:</strong> January 1, 2026</p>
             
-            <p>At AffiStyle ("we", "our", or "us"), we respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we handle information when you interact with our software and services.</p>
+            <p>At AffiStyle ("we", "our", or "us"), we respect your privacy and are committed to protecting your personal data.</p>
 
             <h3>1. Information We Collect</h3>
-            <p>We keep data collection minimal, secure, and transparent:</p>
             <ul>
                 <li><strong>Licensing Details:</strong> Information necessary to validate and authenticate your active software subscription.</li>
                 <li><strong>Communications:</strong> Direct email correspondence sent to us at dreainno@gmail.com for technical assistance.</li>
@@ -453,32 +572,64 @@
             </ul>
 
             <h3>2. Secure Payment Processing</h3>
-            <p>We do not collect or store credit card credentials on our servers. All financial checkouts and orders are securely processed by our Merchant of Record (Lemon Squeezy) under strict global financial safety standards.</p>
+            <p>We do not collect or store credit card credentials on our servers. All checkouts are securely processed by our Merchant of Record (Lemon Squeezy) under PCI-DSS compliance.</p>
 
             <h3>3. Contact Information</h3>
-            <p>For any privacy-related inquiries, reach out to our team at <a href="mailto:dreainno@gmail.com" style="color: var(--primary);">dreainno@gmail.com</a>.</p>
+            <p>For any privacy inquiries, contact us at <a href="mailto:dreainno@gmail.com" style="color: var(--primary);">dreainno@gmail.com</a>.</p>
+        </div>
+    </div>
+
+    <!-- Refund Policy Modal -->
+    <div class="modal-overlay" id="refund-modal">
+        <div class="modal-content">
+            <button class="close-modal" id="close-refund-modal">&times;</button>
+            <h2>Refund Policy</h2>
+            <p><strong>Effective Date:</strong> January 1, 2026</p>
+            
+            <p>We stand behind the quality of AffiStyle. If you experience technical issues or if the plugin does not work as described on your WordPress site, we offer a <strong>14-day money-back guarantee</strong>.</p>
+
+            <h3>1. Eligibility for Refunds</h3>
+            <ul>
+                <li>Refund requests must be submitted within 14 days of the original purchase date.</li>
+                <li>Please allow our support team an opportunity to troubleshoot or resolve any installation/compatibility bugs first.</li>
+            </ul>
+
+            <h3>2. How to Request a Refund</h3>
+            <p>To request a refund, contact us at <a href="mailto:dreainno@gmail.com" style="color: var(--primary);">dreainno@gmail.com</a> with your Lemon Squeezy order number and purchase details. Approved refunds will be issued to the original payment method.</p>
         </div>
     </div>
 
     <!-- Modal Interaction Script -->
     <script>
-        const modal = document.getElementById('privacy-modal');
-        const openBtn = document.getElementById('open-privacy-modal');
-        const closeBtn = document.getElementById('close-privacy-modal');
+        const privacyModal = document.getElementById('privacy-modal');
+        const openPrivacyBtn = document.getElementById('open-privacy-modal');
+        const closePrivacyBtn = document.getElementById('close-privacy-modal');
 
-        openBtn.addEventListener('click', (e) => {
+        const refundModal = document.getElementById('refund-modal');
+        const openRefundBtn = document.getElementById('open-refund-modal');
+        const closeRefundBtn = document.getElementById('close-refund-modal');
+
+        openPrivacyBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            modal.style.display = 'flex';
+            privacyModal.style.display = 'flex';
         });
 
-        closeBtn.addEventListener('click', () => {
-            modal.style.display = 'none';
+        closePrivacyBtn.addEventListener('click', () => {
+            privacyModal.style.display = 'none';
+        });
+
+        openRefundBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            refundModal.style.display = 'flex';
+        });
+
+        closeRefundBtn.addEventListener('click', () => {
+            refundModal.style.display = 'none';
         });
 
         window.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.style.display = 'none';
-            }
+            if (e.target === privacyModal) privacyModal.style.display = 'none';
+            if (e.target === refundModal) refundModal.style.display = 'none';
         });
     </script>
 </body>
