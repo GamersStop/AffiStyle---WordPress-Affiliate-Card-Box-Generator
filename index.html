@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AffiStyle - Free WordPress Affiliate Box & Card Builder Plugin</title>
-    <meta name="description" content="AffiStyle is an open-source, lightweight WordPress plugin designed to turn plain affiliate links into clean, high-converting product boxes and comparison cards.">
+    <title>AffiStyle - Free WordPress Affiliate Box &amp; Card Builder Plugin</title>
+    <meta name="description" content="AffiStyle is an open-source, lightweight WordPress plugin designed to turn plain affiliate links into clean, high-converting product boxes, comparison showdown cards, and cloaked URLs.">
     <link rel="canonical" href="https://affistyle.shop">
 
     <!-- Open Graph / Social Meta -->
@@ -22,7 +22,7 @@
       "name": "AffiStyle",
       "operatingSystem": "WordPress 5.8+",
       "applicationCategory": "BusinessApplication",
-      "description": "Modern open-source affiliate product cards and review box builder for WordPress.",
+      "description": "Modern open-source affiliate product cards and review box builder for WordPress with link cloaking and FTC compliance.",
       "url": "https://affistyle.shop",
       "downloadUrl": "https://wordpress.org/plugins/affistyle/",
       "offers": [
@@ -41,7 +41,7 @@
           "priceCurrency": "USD",
           "priceValidUntil": "2027-12-31",
           "availability": "https://schema.org/InStock",
-          "url": "https://affistyle.shop/#pricing",
+          "url": "https://dreainno.lemonsqueezy.com/",
           "seller": {
             "@type": "Organization",
             "name": "AffiStyle",
@@ -221,7 +221,7 @@
         .hero-desc {
             font-size: 18px;
             color: var(--text-muted);
-            max-width: 720px;
+            max-width: 760px;
             margin: 0 auto 36px auto;
         }
 
@@ -291,7 +291,7 @@
             background: #080d1a;
         }
 
-        /* 6 Features Grid */
+        /* Features Grid */
         .features-container {
             max-width: 1140px;
             margin: 110px auto;
@@ -313,7 +313,7 @@
         .section-header p {
             color: var(--text-muted);
             font-size: 16px;
-            max-width: 620px;
+            max-width: 650px;
             margin: 0 auto;
         }
 
@@ -574,7 +574,7 @@
             line-height: 1.6;
         }
 
-        /* Contact Section */
+        /* Support Section */
         .trust-section {
             max-width: 840px;
             margin: 90px auto;
@@ -737,6 +737,8 @@
         }
 
         .footer-bottom p { color: #64748b; }
+        .footer-bottom p a { color: #94a3b8; text-decoration: none; font-weight: 600; }
+        .footer-bottom p a:hover { color: #fff; }
 
         .footer-badge-note {
             display: flex;
@@ -769,7 +771,7 @@
         .modal-content {
             background: #0d1424;
             width: 100%;
-            max-width: 780px;
+            max-width: 840px;
             max-height: 88vh;
             border-radius: 20px;
             padding: 40px;
@@ -800,17 +802,28 @@
 
         .modal-content h2 { font-size: 26px; font-weight: 800; color: #fff; margin-bottom: 6px; }
         .modal-effective-date { font-size: 13px; color: var(--accent-cyan); margin-bottom: 20px; font-weight: 600; }
-        .modal-content h3 { color: #f1f5f9; margin-top: 24px; margin-bottom: 8px; font-size: 17px; font-weight: 700; }
+        .modal-content h3 { color: #f1f5f9; margin-top: 28px; margin-bottom: 10px; font-size: 18px; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 6px; }
+        .modal-content h4 { color: #93c5fd; margin-top: 16px; margin-bottom: 6px; font-size: 15px; font-weight: 700; }
         .modal-content p, .modal-content li { color: var(--text-muted); font-size: 14px; line-height: 1.7; margin-bottom: 10px; }
         .modal-content ul, .modal-content ol { padding-left: 22px; margin-bottom: 14px; }
+        .modal-content code { background: rgba(255, 255, 255, 0.08); color: #38bdf8; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 13px; }
+        
         .modal-highlight-box {
             background: rgba(59, 130, 246, 0.08);
             border: 1px solid rgba(59, 130, 246, 0.25);
             border-radius: 10px;
             padding: 16px;
-            margin: 16px 0;
+            margin: 18px 0;
             font-size: 13.5px;
             color: #cbd5e1;
+        }
+
+        .doc-section-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 16px 0;
         }
 
         @media (max-width: 900px) {
@@ -846,7 +859,7 @@
             <a href="#pricing" class="nav-link">Pricing &amp; Editions</a>
             <a href="#faq" class="nav-link">FAQ</a>
             <button type="button" class="nav-btn-link" id="open-about-nav">About Us</button>
-            <button type="button" class="nav-btn-link" id="open-docs-nav">Docs</button>
+            <button type="button" class="nav-btn-link" id="open-docs-nav">Documentation</button>
             <a href="https://wordpress.org/plugins/affistyle/" class="nav-cta">Download Free</a>
         </nav>
     </header>
@@ -858,14 +871,14 @@
                 <span>✨</span> 100% Free &amp; Open-Source WordPress Plugin
             </div>
             <h1>Clean Affiliate Boxes for WordPress. Fast, Responsive &amp; Free.</h1>
-            <p class="hero-desc">AffiStyle replaces plain text hyperlinks with clean product review cards, rating boxes, and pros/cons blocks in the Gutenberg editor without writing code.</p>
+            <p class="hero-desc">AffiStyle replaces raw affiliate hyperlinks with attractive product boxes, review cards, pros/cons blocks, and comparison grids in Gutenberg with zero coding required.</p>
             
             <div class="btn-group">
                 <a href="https://wordpress.org/plugins/affistyle/" class="btn-primary">
                     <span>Download Free Plugin</span>
                     <span aria-hidden="true">&darr;</span>
                 </a>
-                <button type="button" class="btn-secondary" id="open-docs-hero">Quick Setup Guide</button>
+                <button type="button" class="btn-secondary" id="open-docs-hero">Read Full Documentation</button>
             </div>
 
             <!-- Banner Showcase -->
@@ -874,42 +887,60 @@
             </div>
         </section>
 
-        <!-- 6 Features Grid -->
+        <!-- 8 Detailed Features Grid -->
         <section class="features-container" id="features">
             <div class="section-header">
-                <h2>Designed for WordPress Creators</h2>
-                <p>Everything you need to turn standard affiliate links into clear, helpful buying triggers.</p>
+                <h2>Engineered for WordPress Publishers</h2>
+                <p>Everything you need to turn standard affiliate links into high-CTR buying recommendations across any network.</p>
             </div>
             <div class="features-grid">
+                <!-- Feature 1 -->
                 <div class="feature-card">
-                    <div class="icon-box" aria-hidden="true">🎨</div>
-                    <h3>Prebuilt Card Layouts</h3>
-                    <p>Clean product boxes, review badges, and call-to-action cards styled to integrate with modern WordPress themes.</p>
+                    <div class="icon-box" aria-hidden="true">🔗</div>
+                    <h3>Smart Link Cloaking</h3>
+                    <p>Converts ugly, suspicious affiliate URLs into clean, branded internal redirect links (e.g. <code>/recommends/product-slug</code>) with safe 302/301 status codes.</p>
                 </div>
+                <!-- Feature 2 -->
                 <div class="feature-card">
                     <div class="icon-box" aria-hidden="true">⚖️</div>
-                    <h3>Comparison Grids</h3>
-                    <p>Display side-by-side product showdowns with clear feature matrices and star ratings.</p>
+                    <h3>Automated FTC &amp; Rel Compliance</h3>
+                    <p>Automatically enforces <code>rel="nofollow sponsored noopener"</code> and <code>target="_blank"</code> on all outbound links while rendering customizable FTC micro-disclosures.</p>
                 </div>
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="icon-box" aria-hidden="true">🌟</div>
+                    <h3>Schema.org Rich Snippets</h3>
+                    <p>Generates valid Product and AggregateRating JSON-LD structured data to unlock Google Star Ratings and rich review badges directly in search engine results.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="icon-box" aria-hidden="true">⚔️</div>
+                    <h3>16+ Pro Comparison Showdowns</h3>
+                    <p>Unlock side-by-side product showdown cards, spec sheet comparison matrices, and versus battle layouts (Product 1 vs Product 2) with independent ratings.</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="icon-box" aria-hidden="true">🏪</div>
+                    <h3>Multi-Retailer Choice Architecture</h3>
+                    <p>Add alternative store buttons (e.g., Best Buy, Walmart, Official Store) under a single card to maximize commission conversions across all your partner programs.</p>
+                </div>
+                <!-- Feature 6 -->
                 <div class="feature-card">
                     <div class="icon-box" aria-hidden="true">🌍</div>
-                    <h3>Geo-Targeted Routing</h3>
-                    <p>Route international visitors to regional storefronts (Amazon US, UK, IN) directly from a single card.</p>
+                    <h3>Smart Country-Level Geo-Targeting</h3>
+                    <p>Automatically detects visitor locations via CDN edge headers and reroutes clicks to localized storefronts (US, UK, CA, IN) without external API overhead.</p>
                 </div>
+                <!-- Feature 7 -->
                 <div class="feature-card">
                     <div class="icon-box" aria-hidden="true">📊</div>
-                    <h3>Click &amp; Conversion Analytics</h3>
-                    <p>Track CTR engagement and monitor top-performing links directly inside your WordPress dashboard.</p>
+                    <h3>100% Local Click Analytics</h3>
+                    <p>Track click-through rates, top-performing product cards, and visitor country demographics locally in your own WordPress SQL database with zero external tracking scripts.</p>
                 </div>
+                <!-- Feature 8 -->
                 <div class="feature-card">
                     <div class="icon-box" aria-hidden="true">⚡</div>
-                    <h3>Lightweight &amp; Fast</h3>
-                    <p>Built following WordPress Core performance standards with zero external dependencies and conditional asset loading.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-box" aria-hidden="true">📱</div>
-                    <h3>Native Block Editor</h3>
-                    <p>Native Gutenberg integration that adapts to desktop, tablet, and mobile screens.</p>
+                    <h3>Ultra-Lightweight &amp; Fast</h3>
+                    <p>Zero third-party library dependencies (Vanilla JS + CSS &lt; 15KB total). CSS and scripts are conditionally loaded only on pages where an affiliate card is rendered.</p>
                 </div>
             </div>
         </section>
@@ -927,20 +958,22 @@
                     <div>
                         <span class="badge-free">Free &bull; Open Source</span>
                         <div class="plan-title">AffiStyle Free</div>
-                        <div class="plan-subtitle">Complete core features for niche bloggers and content creators.</div>
+                        <div class="plan-subtitle">Complete core features for niche bloggers, reviewers, and content creators.</div>
                         <div class="plan-price">
                             <span class="price-currency">$</span>
                             <span class="price-num">0</span>
                             <span class="price-period">/ forever free on WP.org</span>
                         </div>
                         <ul class="plan-features">
-                            <li><span class="check-icon check-free">&check;</span> Standard Affiliate Product Cards</li>
-                            <li><span class="check-icon check-free">&check;</span> Responsive Pros &amp; Cons Lists</li>
-                            <li><span class="check-icon check-free">&check;</span> Star Rating &amp; Custom CTA Buttons</li>
-                            <li><span class="check-icon check-free">&check;</span> Native Gutenberg Block Inserter</li>
-                            <li><span class="check-icon check-free">&check;</span> Community Support via WordPress.org</li>
-                            <li style="opacity: 0.45;"><span class="check-icon check-free">&times;</span> Geo-Targeted Regional Store Routing</li>
-                            <li style="opacity: 0.45;"><span class="check-icon check-free">&times;</span> Multi-Product Showdown Grids</li>
+                            <li><span class="check-icon check-free">&check;</span> Style 1 (Standard Box) &amp; Style 2 (Compact Card)</li>
+                            <li><span class="check-icon check-free">&check;</span> Smart Link Cloaking (<code>/recommends/slug/</code>)</li>
+                            <li><span class="check-icon check-free">&check;</span> Automated FTC Compliance &amp; <code>sponsored</code> Rel Tags</li>
+                            <li><span class="check-icon check-free">&check;</span> Star Rating Display &amp; Pros/Cons Highlighters</li>
+                            <li><span class="check-icon check-free">&check;</span> Native Gutenberg Block &amp; Shortcode Support</li>
+                            <li><span class="check-icon check-free">&check;</span> Local Click-Through Analytics Logging</li>
+                            <li style="opacity: 0.45;"><span class="check-icon check-free">&times;</span> Geo-Targeted Regional Store Routing (US, UK, CA, IN)</li>
+                            <li style="opacity: 0.45;"><span class="check-icon check-free">&times;</span> Styles 3–16 (Versus Battle, Spec Matrix, Showdown Cards)</li>
+                            <li style="opacity: 0.45;"><span class="check-icon check-free">&times;</span> Multi-Retailer Secondary Store CTA Buttons</li>
                         </ul>
                     </div>
                     <div>
@@ -956,7 +989,7 @@
                     <div>
                         <span class="badge-pro">Pro Commercial License</span>
                         <div class="plan-title">AffiStyle Pro</div>
-                        <div class="plan-subtitle">For websites requiring multi-product showdown tables and geo-routing.</div>
+                        <div class="plan-subtitle">For websites requiring multi-product showdown tables, multi-retailers, and geo-routing.</div>
                         <div class="plan-price">
                             <span class="price-currency">$</span>
                             <span class="price-num">40</span>
@@ -964,15 +997,16 @@
                         </div>
                         <ul class="plan-features">
                             <li><span class="check-icon check-pro">&check;</span> <strong>Everything in Free, plus:</strong></li>
-                            <li><span class="check-icon check-pro">&check;</span> <strong>16+ Comparison Showdown Grids &amp; Matrices</strong></li>
-                            <li><span class="check-icon check-pro">&check;</span> <strong>Geo-Targeted Global Link Routing (US, UK, IN, etc.)</strong></li>
-                            <li><span class="check-icon check-pro">&check;</span> Built-in Click Tracking &amp; Conversion Analytics</li>
-                            <li><span class="check-icon check-pro">&check;</span> Automated License Key Activation</li>
+                            <li><span class="check-icon check-pro">&check;</span> <strong>All 16+ Premium Templates (Versus Battle, Matrices)</strong></li>
+                            <li><span class="check-icon check-pro">&check;</span> <strong>Side-by-Side Product 2 Showdown Fields</strong></li>
+                            <li><span class="check-icon check-pro">&check;</span> <strong>Multi-Retailer Choice Buttons (Amazon, Walmart, Direct)</strong></li>
+                            <li><span class="check-icon check-pro">&check;</span> <strong>Country-Specific Geo-Targeting (US, UK, CA, IN)</strong></li>
+                            <li><span class="check-icon check-pro">&check;</span> <strong>Custom Cloaking Prefixes (<code>/go/</code>, <code>/deal/</code>) &amp; Slugs</strong></li>
                             <li><span class="check-icon check-pro">&check;</span> 1 Year of Automatic Updates &amp; Priority Support</li>
                         </ul>
                     </div>
                     <div>
-                        <a href="#contact" class="btn-pro-action">
+                        <a href="https://dreainno.lemonsqueezy.com/" target="_blank" rel="noopener noreferrer" class="btn-pro-action">
                             <span>Get Pro License &bull; $40</span>
                             <span aria-hidden="true">&rarr;</span>
                         </a>
@@ -988,7 +1022,7 @@
         <section class="faq-section" id="faq">
             <div class="section-header">
                 <h2>Frequently Asked Questions</h2>
-                <p>Common questions regarding installation, licensing, and features.</p>
+                <p>Common questions regarding installation, licensing, and compliance.</p>
             </div>
             <div class="faq-list">
                 <details class="faq-item" open>
@@ -997,7 +1031,7 @@
                         <span class="faq-icon">+</span>
                     </summary>
                     <div class="faq-answer">
-                        Yes. The free version hosted on the official WordPress.org directory includes complete affiliate card formatting, customizable button styles, ratings, and pros/cons blocks without any expiration or required upgrade.
+                        Yes. The free version hosted on the official WordPress.org directory includes complete affiliate card formatting, customizable button styles, ratings, pros/cons blocks, link cloaking, and FTC disclosures without any expiration or required upgrade.
                     </div>
                 </details>
 
@@ -1007,7 +1041,7 @@
                         <span class="faq-icon">+</span>
                     </summary>
                     <div class="faq-answer">
-                        The $40 Pro license adds multi-product showdown comparison tables, server-level geo-targeted regional link routing, built-in click conversion tracking, and priority developer support.
+                        The $40 Pro license adds 14 additional designer layouts (Styles 3–16 including Side-by-Side Versus and Spec Matrices), secondary Multi-Retailer CTA buttons, automated Geo-Targeted link routing (US, UK, CA, IN), customizable cloak prefixes, and priority developer support.
                     </div>
                 </details>
 
@@ -1017,7 +1051,7 @@
                         <span class="faq-icon">+</span>
                     </summary>
                     <div class="faq-answer">
-                        Orders are processed securely via Lemon Squeezy (our Merchant of Record). You immediately receive an email receipt containing your downloadable Pro package (`.zip`) and your automated license activation key.
+                        Orders are processed securely via Lemon Squeezy (our Merchant of Record). You immediately receive an email receipt containing your downloadable Pro package (<code>.zip</code>) and your automated license activation key.
                     </div>
                 </details>
 
@@ -1027,7 +1061,7 @@
                         <span class="faq-icon">+</span>
                     </summary>
                     <div class="faq-answer">
-                        No. AffiStyle is built with lightweight CSS and vanilla JavaScript. Scripts and styles are conditionally enqueued only on posts where an affiliate block is actively displayed.
+                        No. AffiStyle is built with lightweight CSS and vanilla JavaScript (&lt; 15KB total). Scripts and styles are conditionally enqueued only on posts where an affiliate block is actively displayed.
                     </div>
                 </details>
 
@@ -1067,6 +1101,10 @@
                 </p>
                 <!-- Social Links with Scalable SVGs -->
                 <div class="footer-socials">
+                    <!-- GitHub -->
+                    <a href="https://github.com/GamersStop" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+                        <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
                     <!-- YouTube -->
                     <a href="https://www.youtube.com/@dreainno" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube Channel">
                         <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
@@ -1103,6 +1141,7 @@
                 <ul class="footer-menu">
                     <li><button type="button" class="footer-btn" id="open-about-modal">About Us</button></li>
                     <li><button type="button" class="footer-btn" id="open-docs-modal">Documentation</button></li>
+                    <li><a href="https://dreainno.online" target="_blank" rel="noopener noreferrer">Creator Website (Dreainno)</a></li>
                     <li><a href="#contact">Technical Support</a></li>
                     <li><a href="mailto:dreainno@gmail.com">Contact Developer</a></li>
                 </ul>
@@ -1121,7 +1160,7 @@
 
         <!-- Bottom Copyright Row -->
         <div class="footer-bottom">
-            <p>&copy; 2026 AffiStyle. All rights reserved. Custom-developed for WordPress.</p>
+            <p>&copy; 2026 AffiStyle. Built by <a href="https://dreainno.online" target="_blank" rel="noopener noreferrer">Dreainno</a>. Custom-developed for WordPress.</p>
             <div class="footer-badge-note">
                 <span></span>
                 Lemon Squeezy Verified Merchant
@@ -1136,7 +1175,7 @@
             <h2 id="about-title">About AffiStyle</h2>
             <div class="modal-effective-date">Our Mission &amp; Development Standards</div>
 
-            <p><strong>AffiStyle</strong> was founded by a team of independent WordPress engineers and content creators who experienced firsthand how difficult it was to present affiliate recommendations cleanly without bloated third-party page builders or heavy external dependencies.</p>
+            <p><strong>AffiStyle</strong> was founded by the engineering team at <a href="https://dreainno.online" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">Dreainno</a> to solve the challenge of presenting affiliate recommendations cleanly without bloated third-party page builders or heavy external dependencies.</p>
 
             <div class="modal-highlight-box">
                 <strong>Our Philosophy:</strong> Fast page loads, semantic WordPress Gutenberg integration, and zero telemetry bloat. We build software that respects both website speed and reader trust.
@@ -1152,79 +1191,158 @@
             </ul>
 
             <h3>Direct Contact</h3>
-            <p>Our lead developers personally handle technical inquiries and product feedback. You can reach out directly to our engineering desk at <a href="mailto:dreainno@gmail.com" style="color: var(--primary);">dreainno@gmail.com</a>.</p>
+            <p>Our lead developers personally handle technical inquiries and product feedback. You can reach out directly to our engineering desk at <a href="mailto:dreainno@gmail.com" style="color: var(--primary);">dreainno@gmail.com</a> or visit <a href="https://dreainno.online" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan);">dreainno.online</a>.</p>
         </div>
     </div>
 
-    <!-- Documentation Modal -->
+    <!-- Complete Dual-Product Documentation Modal -->
     <div class="modal-overlay" id="docs-modal" role="dialog" aria-modal="true" aria-labelledby="docs-title">
         <div class="modal-content">
             <button type="button" class="close-modal" id="close-docs-modal" aria-label="Close Documentation">&times;</button>
-            <h2 id="docs-title">AffiStyle Documentation</h2>
-            <div class="modal-effective-date">Version 1.0 &bull; Developer Guide</div>
-            <p>Integration instructions for setting up AffiStyle on your WordPress website.</p>
+            <h2 id="docs-title">AffiStyle Complete Documentation</h2>
+            <div class="modal-effective-date">Comprehensive Guide &bull; Free &amp; Pro Editions</div>
+            
+            <p>Welcome to the official developer and user guide for AffiStyle. This document provides complete instructions for configuring both the <strong>Free Edition</strong> and the <strong>Pro Commercial Edition</strong>.</p>
 
-            <h3>1. Installing the Free Version</h3>
-            <ol>
-                <li>In your WordPress Admin, go to <strong>Plugins &rarr; Add New</strong>.</li>
-                <li>Search for <strong>AffiStyle</strong>.</li>
-                <li>Click <strong>Install Now</strong> and then <strong>Activate</strong>.</li>
-            </ol>
+            <!-- Free Edition Documentation -->
+            <div class="doc-section-card">
+                <span class="badge-free">Part 1: Free Edition Guide</span>
+                
+                <h4>1. Installation &amp; Setup (Free)</h4>
+                <ol>
+                    <li>Log in to your WordPress Admin dashboard.</li>
+                    <li>Navigate to <strong>Plugins &rarr; Add New</strong>.</li>
+                    <li>Search for <strong>AffiStyle</strong> in the repository search bar.</li>
+                    <li>Click <strong>Install Now</strong>, then click <strong>Activate</strong>.</li>
+                </ol>
 
-            <h3>2. Adding Your First Card</h3>
-            <p>Open any post or page in the Block Editor (Gutenberg), click the <code>+</code> button, search for <strong>AffiStyle Card</strong>, and add product images, titles, pros/cons, and target affiliate links in the sidebar panel.</p>
+                <h4>2. Creating Your First Affiliate Card</h4>
+                <ol>
+                    <li>Go to <strong>Affiliate Boxes &rarr; Add New Box</strong> in your WordPress sidebar.</li>
+                    <li>Enter a descriptive internal title for reference (e.g., <em>"Sony WH-1000XM5 Review Box"</em>).</li>
+                    <li>In the <strong>Product 1 Details</strong> section, populate:
+                        <ul>
+                            <li><strong>Product Title:</strong> The customer-facing product name.</li>
+                            <li><strong>Product Image:</strong> Upload or select from your WordPress Media Library.</li>
+                            <li><strong>Description:</strong> A brief 2–3 sentence review summary.</li>
+                            <li><strong>Default Affiliate URL:</strong> Your raw affiliate or partner link.</li>
+                            <li><strong>Button Text:</strong> Custom CTA copy (e.g., <em>"Check Price on Amazon"</em>).</li>
+                            <li><strong>Badge / Ribbon Text:</strong> Optional highlight badge (e.g., <em>"Best Overall Pick"</em>).</li>
+                            <li><strong>Star Rating &amp; Review Count:</strong> Numerical score from 0.0 to 5.0 and optional review total.</li>
+                            <li><strong>Pros &amp; Cons:</strong> Enter positive points and negative points separated by new lines.</li>
+                        </ul>
+                    </li>
+                    <li>Under <strong>Card Styling</strong>, choose between <strong>Style 1 (Standard Box)</strong> or <strong>Style 2 (Compact Minimalist)</strong>, and optionally set custom background and button colors.</li>
+                    <li>Click <strong>Publish</strong>.</li>
+                </ol>
 
-            <h3>3. Pro License Activation</h3>
-            <p>If using AffiStyle Pro, navigate to <strong>AffiStyle &rarr; License Settings</strong> in your WordPress dashboard, enter your Lemon Squeezy license key, and save settings to enable premium comparison templates.</p>
+                <h4>3. Inserting Cards into Content</h4>
+                <ul>
+                    <li><strong>Gutenberg Block:</strong> In any post or page, click the <code>+</code> inserter, search for <strong>Affiliate Box</strong>, and select your published card from the dropdown preview list.</li>
+                    <li><strong>Shortcode:</strong> Copy the generated shortcode (e.g., <code>[aff_box id="123"]</code>) and paste it into Elementor, Divi, Beaver Builder, or Classic Editor widgets.</li>
+                </ul>
+
+                <h4>4. Link Cloaking &amp; FTC Compliance</h4>
+                <ul>
+                    <li><strong>Branded Outbound URLs:</strong> All affiliate destination links are automatically cloaked under <code>yoursite.com/recommends/your-card-slug/</code> with safe 302 redirects.</li>
+                    <li><strong>FTC Disclosure:</strong> A legally compliant micro-disclosure is automatically attached beneath the box, and all CTA links have <code>rel="nofollow sponsored noopener"</code> and <code>target="_blank"</code> applied.</li>
+                </ul>
+            </div>
+
+            <!-- Pro Edition Documentation -->
+            <div class="doc-section-card">
+                <span class="badge-pro">Part 2: Pro Commercial Edition Guide</span>
+
+                <h4>1. Installing &amp; Activating Pro</h4>
+                <ol>
+                    <li>Ensure <strong>AffiStyle Free</strong> is installed and activated on your WordPress site.</li>
+                    <li>Download the <code>affistyle-pro.zip</code> package from your Lemon Squeezy receipt email.</li>
+                    <li>Navigate to <strong>Plugins &rarr; Add New &rarr; Upload Plugin</strong> and upload the ZIP archive.</li>
+                    <li>Click <strong>Activate Plugin</strong>.</li>
+                    <li>Go to <strong>Affiliate Boxes &rarr; Settings / License</strong>, paste your Lemon Squeezy License Key, and click <strong>Activate License</strong>. Your license will verify cryptographically via HMAC-SHA256.</li>
+                </ol>
+
+                <h4>2. Unlocking 16+ Premium Templates</h4>
+                <p>Once Pro is active, the Template Style dropdown unlocks all 16 layouts:</p>
+                <ul>
+                    <li><strong>Styles 3–13:</strong> Modern Dark Cards, Floating Glassmorphism, Gradient Accent Boxes, and 3-Column Tiered Grids.</li>
+                    <li><strong>Styles 14, 15 &amp; 16:</strong> Side-by-Side Versus Battle Cards, Comparison Showdowns, and Feature Spec Matrix Tables.</li>
+                </ul>
+
+                <h4>3. Configuring Side-by-Side Showdown Cards (Product 1 vs Product 2)</h4>
+                <ol>
+                    <li>Open an Affiliate Box and choose a comparison template (e.g. <strong>Style 14 Versus</strong> or <strong>Style 15 Spec Matrix</strong>).</li>
+                    <li>Check the <strong>[x] Enable Product 2 Comparison</strong> toggle.</li>
+                    <li>Fill in Product 2 details: Title, Image, Description, URL, Badge (e.g. <em>"Runner Up"</em>), Star Rating, and Pros/Cons.</li>
+                    <li>Both products will render side-by-side with independent click tracking (<code>data-product="1"</code> and <code>data-product="2"</code>).</li>
+                </ol>
+
+                <h4>4. Multi-Retailer CTA Buttons (Choice Architecture)</h4>
+                <ol>
+                    <li>In the Pro editor, expand the <strong>Alternative Retailers &amp; Stores</strong> repeater.</li>
+                    <li>Click <strong>+ Add Store Button</strong> to add secondary buttons (e.g., Button 1: Amazon, Button 2: Best Buy, Button 3: Walmart).</li>
+                    <li>Assign custom button labels, localized affiliate URLs, price tags (e.g., <em>"$299"</em>), and custom button colors.</li>
+                </ol>
+
+                <h4>5. Global Geo-Targeted Regional Link Routing</h4>
+                <ol>
+                    <li>Expand the <strong>Geo-Targeted Store Routing</strong> panel.</li>
+                    <li>Enter regional store URLs for your target international markets (<strong>United States, United Kingdom, Canada, and India</strong>).</li>
+                    <li>AffiStyle Pro detects visitor country codes via CDN edge headers (Cloudflare <code>CF-IPCountry</code>) and automatically redirects cloaked clicks to the appropriate regional merchant link.</li>
+                </ol>
+
+                <h4>6. Custom Cloak Prefixes &amp; HTTP Status Codes</h4>
+                <p>In <strong>Affiliate Boxes &rarr; Pro Settings</strong>, customize your site-wide cloak prefix from <code>/recommends/</code> to <code>/go/</code>, <code>/out/</code>, or <code>/deal/</code>, and configure HTTP redirect status codes between <strong>302 (Temporary)</strong>, <strong>301 (Permanent)</strong>, or <strong>307 (Temporary Redirect)</strong>.</p>
+            </div>
         </div>
     </div>
 
-    <!-- Legally Robust Terms of Service Modal -->
+    <!-- Detailed Legally Robust Terms of Service Modal -->
     <div class="modal-overlay" id="terms-modal" role="dialog" aria-modal="true" aria-labelledby="terms-title">
         <div class="modal-content">
             <button type="button" class="close-modal" id="close-terms-modal" aria-label="Close Terms">&times;</button>
-            <h2 id="terms-title">Terms of Service</h2>
-            <div class="modal-effective-date">Last Updated: January 1, 2026</div>
+            <h2 id="terms-title">Terms of Service &amp; End-User License Agreement</h2>
+            <div class="modal-effective-date">Last Updated: August 19, 2026 &bull; Commercial Revision 2.4</div>
 
-            <p>Please review these Terms of Service carefully before purchasing, installing, or using the <strong>AffiStyle</strong> WordPress plugin or any associated digital services provided through <strong>https://affistyle.shop</strong>. By accessing or using our software, you agree to be bound by these Terms. If you disagree with any part of these Terms, you may not access or use the software.</p>
+            <p>Please review these Terms of Service ("Terms", "Agreement") carefully before purchasing, installing, activating, or utilizing the <strong>AffiStyle</strong> software or services provided via <strong>https://affistyle.shop</strong>. By accessing our software or completing a purchase, you agree to be bound by these Terms.</p>
 
             <div class="modal-highlight-box">
-                <strong>Legal Summary:</strong> AffiStyle software is provided on an "as is" basis under dual licensing (GPL for core files, commercial subscription for Pro extensions). Customers are responsible for FTC affiliate disclosures and regional compliance.
+                <strong>Legal Summary:</strong> AffiStyle operates under dual-licensing: PHP core components are GPL-compliant, while Pro features, updates, and cloud licensing services require an active commercial license. Site owners maintain sole legal responsibility for FTC compliance.
             </div>
 
-            <h3>1. Definitions &amp; Scope</h3>
+            <h3>Article 1: Scope, Definitions &amp; Licensing Structure</h3>
             <ul>
-                <li><strong>"Software" / "Plugin":</strong> Refers to the AffiStyle free plugin hosted on WordPress.org and the AffiStyle Pro premium software extension packages.</li>
-                <li><strong>"Merchant of Record":</strong> Refers to Lemon Squeezy, LLC, which processes all financial transactions, invoicing, tax calculation, and order fulfillment.</li>
-                <li><strong>"User" / "Customer":</strong> Any individual or entity that downloads, installs, activates, or purchases a license for AffiStyle.</li>
+                <li><strong>"Free Software":</strong> Refers to the open-source base edition hosted on WordPress.org, licensed under the GNU General Public License v2 or later (GPLv2+).</li>
+                <li><strong>"Pro Software":</strong> Refers to the commercial extension package granting access to premium templates (Styles 3–16), Geo-routing modules, Multi-retailer repeaters, and developer support.</li>
+                <li><strong>"Merchant of Record":</strong> Lemon Squeezy, LLC, which securely processes all financial checkouts, billing records, global tax remittance (VAT/GST/Sales Tax), and payment invoicing.</li>
+                <li><strong>"Single Site License":</strong> Authorizes the activation and use of AffiStyle Pro on exactly one (1) live production WordPress installation domain (plus staging/local test environments). Sharing, reselling, or leasing license keys is strictly prohibited.</li>
             </ul>
 
-            <h3>2. Intellectual Property &amp; Licensing Rights</h3>
+            <h3>Article 2: Commercial Subscription, Key Validation &amp; Anti-Tamper Protection</h3>
             <ul>
-                <li><strong>GNU General Public License (GPL):</strong> In adherence to WordPress ecosystem standards, PHP code elements of AffiStyle are licensed under the GNU General Public License v2 or later (GPLv2+).</li>
-                <li><strong>Commercial License Key:</strong> Access to proprietary cloud update servers, premium layouts, geo-routing databases, and developer support requires an active, paid AffiStyle Pro license key. A Single Site License grants authorization for exactly one (1) production domain. Sharing, reselling, or sub-licensing commercial keys is strictly prohibited and results in immediate key revocation without refund.</li>
+                <li><strong>Cryptographic Verification:</strong> AffiStyle Pro utilizes HMAC-SHA256 signatures paired with your site URL to prevent unauthorized tampering. Attempting to bypass licensing gates through reverse engineering or unauthorized server spoofing constitutes a material breach and results in immediate license termination.</li>
+                <li><strong>Maintenance &amp; Updates:</strong> Each commercial license includes twelve (12) consecutive months of automated software updates, security patches, and technical support. Following expiration, the software remains functional but loses access to update servers and priority support unless renewed.</li>
             </ul>
 
-            <h3>3. Payment Processing &amp; Tax Obligations</h3>
-            <p>All financial checkouts are securely executed by Lemon Squeezy, LLC acting as Merchant of Record. Lemon Squeezy handles value-added tax (VAT), Goods and Services Tax (GST), and sales taxes in compliance with international jurisdictions. We do not store raw payment card data on our servers.</p>
+            <h3>Article 3: Merchant of Record, Payments &amp; Invoicing</h3>
+            <p>All financial checkouts are processed exclusively by Lemon Squeezy, LLC acting as Merchant of Record. Lemon Squeezy is responsible for PCI-DSS compliance, currency conversion, and applicable tax calculations. AffiStyle does not receive or store payment card details.</p>
 
-            <h3>4. Software Updates &amp; Support Scope</h3>
+            <h3>Article 4: Affiliate Disclosure, FTC Guidelines &amp; User Liability</h3>
+            <p>AffiStyle provides software presentation tools for commercial and affiliate product recommendations. <strong>The licensee assumes sole legal responsibility</strong> for ensuring compliance with all local and international marketing regulations, including:</p>
             <ul>
-                <li><strong>Maintenance Period:</strong> Pro licenses include twelve (12) consecutive months of automated software updates and technical support from the date of initial purchase.</li>
-                <li><strong>Scope of Support:</strong> Support is limited to core functionality, bug fixes, and installation assistance directly related to AffiStyle. We explicitly disclaim obligations to resolve conflicts caused by third-party themes, unmaintained plugins, or server-level caching misconfigurations.</li>
+                <li>Federal Trade Commission (FTC) Affiliate Disclosure Directives.</li>
+                <li>Amazon Associates Program Operating Agreement requirements (e.g., maintaining accurate pricing disclaimers).</li>
+                <li>General Data Protection Regulation (GDPR) and regional ePrivacy guidelines regarding outbound tracking.</li>
             </ul>
 
-            <h3>5. Affiliate Disclosure &amp; Regulatory Compliance</h3>
-            <p>AffiStyle provides presentation tools for commercial and affiliate product links. The user acknowledges sole legal liability for complying with all applicable global regulatory guidelines, including but not limited to <strong>Federal Trade Commission (FTC) Affiliate Disclosure Regulations</strong>, GDPR cookie directives, and specific merchant terms (such as the Amazon Associates Operating Agreement).</p>
+            <h3>Article 5: Technical Support Scope &amp; Exclusions</h3>
+            <p>Support is provided exclusively via email (<code>dreainno@gmail.com</code>) to active license holders. Support covers core plugin functionality, bug resolutions, and installation guidance. Support explicitly excludes custom CSS theme restyling, conflicts caused by unmaintained third-party plugins, or server-level hosting misconfigurations.</p>
 
-            <h3>6. Limitation of Liability &amp; Disclaimer of Warranties</h3>
-            <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, AFFISTYLE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. IN NO EVENT SHALL AFFISTYLE, ITS DEVELOPERS, OR AFFILIATES BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES (INCLUDING LOSS OF PROFITS, AFFILIATE COMMISSIONS, SERVER DOWNTIME, OR DATA CORRUPTION) ARISING OUT OF OR IN CONNECTION WITH THE USE OR INABILITY TO USE THE SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+            <h3>Article 6: Disclaimer of Warranties &amp; Limitation of Liability</h3>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, AFFISTYLE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. IN NO EVENT SHALL AFFISTYLE, DREAINNO, ITS DEVELOPERS, OR AFFILIATES BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES (INCLUDING LOSS OF COMMISSIONS, ADVERTISING REVENUES, DATABASE CORRUPTION, OR SERVER DOWNTIME) ARISING FROM THE USE OR INABILITY TO USE THIS SOFTWARE.</p>
 
-            <h3>7. Termination &amp; Severability</h3>
-            <p>We reserve the right to suspend or terminate access to license update servers for users who violate these Terms, engage in fraudulent chargebacks, or attempt unauthorized reverse engineering. If any provision of these Terms is found invalid or unenforceable, the remaining provisions shall remain in full force and effect.</p>
-
-            <h3>8. Governing Contact</h3>
-            <p>For official legal inquiries regarding these Terms, contact our legal administration team at <a href="mailto:dreainno@gmail.com" style="color: var(--primary);">dreainno@gmail.com</a>.</p>
+            <h3>Article 7: Termination, Governing Jurisdiction &amp; Legal Notices</h3>
+            <p>We reserve the right to revoke license keys in instances of fraudulent chargebacks, commercial piracy, or breach of these Terms. This Agreement is governed by applicable commercial laws. For official legal inquiries, contact <a href="mailto:dreainno@gmail.com" style="color: var(--primary);">dreainno@gmail.com</a>.</p>
         </div>
     </div>
 
@@ -1233,48 +1351,36 @@
         <div class="modal-content">
             <button type="button" class="close-modal" id="close-privacy-modal" aria-label="Close Privacy">&times;</button>
             <h2 id="privacy-title">Privacy Policy</h2>
-            <div class="modal-effective-date">Last Updated: January 1, 2026</div>
+            <div class="modal-effective-date">Last Updated: August 19, 2026</div>
 
-            <p>This Privacy Policy outlines how <strong>AffiStyle</strong> ("we", "our", or "us"), accessible via <strong>https://affistyle.shop</strong>, collects, processes, and protects your personal data in accordance with the <strong>General Data Protection Regulation (GDPR)</strong>, the <strong>California Consumer Privacy Act (CCPA)</strong>, and global data privacy standards.</p>
+            <p>This Privacy Policy outlines how <strong>AffiStyle</strong> ("we", "our", or "us"), accessible via <strong>https://affistyle.shop</strong>, collects, processes, and protects personal data in compliance with the <strong>General Data Protection Regulation (GDPR)</strong>, the <strong>California Consumer Privacy Act (CCPA)</strong>, and international privacy standards.</p>
 
             <div class="modal-highlight-box">
-                <strong>Zero-Telemetry Policy:</strong> AffiStyle does not harvest, transmit, or monetize personal reader data from websites using our plugin. All link click tracking is computed and retained locally inside your WordPress SQL database.
+                <strong>Zero-Telemetry Policy:</strong> AffiStyle does not harvest, transmit, or monetize reader traffic from websites using our plugin. All affiliate link click metrics are logged and computed locally inside the site owner's WordPress SQL database (<code>wp_affistyle_clicks</code>).
             </div>
 
             <h3>1. Data We Collect &amp; Purpose of Processing</h3>
             <ul>
-                <li><strong>Customer Order Records:</strong> When you purchase AffiStyle Pro, our payment processor (Lemon Squeezy) collects your name, email address, billing location, and IP address for fraud prevention and statutory tax compliance. We retain licensing email records solely to facilitate license key verification and update notifications.</li>
-                <li><strong>License Verification Data:</strong> When activating a license within WordPress, our API validates the license key, WordPress version, active theme name, and website URL to verify domain authorization.</li>
-                <li><strong>Customer Support Data:</strong> Any correspondence sent to <code>dreainno@gmail.com</code> is retained strictly to provide technical support and resolve inquiries.</li>
+                <li><strong>Customer Order Records:</strong> When purchasing AffiStyle Pro, our payment processor (Lemon Squeezy) collects billing details, email, and IP address for transaction fulfillment and tax reporting.</li>
+                <li><strong>License Validation Handshake:</strong> When activating a license key in WordPress, our API validates the key, site URL, and WordPress version to authenticate your active subscription status.</li>
+                <li><strong>Support Correspondence:</strong> Emails sent to <code>dreainno@gmail.com</code> are stored securely to assist with technical troubleshooting.</li>
             </ul>
 
             <h3>2. Local Data Processing on End-User Websites</h3>
-            <p>The AffiStyle plugin includes local conversion tracking and geo-targeted link routing:</p>
+            <p>The AffiStyle plugin features built-in click analytics and geolocation routing designed with privacy-first standards:</p>
             <ul>
-                <li><strong>Local SQL Storage:</strong> All click metrics are recorded directly into the site owner's WordPress database table (<code>wp_affistyle_clicks</code>). No visitor identifiers, browser fingerprints, or IP logs are transmitted to external servers.</li>
-                <li><strong>Server-Side Geo Detection:</strong> Geolocation routing is executed strictly in server memory via standard proxy headers (e.g., Cloudflare <code>CF-IPCountry</code>) without tracking or profiling individual users.</li>
+                <li><strong>Local SQL Storage:</strong> Outbound clicks increment aggregate counters locally. No visitor IP addresses, browser cookies, or tracking beacons are transmitted to external servers.</li>
+                <li><strong>Edge Geolocation:</strong> Regional routing utilizes CDN proxy headers (e.g., Cloudflare <code>CF-IPCountry</code>) locally in memory without tracking or building user profiles.</li>
             </ul>
 
             <h3>3. Third-Party Service Providers</h3>
-            <p>We work exclusively with certified third-party vendors who maintain strict data protection standards:</p>
             <ul>
-                <li><strong>Lemon Squeezy, LLC (USA):</strong> Merchant of Record managing PCI-DSS compliant payment processing, global tax remittance, and license distribution.</li>
-                <li><strong>GitHub Inc. (USA) &amp; Cloudflare:</strong> Web hosting infrastructure and SSL/TLS certificate encryption.</li>
+                <li><strong>Lemon Squeezy, LLC (USA):</strong> PCI-DSS compliant Merchant of Record for financial processing and license delivery.</li>
+                <li><strong>Cloudflare &amp; GitHub Inc. (USA):</strong> Secure SSL/TLS encrypted hosting infrastructure.</li>
             </ul>
 
-            <h3>4. Data Subject Rights (GDPR &amp; CCPA)</h3>
-            <p>Users residing in the European Economic Area (EEA), the United Kingdom, or California hold specific statutory rights:</p>
-            <ul>
-                <li><strong>Right of Access &amp; Portability:</strong> You may request a copy of the personal data we hold regarding your license records.</li>
-                <li><strong>Right to Rectification:</strong> You may request correction of inaccurate licensing or billing email records.</li>
-                <li><strong>Right to Erasure ("Right to Be Forgotten"):</strong> You may request deletion of your support correspondence and licensing account data, subject to statutory accounting retention laws.</li>
-            </ul>
-
-            <h3>5. Data Security Measures</h3>
-            <p>We employ industry-standard technical safeguards, including 256-bit SSL encryption, restricted database access controls, and strict nonce verification across all API endpoints, to protect against unauthorized data access.</p>
-
-            <h3>6. Privacy Inquiries</h3>
-            <p>To exercise your statutory data privacy rights or submit privacy-related inquiries, contact our Data Protection representative at <a href="mailto:dreainno@gmail.com" style="color: var(--primary);">dreainno@gmail.com</a>.</p>
+            <h3>4. Privacy Inquiries &amp; GDPR Rights</h3>
+            <p>To exercise your statutory rights of data access, rectification, or erasure, contact our Data Protection desk at <a href="mailto:dreainno@gmail.com" style="color: var(--primary);">dreainno@gmail.com</a>.</p>
         </div>
     </div>
 
@@ -1283,40 +1389,27 @@
         <div class="modal-content">
             <button type="button" class="close-modal" id="close-refund-modal" aria-label="Close Refund">&times;</button>
             <h2 id="refund-title">Refund &amp; Cancellation Policy</h2>
-            <div class="modal-effective-date">Last Updated: January 1, 2026</div>
+            <div class="modal-effective-date">Last Updated: August 19, 2026</div>
 
-            <p>At AffiStyle, customer satisfaction and transparency are core to our development. We provide an explicit, risk-free <strong>14-Day Money-Back Guarantee</strong> on all new commercial licenses of AffiStyle Pro.</p>
+            <p>At AffiStyle, customer satisfaction is our top priority. We provide an explicit, risk-free <strong>14-Day Money-Back Guarantee</strong> on all new commercial licenses of AffiStyle Pro.</p>
 
             <div class="modal-highlight-box">
-                <strong>14-Day Evaluation Guarantee:</strong> If AffiStyle Pro does not function properly on your WordPress installation and our technical engineering team cannot resolve the defect within a reasonable timeframe, you are eligible for a 100% full refund.
+                <strong>14-Day Guarantee:</strong> If AffiStyle Pro experiences a technical defect on your WordPress setup that our engineering team cannot resolve, you are entitled to a 100% full refund.
             </div>
 
             <h3>1. Refund Eligibility Criteria</h3>
-            <p>A full refund will be granted if all of the following conditions are met:</p>
             <ul>
-                <li>The refund request is submitted within <strong>fourteen (14) calendar days</strong> from the original timestamp of transaction.</li>
-                <li>You have encountered a reproducible technical defect, script error, or plugin conflict preventing core software operation.</li>
-                <li>You provide our developer support desk with basic diagnostic details (such as WordPress version, theme name, or error logs) and allow an opportunity to provide a software patch or resolution.</li>
+                <li>The request is submitted within <strong>fourteen (14) calendar days</strong> from the original timestamp of purchase.</li>
+                <li>You encountered a reproducible technical issue or plugin incompatibility preventing core operation.</li>
+                <li>You allow our developer support desk an opportunity to diagnose the conflict and provide a software resolution or patch.</li>
             </ul>
 
-            <h3>2. Ineligibility &amp; Abuse Prevention</h3>
-            <p>To prevent commercial piracy and fraudulent license exploitation, refunds will not be issued under the following circumstances:</p>
-            <ul>
-                <li>Requests submitted after the expiration of the 14-day evaluation window.</li>
-                <li>Claims based on features explicitly excluded in the product specifications (e.g., demanding features not advertised on our official website).</li>
-                <li>Refusal to cooperate with developer support in diagnosing reported technical conflicts.</li>
-                <li>Purchases where a chargeback or payment dispute was filed without first contacting our support desk.</li>
-            </ul>
-
-            <h3>3. Refund Procedure</h3>
+            <h3>2. Procedure</h3>
             <ol>
-                <li>Submit an email to <a href="mailto:dreainno@gmail.com" style="color: var(--primary);"><strong>dreainno@gmail.com</strong></a> with the subject line <code>Refund Request - [Order Number]</code>.</li>
-                <li>Include your Lemon Squeezy Order Number, registered email address, and a brief description of the technical incompatibility.</li>
-                <li>Our engineering desk will review and process eligible requests within <strong>24 to 48 business hours</strong>. Approved refunds will be automatically credited back to your original payment method via Lemon Squeezy.</li>
+                <li>Email <a href="mailto:dreainno@gmail.com" style="color: var(--primary);"><strong>dreainno@gmail.com</strong></a> with the subject line <code>Refund Request - [Order Number]</code>.</li>
+                <li>Provide your Lemon Squeezy Order Number and a brief description of the technical incompatibility.</li>
+                <li>Eligible requests are reviewed and processed within <strong>24 to 48 business hours</strong>, with funds returned directly to your original payment method.</li>
             </ol>
-
-            <h3>4. Immediate License Key Deactivation</h3>
-            <p>Upon the issuance of a refund, the associated AffiStyle Pro license key will be permanently deactivated. The software will revert to the core free functionality, and access to premium showdown templates, geo-routing servers, automated updates, and support will terminate immediately.</p>
         </div>
     </div>
 
