@@ -73,7 +73,8 @@
     <!-- Google Fonts: Plus Jakarta Sans & Caveat Script (Reference Poster Brand Identity) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <style>
@@ -1102,13 +1103,27 @@
 
         /* Animations */
         @keyframes float-card-1 {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-9px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-9px);
+            }
         }
 
         @keyframes float-card-2 {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(8px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(8px);
+            }
         }
 
         /* Responsive Breakpoints for Hero */
@@ -1117,25 +1132,32 @@
                 grid-template-columns: 1fr;
                 gap: 50px;
             }
+
             .hero-copy {
                 text-align: center;
             }
-            .hero h1, .hero-desc {
+
+            .hero h1,
+            .hero-desc {
                 margin-left: auto;
                 margin-right: auto;
             }
+
             .hero-cta-wrap {
                 justify-content: center;
             }
+
             .hero-trust-bar {
                 margin-left: auto;
                 margin-right: auto;
             }
+
             .hero-checklist {
                 justify-content: center;
                 margin-left: auto;
                 margin-right: auto;
             }
+
             .hero-stage {
                 height: 480px;
             }
@@ -1146,14 +1168,17 @@
                 height: 420px;
                 transform: scale(0.9);
             }
+
             .stage-card-primary {
                 right: 0;
                 width: 290px;
             }
+
             .stage-card-secondary {
                 left: 0;
                 width: 280px;
             }
+
             .stage-metric-pill {
                 top: 180px;
             }
@@ -1983,11 +2008,18 @@
                 radial-gradient(ellipse at 80% 30%, rgba(37, 99, 235, 0.18) 0%, transparent 55%),
                 #0b1324;
         }
+
         .flagship-card.theme-convert:hover {
             box-shadow: 0 30px 65px -15px rgba(0, 0, 0, 0.85), 0 0 35px -5px rgba(6, 182, 212, 0.28);
         }
-        .flagship-card.theme-convert .flagship-kicker { color: #38bdf8; }
-        .flagship-card.theme-convert .flagship-trim { background: linear-gradient(90deg, #06b6d4 0%, #3b82f6 100%); }
+
+        .flagship-card.theme-convert .flagship-kicker {
+            color: #38bdf8;
+        }
+
+        .flagship-card.theme-convert .flagship-trim {
+            background: linear-gradient(90deg, #06b6d4 0%, #3b82f6 100%);
+        }
 
         /* 2. SECURE & COMPLY (Emerald / Gold Glow) */
         .flagship-card.theme-comply {
@@ -1996,11 +2028,18 @@
                 radial-gradient(ellipse at 80% 35%, rgba(245, 158, 11, 0.16) 0%, transparent 55%),
                 #0b181e;
         }
+
         .flagship-card.theme-comply:hover {
             box-shadow: 0 30px 65px -15px rgba(0, 0, 0, 0.85), 0 0 35px -5px rgba(16, 185, 129, 0.28);
         }
-        .flagship-card.theme-comply .flagship-kicker { color: #fbbf24; }
-        .flagship-card.theme-comply .flagship-trim { background: linear-gradient(90deg, #f59e0b 0%, #10b981 100%); }
+
+        .flagship-card.theme-comply .flagship-kicker {
+            color: #fbbf24;
+        }
+
+        .flagship-card.theme-comply .flagship-trim {
+            background: linear-gradient(90deg, #f59e0b 0%, #10b981 100%);
+        }
 
         /* 3. SCALE & GROW (Purple / Sunset Coral Glow) */
         .flagship-card.theme-scale {
@@ -2009,11 +2048,18 @@
                 radial-gradient(ellipse at 80% 35%, rgba(249, 115, 22, 0.2) 0%, transparent 55%),
                 #140e24;
         }
+
         .flagship-card.theme-scale:hover {
             box-shadow: 0 30px 65px -15px rgba(0, 0, 0, 0.85), 0 0 35px -5px rgba(168, 85, 247, 0.28);
         }
-        .flagship-card.theme-scale .flagship-kicker { color: #c084fc; }
-        .flagship-card.theme-scale .flagship-trim { background: linear-gradient(90deg, #a855f7 0%, #f97316 100%); }
+
+        .flagship-card.theme-scale .flagship-kicker {
+            color: #c084fc;
+        }
+
+        .flagship-card.theme-scale .flagship-trim {
+            background: linear-gradient(90deg, #a855f7 0%, #f97316 100%);
+        }
 
         /* 4. SPEED & 0 CLS (Neon Lime / Emerald Glow) */
         .flagship-card.theme-speed {
@@ -2022,11 +2068,18 @@
                 radial-gradient(ellipse at 80% 35%, rgba(16, 185, 129, 0.2) 0%, transparent 55%),
                 #0c1815;
         }
+
         .flagship-card.theme-speed:hover {
             box-shadow: 0 30px 65px -15px rgba(0, 0, 0, 0.85), 0 0 35px -5px rgba(132, 204, 22, 0.28);
         }
-        .flagship-card.theme-speed .flagship-kicker { color: #a3e635; }
-        .flagship-card.theme-speed .flagship-trim { background: linear-gradient(90deg, #84cc16 0%, #10b981 100%); }
+
+        .flagship-card.theme-speed .flagship-kicker {
+            color: #a3e635;
+        }
+
+        .flagship-card.theme-speed .flagship-trim {
+            background: linear-gradient(90deg, #84cc16 0%, #10b981 100%);
+        }
 
         /* 5. RANK & SCHEMA (Amber Gold / Google Blue Glow) */
         .flagship-card.theme-rank {
@@ -2035,11 +2088,18 @@
                 radial-gradient(ellipse at 80% 35%, rgba(59, 130, 246, 0.18) 0%, transparent 55%),
                 #16130e;
         }
+
         .flagship-card.theme-rank:hover {
             box-shadow: 0 30px 65px -15px rgba(0, 0, 0, 0.85), 0 0 35px -5px rgba(245, 158, 11, 0.28);
         }
-        .flagship-card.theme-rank .flagship-kicker { color: #f59e0b; }
-        .flagship-card.theme-rank .flagship-trim { background: linear-gradient(90deg, #f59e0b 0%, #3b82f6 100%); }
+
+        .flagship-card.theme-rank .flagship-kicker {
+            color: #f59e0b;
+        }
+
+        .flagship-card.theme-rank .flagship-trim {
+            background: linear-gradient(90deg, #f59e0b 0%, #3b82f6 100%);
+        }
 
         /* 6. ANALYZE & SQL (Cyan / Deep Indigo Glow) */
         .flagship-card.theme-analytics {
@@ -2048,11 +2108,18 @@
                 radial-gradient(ellipse at 80% 35%, rgba(99, 102, 241, 0.22) 0%, transparent 55%),
                 #0c1424;
         }
+
         .flagship-card.theme-analytics:hover {
             box-shadow: 0 30px 65px -15px rgba(0, 0, 0, 0.85), 0 0 35px -5px rgba(99, 102, 241, 0.28);
         }
-        .flagship-card.theme-analytics .flagship-kicker { color: #818cf8; }
-        .flagship-card.theme-analytics .flagship-trim { background: linear-gradient(90deg, #06b6d4 0%, #6366f1 100%); }
+
+        .flagship-card.theme-analytics .flagship-kicker {
+            color: #818cf8;
+        }
+
+        .flagship-card.theme-analytics .flagship-trim {
+            background: linear-gradient(90deg, #06b6d4 0%, #6366f1 100%);
+        }
 
         /* 7. BUILD & GUTENBERG (WordPress Blue / Magenta Glow) */
         .flagship-card.theme-editor {
@@ -2061,11 +2128,18 @@
                 radial-gradient(ellipse at 80% 35%, rgba(236, 72, 153, 0.18) 0%, transparent 55%),
                 #111124;
         }
+
         .flagship-card.theme-editor:hover {
             box-shadow: 0 30px 65px -15px rgba(0, 0, 0, 0.85), 0 0 35px -5px rgba(236, 72, 153, 0.28);
         }
-        .flagship-card.theme-editor .flagship-kicker { color: #f472b6; }
-        .flagship-card.theme-editor .flagship-trim { background: linear-gradient(90deg, #2563eb 0%, #ec4899 100%); }
+
+        .flagship-card.theme-editor .flagship-kicker {
+            color: #f472b6;
+        }
+
+        .flagship-card.theme-editor .flagship-trim {
+            background: linear-gradient(90deg, #2563eb 0%, #ec4899 100%);
+        }
 
         /* 8. THEME & 16 STYLES (Sunset Amber / Rose Glow) */
         .flagship-card.theme-styles {
@@ -2074,11 +2148,18 @@
                 radial-gradient(ellipse at 80% 35%, rgba(244, 63, 94, 0.2) 0%, transparent 55%),
                 #180e16;
         }
+
         .flagship-card.theme-styles:hover {
             box-shadow: 0 30px 65px -15px rgba(0, 0, 0, 0.85), 0 0 35px -5px rgba(244, 63, 94, 0.28);
         }
-        .flagship-card.theme-styles .flagship-kicker { color: #fb7185; }
-        .flagship-card.theme-styles .flagship-trim { background: linear-gradient(90deg, #f59e0b 0%, #f43f5e 100%); }
+
+        .flagship-card.theme-styles .flagship-kicker {
+            color: #fb7185;
+        }
+
+        .flagship-card.theme-styles .flagship-trim {
+            background: linear-gradient(90deg, #f59e0b 0%, #f43f5e 100%);
+        }
 
         /* Visual Scene Area (Top 50%) */
         .flagship-scene {
@@ -2133,6 +2214,7 @@
             justify-content: space-between;
             position: relative;
         }
+
         .art-mini-card {
             background: rgba(15, 23, 42, 0.85);
             border: 1px solid rgba(56, 189, 248, 0.35);
@@ -2144,10 +2226,12 @@
             gap: 8px;
             backdrop-filter: blur(8px);
         }
+
         .art-mini-card.winner {
             border-color: #38bdf8;
             box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
         }
+
         .art-badge-pill {
             font-size: 9.5px;
             font-weight: 800;
@@ -2157,6 +2241,7 @@
             border-radius: 4px;
             text-transform: uppercase;
         }
+
         .art-pulse-dot {
             width: 8px;
             height: 8px;
@@ -2165,6 +2250,7 @@
             box-shadow: 0 0 10px #38bdf8;
             animation: pulse-glow 2s infinite ease-in-out;
         }
+
         .art-vs-badge {
             width: 30px;
             height: 30px;
@@ -2187,6 +2273,7 @@
             gap: 10px;
             position: relative;
         }
+
         .art-shield-icon-wrap {
             width: 62px;
             height: 62px;
@@ -2199,6 +2286,7 @@
             box-shadow: 0 0 25px rgba(245, 158, 11, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.3);
             color: #fbbf24;
         }
+
         .art-cloaking-pill {
             display: inline-flex;
             align-items: center;
@@ -2211,7 +2299,11 @@
             color: #e2e8f0;
             backdrop-filter: blur(8px);
         }
-        .art-cloaking-pill code { color: #34d399; font-weight: 700; }
+
+        .art-cloaking-pill code {
+            color: #34d399;
+            font-weight: 700;
+        }
 
         /* Scene 3: Scale */
         .art-scale-stage {
@@ -2221,6 +2313,7 @@
             gap: 14px;
             width: 100%;
         }
+
         .art-globe-circle {
             width: 58px;
             height: 58px;
@@ -2233,7 +2326,13 @@
             color: #c084fc;
             box-shadow: 0 0 22px rgba(168, 85, 247, 0.35);
         }
-        .art-store-chips { display: flex; flex-direction: column; gap: 5px; }
+
+        .art-store-chips {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
         .art-store-chip {
             display: flex;
             align-items: center;
@@ -2254,6 +2353,7 @@
             align-items: center;
             gap: 10px;
         }
+
         .art-speed-meter {
             width: 64px;
             height: 64px;
@@ -2266,18 +2366,21 @@
             justify-content: center;
             box-shadow: 0 0 25px rgba(132, 204, 22, 0.35);
         }
+
         .art-speed-val {
             font-size: 18px;
             font-weight: 900;
             color: #bef264;
             line-height: 1;
         }
+
         .art-speed-lbl {
             font-size: 8px;
             font-weight: 800;
             color: #a3e635;
             letter-spacing: 0.5px;
         }
+
         .art-speed-pill {
             display: inline-flex;
             align-items: center;
@@ -2296,6 +2399,7 @@
             width: 100%;
             max-width: 240px;
         }
+
         .art-serp-card {
             background: rgba(15, 23, 42, 0.9);
             border: 1px solid rgba(245, 158, 11, 0.35);
@@ -2304,6 +2408,7 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(8px);
         }
+
         .art-serp-url {
             font-size: 10px;
             color: #94a3b8;
@@ -2312,6 +2417,7 @@
             align-items: center;
             gap: 6px;
         }
+
         .art-serp-title {
             font-size: 12px;
             font-weight: 700;
@@ -2321,6 +2427,7 @@
             text-overflow: ellipsis;
             margin-bottom: 4px;
         }
+
         .art-serp-stars {
             display: flex;
             align-items: center;
@@ -2338,6 +2445,7 @@
             align-items: center;
             gap: 8px;
         }
+
         .art-chart-wrap {
             display: flex;
             align-items: flex-end;
@@ -2345,12 +2453,14 @@
             height: 48px;
             padding: 0 10px;
         }
+
         .art-chart-bar {
             width: 16px;
             border-radius: 4px 4px 0 0;
             background: linear-gradient(180deg, #38bdf8 0%, #0284c7 100%);
             box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
         }
+
         .art-analytics-pill {
             display: inline-flex;
             align-items: center;
@@ -2369,6 +2479,7 @@
             width: 100%;
             max-width: 230px;
         }
+
         .art-editor-box {
             background: rgba(15, 23, 42, 0.9);
             border: 1px solid rgba(236, 72, 153, 0.35);
@@ -2376,6 +2487,7 @@
             padding: 10px 14px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
         }
+
         .art-editor-header {
             display: flex;
             align-items: center;
@@ -2385,6 +2497,7 @@
             font-weight: 800;
             color: #f472b6;
         }
+
         .art-editor-preview {
             background: rgba(255, 255, 255, 0.05);
             border: 1px dashed rgba(255, 255, 255, 0.15);
@@ -2402,10 +2515,12 @@
             align-items: center;
             gap: 10px;
         }
+
         .art-swatches-row {
             display: flex;
             gap: 8px;
         }
+
         .art-swatch-dot {
             width: 24px;
             height: 24px;
@@ -2413,6 +2528,7 @@
             border: 2px solid rgba(255, 255, 255, 0.3);
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
         }
+
         .art-ribbon-demo {
             background: linear-gradient(135deg, #f59e0b, #d97706);
             color: #fff;
@@ -2929,7 +3045,7 @@
             position: relative;
             overflow: hidden;
             background: radial-gradient(circle at 15% 40%, rgba(56, 189, 248, 0.08), transparent 45%),
-                        radial-gradient(circle at 85% 70%, rgba(37, 99, 235, 0.10), transparent 50%);
+                radial-gradient(circle at 85% 70%, rgba(37, 99, 235, 0.10), transparent 50%);
         }
 
         .faq-section::before {
@@ -3025,13 +3141,27 @@
         }
 
         @keyframes floatBubble1 {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-7px) rotate(1.5deg); }
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-7px) rotate(1.5deg);
+            }
         }
 
         @keyframes floatBubble2 {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-8px) rotate(-1.5deg); }
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-8px) rotate(-1.5deg);
+            }
         }
 
         .faq-svg-illustration {
@@ -3094,9 +3224,21 @@
         }
 
         @keyframes pulseEmerald {
-            0% { transform: scale(0.95); opacity: 0.8; }
-            50% { transform: scale(1.3); opacity: 1; box-shadow: 0 0 14px var(--accent-emerald); }
-            100% { transform: scale(0.95); opacity: 0.8; }
+            0% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+
+            50% {
+                transform: scale(1.3);
+                opacity: 1;
+                box-shadow: 0 0 14px var(--accent-emerald);
+            }
+
+            100% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
         }
 
         .faq-support-card h4 {
@@ -3393,8 +3535,15 @@
         }
 
         @keyframes fadeInFaq {
-            from { opacity: 0; transform: translateY(-4px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(-4px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .faq-answer p {
@@ -3917,6 +4066,176 @@
                 font-size: 12px;
             }
         }
+
+        /* ========================================================================== */
+        /* Home Blog Showcase Section Styles                                          */
+        /* ========================================================================== */
+        .home-blog-section {
+            padding: 96px 0;
+            position: relative;
+            background: linear-gradient(180deg, rgba(6, 9, 18, 0.4) 0%, rgba(12, 18, 34, 0.7) 50%, rgba(6, 9, 18, 0.4) 100%);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .home-blog-header {
+            text-align: center;
+            max-width: 820px;
+            margin: 0 auto 56px;
+        }
+
+        .home-blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            margin-bottom: 44px;
+        }
+
+        .home-blog-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s var(--ease-spring);
+            backdrop-filter: blur(14px);
+            position: relative;
+        }
+
+        .home-blog-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--border-glow);
+            box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.6), 0 0 24px rgba(59, 130, 246, 0.2);
+            background: var(--bg-card-hover);
+        }
+
+        .home-blog-thumb {
+            height: 160px;
+            background: linear-gradient(135deg, rgba(14, 21, 38, 0.9), rgba(24, 36, 68, 0.9));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .home-blog-icon {
+            font-size: 48px;
+            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+        }
+
+        .home-blog-badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: rgba(6, 9, 18, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: var(--accent-cyan);
+            font-size: 10.5px;
+            font-weight: 700;
+            padding: 3px 9px;
+            border-radius: 100px;
+        }
+
+        .home-blog-time {
+            position: absolute;
+            bottom: 12px;
+            right: 14px;
+            background: rgba(6, 9, 18, 0.75);
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 6px;
+        }
+
+        .home-blog-body {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .home-blog-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-main);
+            line-height: 1.35;
+            margin-bottom: 10px;
+            transition: color 0.2s ease;
+        }
+
+        .home-blog-card:hover .home-blog-title {
+            color: var(--accent-cyan);
+        }
+
+        .home-blog-desc {
+            font-size: 13.5px;
+            color: var(--text-body);
+            line-height: 1.6;
+            margin-bottom: 18px;
+            flex-grow: 1;
+        }
+
+        .home-blog-footer {
+            padding-top: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+            color: var(--text-subtle);
+        }
+
+        .home-blog-cta {
+            color: var(--accent-cyan);
+            font-weight: 700;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: gap 0.2s ease;
+        }
+
+        .home-blog-card:hover .home-blog-cta {
+            gap: 8px;
+            color: #ffffff;
+        }
+
+        .home-blog-all-wrap {
+            text-align: center;
+        }
+
+        .btn-view-all-blog {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(59, 130, 246, 0.12);
+            border: 1px solid rgba(59, 130, 246, 0.35);
+            color: var(--accent-cyan);
+            font-size: 14px;
+            font-weight: 700;
+            padding: 12px 24px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-view-all-blog:hover {
+            background: rgba(59, 130, 246, 0.25);
+            color: #fff;
+            border-color: var(--primary-neon);
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+        }
+
+        @media (max-width: 992px) {
+            .home-blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 
@@ -3942,14 +4261,29 @@
                     <span class="nav-micro-badge">NEW</span>
                 </a>
                 <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="blog/index.html" class="nav-link">
+                    <span>Blog</span>
+                    <span class="nav-micro-badge">GUIDES</span>
+                </a>
 
                 <!-- Resources Dropdown -->
                 <div class="nav-dropdown" id="resources-nav-dropdown">
-                    <button type="button" class="nav-link nav-dropdown-btn" id="resources-dropdown-btn" aria-haspopup="true" aria-expanded="false">
+                    <button type="button" class="nav-link nav-dropdown-btn" id="resources-dropdown-btn"
+                        aria-haspopup="true" aria-expanded="false">
                         <span>Resources</span>
-                        <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+                        <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
                     </button>
                     <div class="nav-dropdown-menu" id="resources-dropdown-menu">
+                        <a href="blog/index.html" class="dropdown-item" style="text-decoration: none;">
+                            <div class="dropdown-item-icon">📰</div>
+                            <div class="dropdown-item-text">
+                                <strong>Publisher Guides</strong>
+                                <span>CLS, FTC rules &amp; CTR tactics</span>
+                            </div>
+                        </a>
                         <button type="button" class="dropdown-item" id="open-docs-nav">
                             <div class="dropdown-item-icon">📖</div>
                             <div class="dropdown-item-text">
@@ -3976,17 +4310,23 @@
             </nav>
 
             <div class="nav-cta-group">
-                <a href="https://wordpress.org/plugins/affistyle/" class="btn-nav-free" target="_blank"
-                    rel="noopener">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <a href="https://wordpress.org/plugins/affistyle/" class="btn-nav-free" target="_blank" rel="noopener">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
                     <span>Download Free</span>
                 </a>
                 <a href="https://dreainno.lemonsqueezy.com/" class="btn-nav-pro" target="_blank" rel="noopener">
                     <span>Get Pro &bull; $40</span>
                     <span aria-hidden="true">&rarr;</span>
                 </a>
-                <button type="button" class="mobile-nav-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+                <button type="button" class="mobile-nav-toggle" id="mobile-toggle-btn"
+                    aria-label="Toggle Navigation Menu">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                        stroke-linecap="round">
                         <line x1="3" y1="6" x2="21" y2="6"></line>
                         <line x1="3" y1="12" x2="21" y2="12"></line>
                         <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -4005,14 +4345,19 @@
                 <span>Free Swipe File <span class="nav-micro-badge">NEW</span></span>
                 <span>&rarr;</span>
             </a>
-            <a href="#pricing" class="mobile-drawer-link mobile-nav-close">Pricing &amp; Editions <span>&rarr;</span></a>
+            <a href="#pricing" class="mobile-drawer-link mobile-nav-close">Pricing &amp; Editions
+                <span>&rarr;</span></a>
+            <a href="blog/index.html" class="mobile-drawer-link">Blog &amp; Publishing Guides <span>📰</span></a>
             <a href="#faq" class="mobile-drawer-link mobile-nav-close">FAQ <span>&rarr;</span></a>
-            <button type="button" class="mobile-drawer-link" id="mobile-open-docs">Documentation <span>📖</span></button>
+            <button type="button" class="mobile-drawer-link" id="mobile-open-docs">Documentation
+                <span>📖</span></button>
             <button type="button" class="mobile-drawer-link" id="mobile-open-about">About Us <span>🏢</span></button>
-            
+
             <div class="mobile-drawer-btns">
-                <a href="https://wordpress.org/plugins/affistyle/" class="btn-nav-free" target="_blank" rel="noopener">Download Free Plugin</a>
-                <a href="https://dreainno.lemonsqueezy.com/" class="btn-nav-pro" target="_blank" rel="noopener">Get Commercial Pro ($40) &rarr;</a>
+                <a href="https://wordpress.org/plugins/affistyle/" class="btn-nav-free" target="_blank"
+                    rel="noopener">Download Free Plugin</a>
+                <a href="https://dreainno.lemonsqueezy.com/" class="btn-nav-pro" target="_blank" rel="noopener">Get
+                    Commercial Pro ($40) &rarr;</a>
             </div>
         </div>
     </div>
@@ -4025,7 +4370,9 @@
                     <!-- Left Column: Copy, CTAs, Trust & Checklist -->
                     <div class="hero-copy">
                         <div class="hero-pill">
-                            <span class="icon-glow">✦</span> Native Gutenberg Engine &bull; Zero Bloat &bull; <span class="hand-script" style="font-size: 1.18em; color: var(--accent-gold); margin-left: 2px;">0 CLS</span>
+                            <span class="icon-glow">✦</span> Native Gutenberg Engine &bull; Zero Bloat &bull; <span
+                                class="hand-script"
+                                style="font-size: 1.18em; color: var(--accent-gold); margin-left: 2px;">0 CLS</span>
                         </div>
 
                         <h1>
@@ -4034,17 +4381,20 @@
                         </h1>
 
                         <p class="hero-desc">
-                            Stop losing 30%+ of your affiliate clicks to broken mobile layouts and clunky shortcodes. 
-                            AffiStyle transforms raw hyperlinks into high-CTR review boxes, showdown cards, and cloaked redirects directly inside WordPress. 
+                            Stop losing 30%+ of your affiliate clicks to broken mobile layouts and clunky shortcodes.
+                            AffiStyle transforms raw hyperlinks into high-CTR review boxes, showdown cards, and cloaked
+                            redirects directly inside WordPress.
                             <span class="script-annotation">⤷ no coding required! ✦</span>
                         </p>
 
                         <div class="hero-cta-wrap">
-                            <a href="https://wordpress.org/plugins/affistyle/" class="btn-hero-primary" target="_blank" rel="noopener">
+                            <a href="https://wordpress.org/plugins/affistyle/" class="btn-hero-primary" target="_blank"
+                                rel="noopener">
                                 <span>Download Free Plugin</span>
                                 <span aria-hidden="true">&darr;</span>
                             </a>
-                            <a href="https://dreainno.lemonsqueezy.com/" class="btn-hero-pro" target="_blank" rel="noopener">
+                            <a href="https://dreainno.lemonsqueezy.com/" class="btn-hero-pro" target="_blank"
+                                rel="noopener">
                                 <span>Get Pro License ($40)</span>
                                 <span aria-hidden="true">&rarr;</span>
                             </a>
@@ -4069,7 +4419,10 @@
                         <div class="hero-checklist">
                             <div class="hero-check-pill">
                                 <div class="hero-pill-icon blue">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
                                 </div>
                                 <div class="hero-pill-text">
                                     <span class="hero-pill-title">Zero Code Required</span>
@@ -4078,7 +4431,10 @@
                             </div>
                             <div class="hero-check-pill">
                                 <div class="hero-pill-icon lime">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                                    </svg>
                                 </div>
                                 <div class="hero-pill-text">
                                     <span class="hero-pill-title">0 CLS Performance</span>
@@ -4087,7 +4443,11 @@
                             </div>
                             <div class="hero-check-pill">
                                 <div class="hero-pill-icon gold">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                                    </svg>
                                 </div>
                                 <div class="hero-pill-text">
                                     <span class="hero-pill-title">Automated FTC &amp; Rel</span>
@@ -4096,7 +4456,12 @@
                             </div>
                             <div class="hero-check-pill">
                                 <div class="hero-pill-icon purple">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 20V10" />
+                                        <path d="M18 20V4" />
+                                        <path d="M6 20v-4" />
+                                    </svg>
                                 </div>
                                 <div class="hero-pill-text">
                                     <span class="hero-pill-title">100% Local SQL</span>
@@ -4166,7 +4531,10 @@
                         <!-- 3D WordPress Pedestal Medallion -->
                         <div class="stage-wp-pedestal" aria-hidden="true">
                             <div class="wp-medallion-disc">
-                                <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                                </svg>
                             </div>
                             <div class="wp-pedestal-ring"></div>
                         </div>
@@ -4186,7 +4554,8 @@
                     </div>
                     <span class="section-tag">Interactive Preview Sandbox</span>
                     <h2>Experience High-Converting Card Formats</h2>
-                    <p>Toggle between card styles and canvas themes below to see how AffiStyle renders responsive, conversion-engineered
+                    <p>Toggle between card styles and canvas themes below to see how AffiStyle renders responsive,
+                        conversion-engineered
                         affiliate boxes without slowing down your site.</p>
                 </div>
 
@@ -4212,7 +4581,13 @@
                     <div class="gutenberg-toolbar">
                         <div class="gb-tools-left">
                             <span class="gb-pill-badge">
-                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 3v18"/><path d="M15 9h6"/><path d="M15 15h6"/></svg>
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="3" />
+                                    <path d="M9 3v18" />
+                                    <path d="M15 9h6" />
+                                    <path d="M15 15h6" />
+                                </svg>
                                 <span>AffiStyle Gutenberg Block</span>
                             </span>
                             <span class="gb-sep"></span>
@@ -4222,7 +4597,8 @@
                         <div class="gb-tools-right">
                             <span class="gb-theme-label">Canvas Mode:</span>
                             <div class="gb-theme-pill">
-                                <button type="button" class="gb-theme-btn active" id="btn-theme-light" data-theme="light">
+                                <button type="button" class="gb-theme-btn active" id="btn-theme-light"
+                                    data-theme="light">
                                     <span>☀️ Light Post</span>
                                 </button>
                                 <button type="button" class="gb-theme-btn" id="btn-theme-dark" data-theme="dark">
@@ -4252,8 +4628,10 @@
                                         <div class="affi-rating-text">(125 verified buyer reviews)</div>
                                     </div>
                                     <p class="affi-prod-desc">
-                                        Exceptional sound reproduction with hybrid active noise cancellation, 40-hour rapid
-                                        charge battery, and ultra-soft protein leather earcups engineered for long work sessions.
+                                        Exceptional sound reproduction with hybrid active noise cancellation, 40-hour
+                                        rapid
+                                        charge battery, and ultra-soft protein leather earcups engineered for long work
+                                        sessions.
                                     </p>
 
                                     <div class="affi-pros-cons">
@@ -4277,7 +4655,8 @@
                                     <div class="affi-action-bar">
                                         <div class="affi-deal-status">
                                             <span class="stock-pulse"></span>
-                                            <span style="font-size: 13px; font-weight: 700; color: #10b981;">Official Verified Listing</span>
+                                            <span style="font-size: 13px; font-weight: 700; color: #10b981;">Official
+                                                Verified Listing</span>
                                         </div>
                                         <a href="#pricing" class="affi-cta-btn">
                                             <span>Claim Deal on Amazon</span>
@@ -4286,8 +4665,12 @@
                                     </div>
 
                                     <div class="affi-ftc-note">
-                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                                        <span>AffiStyle Automated FTC Notice: When you purchase via links on this site, we may earn an affiliate commission at no added cost to you.</span>
+                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                        </svg>
+                                        <span>AffiStyle Automated FTC Notice: When you purchase via links on this site,
+                                            we may earn an affiliate commission at no added cost to you.</span>
                                     </div>
                                 </div>
                             </div>
@@ -4316,7 +4699,8 @@
                                 </div>
                                 <div>
                                     <div style="margin-bottom: 14px;">
-                                        <span class="badge-discount" style="font-size: 12px; padding: 4px 10px;">★ EDITORS' TOP RATED</span>
+                                        <span class="badge-discount" style="font-size: 12px; padding: 4px 10px;">★
+                                            EDITORS' TOP RATED</span>
                                     </div>
                                     <a href="https://dreainno.lemonsqueezy.com/" class="affi-cta-btn"
                                         style="width: 100%; justify-content: center;">
@@ -4350,7 +4734,8 @@
                                 </div>
                                 <div>
                                     <div style="margin-bottom: 14px;">
-                                        <span style="font-size: 12px; font-weight: 700; color: #64748b;">ALTERNATIVE OPTION</span>
+                                        <span style="font-size: 12px; font-weight: 700; color: #64748b;">ALTERNATIVE
+                                            OPTION</span>
                                     </div>
                                     <a href="https://dreainno.lemonsqueezy.com/" class="affi-cta-btn"
                                         style="background: #475569; width: 100%; justify-content: center;">
@@ -4416,7 +4801,9 @@
                                     <div class="affi-action-bar" style="margin-top: 20px;">
                                         <div class="affi-deal-status">
                                             <span class="stock-pulse"></span>
-                                            <span id="demo-stock-tag" style="font-size: 13px; font-weight: 700; color: #10b981;">Prime 2-Day Delivery</span>
+                                            <span id="demo-stock-tag"
+                                                style="font-size: 13px; font-weight: 700; color: #10b981;">Prime 2-Day
+                                                Delivery</span>
                                         </div>
                                         <a href="https://dreainno.lemonsqueezy.com/" class="affi-cta-btn"
                                             id="demo-cta-btn">
@@ -4443,7 +4830,8 @@
                     </div>
                     <span class="section-tag">Flagship Architecture</span>
                     <h2>Engineered for Serious WordPress Publishers</h2>
-                    <p>High-converting card formats, automated compliance, and dynamic link routing crafted with zero third-party dependencies.</p>
+                    <p>High-converting card formats, automated compliance, and dynamic link routing crafted with zero
+                        third-party dependencies.</p>
                 </div>
 
                 <!-- All 8 Flagship Feature Cards (Inspired by product_feature.png) -->
@@ -4461,7 +4849,8 @@
                                         <span class="art-pulse-dot"></span>
                                         <div>
                                             <span class="art-badge-pill">#1 Winner</span>
-                                            <div style="color: #fbbf24; font-size: 11px; margin-top: 2px;">★★★★★ 9.8</div>
+                                            <div style="color: #fbbf24; font-size: 11px; margin-top: 2px;">★★★★★ 9.8
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="art-vs-badge">VS</div>
@@ -4475,7 +4864,8 @@
                         <div class="flagship-content">
                             <div>
                                 <h3>High-Converting Review &amp; Showdown Cards.</h3>
-                                <p>Transform passive review readers into active buyers with responsive showdown battles, editor's choice ribbons, and side-by-side spec comparison matrices.</p>
+                                <p>Transform passive review readers into active buyers with responsive showdown battles,
+                                    editor's choice ribbons, and side-by-side spec comparison matrices.</p>
                             </div>
                             <a href="#sandbox" class="flagship-action-chip" data-tab-target="versus">
                                 <span>Explore Card Layouts</span>
@@ -4495,7 +4885,12 @@
                             <div class="flagship-art-stage">
                                 <div class="art-shield-stage">
                                     <div class="art-shield-icon-wrap">
-                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                            <path d="m9 12 2 2 4-4" />
+                                        </svg>
                                     </div>
                                     <div class="art-cloaking-pill">
                                         <span style="color: #10b981;">🔒</span>
@@ -4507,7 +4902,9 @@
                         <div class="flagship-content">
                             <div>
                                 <h3>Automated FTC &amp; Smart Link Cloaking.</h3>
-                                <p>Protect domain authority with clean, branded 302 internal redirects while automated <code>rel="sponsored"</code> tags and FTC notices keep your site 100% compliant.</p>
+                                <p>Protect domain authority with clean, branded 302 internal redirects while automated
+                                    <code>rel="sponsored"</code> tags and FTC notices keep your site 100% compliant.
+                                </p>
                             </div>
                             <button type="button" class="flagship-action-chip" id="feature-open-docs">
                                 <span>View Compliance Specs</span>
@@ -4527,7 +4924,13 @@
                             <div class="flagship-art-stage">
                                 <div class="art-scale-stage">
                                     <div class="art-globe-circle">
-                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <circle cx="12" cy="12" r="10" />
+                                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                                            <path d="M2 12h20" />
+                                        </svg>
                                     </div>
                                     <div class="art-store-chips">
                                         <div class="art-store-chip">
@@ -4546,7 +4949,8 @@
                         <div class="flagship-content">
                             <div>
                                 <h3>Edge CDN Geo-Routing &amp; Multi-Store Deals.</h3>
-                                <p>Capture lost international commissions by dynamically routing visitors to regional partner storefronts while offering multi-retailer purchase freedom.</p>
+                                <p>Capture lost international commissions by dynamically routing visitors to regional
+                                    partner storefronts while offering multi-retailer purchase freedom.</p>
                             </div>
                             <a href="#sandbox" class="flagship-action-chip" data-tab-target="retailer">
                                 <span>Test Multi-Store Switcher</span>
@@ -4579,7 +4983,8 @@
                         <div class="flagship-content">
                             <div>
                                 <h3>Ultra-Lightweight &amp; Zero CLS Engine.</h3>
-                                <p>No jQuery, external CDNs, or heavy JS dependencies. Conditional asset loading ensures pure 100/100 Core Web Vitals across all mobile devices.</p>
+                                <p>No jQuery, external CDNs, or heavy JS dependencies. Conditional asset loading ensures
+                                    pure 100/100 Core Web Vitals across all mobile devices.</p>
                             </div>
                             <a href="#sandbox" class="flagship-action-chip" data-tab-target="standard">
                                 <span>Inspect Performance</span>
@@ -4613,7 +5018,8 @@
                         <div class="flagship-content">
                             <div>
                                 <h3>Automated Schema.org JSON-LD.</h3>
-                                <p>Unlock eye-catching review stars directly in Google search results with valid automated Product &amp; AggregateRating structured data.</p>
+                                <p>Unlock eye-catching review stars directly in Google search results with valid
+                                    automated Product &amp; AggregateRating structured data.</p>
                             </div>
                             <button type="button" class="flagship-action-chip" id="card-open-docs-schema">
                                 <span>See Schema Specs</span>
@@ -4636,7 +5042,9 @@
                                         <div class="art-chart-bar" style="height: 18px;"></div>
                                         <div class="art-chart-bar" style="height: 28px;"></div>
                                         <div class="art-chart-bar" style="height: 38px;"></div>
-                                        <div class="art-chart-bar" style="height: 48px; background: linear-gradient(180deg, #10b981, #059669);"></div>
+                                        <div class="art-chart-bar"
+                                            style="height: 48px; background: linear-gradient(180deg, #10b981, #059669);">
+                                        </div>
                                     </div>
                                     <div class="art-analytics-pill">
                                         <span>📈</span>
@@ -4648,7 +5056,8 @@
                         <div class="flagship-content">
                             <div>
                                 <h3>100% Local SQL Click Analytics.</h3>
-                                <p>Track link clicks, top-performing product cards, and country demographics in your own WordPress database with zero third-party tracking scripts.</p>
+                                <p>Track link clicks, top-performing product cards, and country demographics in your own
+                                    WordPress database with zero third-party tracking scripts.</p>
                             </div>
                             <button type="button" class="flagship-action-chip" id="card-open-docs-analytics">
                                 <span>Explore Local Analytics</span>
@@ -4669,7 +5078,8 @@
                                 <div class="art-editor-stage">
                                     <div class="art-editor-box">
                                         <div class="art-editor-header">
-                                            <span style="background: #2563eb; color: #fff; width: 18px; height: 18px; border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; font-size: 11px;">+</span>
+                                            <span
+                                                style="background: #2563eb; color: #fff; width: 18px; height: 18px; border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; font-size: 11px;">+</span>
                                             <span>AffiStyle Review Block</span>
                                         </div>
                                         <div class="art-editor-preview">
@@ -4682,7 +5092,8 @@
                         <div class="flagship-content">
                             <div>
                                 <h3>Native Gutenberg Block &amp; Shortcodes.</h3>
-                                <p>Drag, drop, and visually configure affiliate cards directly inside the WordPress block editor, or use universal shortcodes for Elementor and classic themes.</p>
+                                <p>Drag, drop, and visually configure affiliate cards directly inside the WordPress
+                                    block editor, or use universal shortcodes for Elementor and classic themes.</p>
                             </div>
                             <a href="#sandbox" class="flagship-action-chip" data-tab-target="standard">
                                 <span>Preview Block Controls</span>
@@ -4716,7 +5127,8 @@
                         <div class="flagship-content">
                             <div>
                                 <h3>16+ Modular Review &amp; Battle Formats.</h3>
-                                <p>Seamlessly match any niche editorial magazine, tech review hub, or blog theme with fully customizable badges, ribbons, and color tokens.</p>
+                                <p>Seamlessly match any niche editorial magazine, tech review hub, or blog theme with
+                                    fully customizable badges, ribbons, and color tokens.</p>
                             </div>
                             <a href="#pricing" class="flagship-action-chip">
                                 <span>Browse All 16 Formats</span>
@@ -4855,7 +5267,8 @@
                                 <li><span class="check-icon check-free">&check;</span> Smart Link Cloaking
                                     (<code>/recommends/slug/</code>)</li>
                                 <li><span class="check-icon check-free">&check;</span> Automated FTC Compliance &amp;
-                                    <code>sponsored</code> Rel Tags</li>
+                                    <code>sponsored</code> Rel Tags
+                                </li>
                                 <li><span class="check-icon check-free">&check;</span> Star Rating Display &amp;
                                     Pros/Cons Highlighters</li>
                                 <li><span class="check-icon check-free">&check;</span> Native Gutenberg Block &amp;
@@ -4923,6 +5336,98 @@
             </div>
         </section>
 
+        <!-- Publishing Guides & Blog Showcase Section -->
+        <section class="home-blog-section" id="blog">
+            <div class="container">
+                <div class="home-blog-header">
+                    <div class="section-script-kicker">
+                        <span class="hand-script">engineering &bull; compliance &bull; ctr</span>
+                        <span style="color: var(--accent-gold); font-size: 14px;">✦</span>
+                    </div>
+                    <span class="section-tag">Publisher Masterclasses</span>
+                    <h2>Latest WordPress Affiliate Optimization Guides</h2>
+                    <p style="color: var(--text-muted); font-size: 16px; margin-top: 10px;">
+                        Practical, technical teardowns to crush Google Core Web Vitals, satisfy legal FTC compliance,
+                        and build high-converting Gutenberg comparison grids.
+                    </p>
+                </div>
+
+                <div class="home-blog-grid">
+                    <!-- Post 1 -->
+                    <a href="blog/how-to-fix-cls-affiliate-product-boxes-wordpress.html" class="home-blog-card">
+                        <div class="home-blog-thumb">
+                            <span class="home-blog-badge">Core Web Vitals</span>
+                            <div class="home-blog-icon">⚡</div>
+                            <span class="home-blog-time">8 min read</span>
+                        </div>
+                        <div class="home-blog-body">
+                            <h3 class="home-blog-title">How to Fix Cumulative Layout Shift (CLS) in WordPress Affiliate
+                                Product Boxes</h3>
+                            <p class="home-blog-desc">
+                                Discover why legacy shortcode plugins destroy mobile PageSpeed scores and how native
+                                Gutenberg server-rendered blocks guarantee 0.00 CLS.
+                            </p>
+                            <div class="home-blog-footer">
+                                <span>Mayuresh Pandit &bull; Dreainno</span>
+                                <span class="home-blog-cta">Read Guide &rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Post 2 -->
+                    <a href="blog/ftc-affiliate-disclosure-guidelines-wordpress.html" class="home-blog-card">
+                        <div class="home-blog-thumb">
+                            <span class="home-blog-badge" style="color: var(--accent-emerald);">Legal &amp;
+                                Compliance</span>
+                            <div class="home-blog-icon">⚖️</div>
+                            <span class="home-blog-time">7 min read</span>
+                        </div>
+                        <div class="home-blog-body">
+                            <h3 class="home-blog-title">Complete 2026 FTC Affiliate Disclosure Guide for WordPress
+                                Bloggers</h3>
+                            <p class="home-blog-desc">
+                                Why footer disclosures fail FTC audits. The exact 2-line safe-harbor formula,
+                                rel=sponsored tags, and automated per-box micro-disclaimers.
+                            </p>
+                            <div class="home-blog-footer">
+                                <span>Dreainno Studio</span>
+                                <span class="home-blog-cta">Read Guide &rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Post 3 -->
+                    <a href="blog/high-converting-product-comparison-tables-wordpress.html" class="home-blog-card">
+                        <div class="home-blog-thumb">
+                            <span class="home-blog-badge" style="color: var(--accent-purple);">Conversion
+                                Architecture</span>
+                            <div class="home-blog-icon">📊</div>
+                            <span class="home-blog-time">9 min read</span>
+                        </div>
+                        <div class="home-blog-body">
+                            <h3 class="home-blog-title">How to Build High-Converting Product Comparison Tables &amp;
+                                Versus Cards</h3>
+                            <p class="home-blog-desc">
+                                The psychology of choice architecture: How side-by-side versus cards and multi-retailer
+                                CTA buttons boost outbound affiliate click-throughs by 38%+.
+                            </p>
+                            <div class="home-blog-footer">
+                                <span>Mayuresh Pandit &bull; Dreainno</span>
+                                <span class="home-blog-cta">Read Guide &rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="home-blog-all-wrap">
+                    <a href="blog/index.html" class="btn-view-all-blog">
+                        <span>Explore All Publisher Masterclasses &amp; Guides</span>
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- FAQ Section (Refactored per faq.png, Frontend Design & Brand Guidelines) -->
         <section class="faq-section" id="faq">
             <div class="ghost-watermark" aria-hidden="true">ANSWERS</div>
@@ -4934,7 +5439,8 @@
                     </div>
                     <span class="section-tag">Got Questions?</span>
                     <h2>Frequently Asked Questions</h2>
-                    <p>Everything you need to know about installation, Gutenberg workflows, licensing, and compliance.</p>
+                    <p>Everything you need to know about installation, Gutenberg workflows, licensing, and compliance.
+                    </p>
                 </div>
 
                 <!-- 2-Column Split Stage Layout (From Reference faq.png) -->
@@ -4954,36 +5460,39 @@
                             </div>
 
                             <!-- 3D Vector Typographic Sculpture -->
-                            <svg viewBox="0 0 460 260" class="faq-svg-illustration" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="3D FAQ Art Illustration">
+                            <svg viewBox="0 0 460 260" class="faq-svg-illustration" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-label="3D FAQ Art Illustration">
                                 <defs>
                                     <linearGradient id="faqGradF" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#38bdf8"/>
-                                        <stop offset="100%" stop-color="#2563eb"/>
+                                        <stop offset="0%" stop-color="#38bdf8" />
+                                        <stop offset="100%" stop-color="#2563eb" />
                                     </linearGradient>
                                     <linearGradient id="faqGradA" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#60a5fa"/>
-                                        <stop offset="100%" stop-color="#1d4ed8"/>
+                                        <stop offset="0%" stop-color="#60a5fa" />
+                                        <stop offset="100%" stop-color="#1d4ed8" />
                                     </linearGradient>
                                     <linearGradient id="faqGradQ" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#38bdf8"/>
-                                        <stop offset="100%" stop-color="#2563eb"/>
+                                        <stop offset="0%" stop-color="#38bdf8" />
+                                        <stop offset="100%" stop-color="#2563eb" />
                                     </linearGradient>
                                     <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#1e293b"/>
-                                        <stop offset="100%" stop-color="#0f172a"/>
+                                        <stop offset="0%" stop-color="#1e293b" />
+                                        <stop offset="100%" stop-color="#0f172a" />
                                     </linearGradient>
                                     <filter id="faqDropShadow" x="-20%" y="-20%" width="140%" height="140%">
-                                        <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#2563eb" flood-opacity="0.35"/>
+                                        <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#2563eb"
+                                            flood-opacity="0.35" />
                                     </filter>
                                     <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
-                                        <feGaussianBlur stdDeviation="6" result="glow"/>
-                                        <feComposite in="SourceGraphic" in2="glow" operator="over"/>
+                                        <feGaussianBlur stdDeviation="6" result="glow" />
+                                        <feComposite in="SourceGraphic" in2="glow" operator="over" />
                                     </filter>
                                 </defs>
 
                                 <!-- Isometric Floor Lines -->
-                                <g opacity="0.35" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1" stroke-dasharray="3 3">
-                                    <ellipse cx="230" cy="220" rx="190" ry="32"/>
+                                <g opacity="0.35" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1"
+                                    stroke-dasharray="3 3">
+                                    <ellipse cx="230" cy="220" rx="190" ry="32" />
                                     <line x1="60" y1="220" x2="400" y2="220" />
                                     <line x1="120" y1="205" x2="340" y2="205" />
                                     <line x1="90" y1="235" x2="370" y2="235" />
@@ -4991,47 +5500,68 @@
 
                                 <!-- Large Floating Question Bubble Behind Letters -->
                                 <g transform="translate(195, 18)">
-                                    <rect x="0" y="0" width="70" height="52" rx="16" fill="url(#bubbleGrad)" stroke="rgba(56, 189, 248, 0.5)" stroke-width="1.5"/>
-                                    <polygon points="26,52 36,52 30,62" fill="#0f172a" stroke="rgba(56, 189, 248, 0.5)" stroke-width="1.5" stroke-linejoin="round"/>
-                                    <text x="35" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#38bdf8" text-anchor="middle" filter="url(#subtleGlow)">?</text>
+                                    <rect x="0" y="0" width="70" height="52" rx="16" fill="url(#bubbleGrad)"
+                                        stroke="rgba(56, 189, 248, 0.5)" stroke-width="1.5" />
+                                    <polygon points="26,52 36,52 30,62" fill="#0f172a" stroke="rgba(56, 189, 248, 0.5)"
+                                        stroke-width="1.5" stroke-linejoin="round" />
+                                    <text x="35" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="28"
+                                        font-weight="800" fill="#38bdf8" text-anchor="middle"
+                                        filter="url(#subtleGlow)">?</text>
                                 </g>
 
                                 <!-- Smaller Typing Bubble -->
                                 <g transform="translate(340, 48)">
-                                    <rect x="0" y="0" width="56" height="40" rx="12" fill="url(#bubbleGrad)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
-                                    <polygon points="18,40 26,40 21,48" fill="#0f172a" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" stroke-linejoin="round"/>
-                                    <circle cx="18" cy="20" r="3" fill="#94a3b8"/>
-                                    <circle cx="28" cy="20" r="3" fill="#94a3b8"/>
-                                    <circle cx="38" cy="20" r="3" fill="#38bdf8"/>
+                                    <rect x="0" y="0" width="56" height="40" rx="12" fill="url(#bubbleGrad)"
+                                        stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" />
+                                    <polygon points="18,40 26,40 21,48" fill="#0f172a"
+                                        stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" stroke-linejoin="round" />
+                                    <circle cx="18" cy="20" r="3" fill="#94a3b8" />
+                                    <circle cx="28" cy="20" r="3" fill="#94a3b8" />
+                                    <circle cx="38" cy="20" r="3" fill="#38bdf8" />
                                 </g>
 
                                 <!-- 3D Letter "F" -->
                                 <g filter="url(#faqDropShadow)">
-                                    <path d="M 68 88 L 84 74 L 160 74 L 144 88 Z" fill="#1d4ed8" opacity="0.85"/>
-                                    <path d="M 144 88 L 160 74 L 160 102 L 144 116 Z" fill="#1e3a8a" opacity="0.95"/>
-                                    <path d="M 68 210 L 84 196 L 84 74 L 68 88 Z" fill="#172554" opacity="0.9"/>
-                                    <path d="M 68 88 L 144 88 L 144 116 L 102 116 L 102 136 L 136 136 L 136 162 L 102 162 L 102 210 L 68 210 Z" fill="url(#faqGradF)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linejoin="round"/>
-                                    <path d="M 72 92 L 140 92" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M 68 88 L 84 74 L 160 74 L 144 88 Z" fill="#1d4ed8" opacity="0.85" />
+                                    <path d="M 144 88 L 160 74 L 160 102 L 144 116 Z" fill="#1e3a8a" opacity="0.95" />
+                                    <path d="M 68 210 L 84 196 L 84 74 L 68 88 Z" fill="#172554" opacity="0.9" />
+                                    <path
+                                        d="M 68 88 L 144 88 L 144 116 L 102 116 L 102 136 L 136 136 L 136 162 L 102 162 L 102 210 L 68 210 Z"
+                                        fill="url(#faqGradF)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"
+                                        stroke-linejoin="round" />
+                                    <path d="M 72 92 L 140 92" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"
+                                        stroke-linecap="round" />
                                 </g>
 
                                 <!-- 3D Letter "A" -->
                                 <g filter="url(#faqDropShadow)">
-                                    <path d="M 218 88 L 232 74 L 250 74 L 236 88 Z" fill="#1d4ed8" opacity="0.85"/>
-                                    <path d="M 236 88 L 250 74 L 302 196 L 288 210 Z" fill="#1e3a8a" opacity="0.95"/>
-                                    <path d="M 218 88 L 236 88 L 288 210 L 254 210 L 244 186 L 210 186 L 200 210 L 166 210 Z M 227 122 L 217 158 L 237 158 Z" fill="url(#faqGradA)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linejoin="round"/>
-                                    <path d="M 222 93 L 232 93" stroke="rgba(255,255,255,0.8)" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M 218 88 L 232 74 L 250 74 L 236 88 Z" fill="#1d4ed8" opacity="0.85" />
+                                    <path d="M 236 88 L 250 74 L 302 196 L 288 210 Z" fill="#1e3a8a" opacity="0.95" />
+                                    <path
+                                        d="M 218 88 L 236 88 L 288 210 L 254 210 L 244 186 L 210 186 L 200 210 L 166 210 Z M 227 122 L 217 158 L 237 158 Z"
+                                        fill="url(#faqGradA)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"
+                                        stroke-linejoin="round" />
+                                    <path d="M 222 93 L 232 93" stroke="rgba(255,255,255,0.8)" stroke-width="1.5"
+                                        stroke-linecap="round" />
                                 </g>
 
                                 <!-- 3D Letter "Q" -->
                                 <g filter="url(#faqDropShadow)">
-                                    <ellipse cx="376" cy="136" rx="58" ry="60" fill="none" stroke="#1d4ed8" stroke-width="32" opacity="0.9" transform="translate(12, -12)"/>
-                                    <path d="M 370 78 C 404 78 430 106 430 144 C 430 182 404 210 370 210 C 336 210 310 182 310 144 C 310 106 336 78 370 78 Z M 370 106 C 352 106 338 122 338 144 C 338 166 352 182 370 182 C 388 182 402 166 402 144 C 402 122 388 106 370 106 Z" fill="url(#faqGradQ)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linejoin="round"/>
-                                    <path d="M 378 174 L 416 218 L 396 230 L 362 186 Z" fill="#38bdf8" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linejoin="round"/>
-                                    <path d="M 340 120 C 348 98 372 90 395 96" stroke="rgba(255,255,255,0.75)" stroke-width="2" stroke-linecap="round" fill="none"/>
+                                    <ellipse cx="376" cy="136" rx="58" ry="60" fill="none" stroke="#1d4ed8"
+                                        stroke-width="32" opacity="0.9" transform="translate(12, -12)" />
+                                    <path
+                                        d="M 370 78 C 404 78 430 106 430 144 C 430 182 404 210 370 210 C 336 210 310 182 310 144 C 310 106 336 78 370 78 Z M 370 106 C 352 106 338 122 338 144 C 338 166 352 182 370 182 C 388 182 402 166 402 144 C 402 122 388 106 370 106 Z"
+                                        fill="url(#faqGradQ)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"
+                                        stroke-linejoin="round" />
+                                    <path d="M 378 174 L 416 218 L 396 230 L 362 186 Z" fill="#38bdf8"
+                                        stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linejoin="round" />
+                                    <path d="M 340 120 C 348 98 372 90 395 96" stroke="rgba(255,255,255,0.75)"
+                                        stroke-width="2" stroke-linecap="round" fill="none" />
                                 </g>
                             </svg>
 
-                            <p class="faq-art-caption">High-converting WordPress affiliate showcases with 0 layout shift and transparent compliance.</p>
+                            <p class="faq-art-caption">High-converting WordPress affiliate showcases with 0 layout shift
+                                and transparent compliance.</p>
                         </div>
 
                         <!-- Direct Support & Founder Help Card -->
@@ -5043,12 +5573,15 @@
                                     <span>Support Active</span>
                                 </div>
                             </div>
-                            <p>Have a custom theme or need assistance with setup? Mayuresh Pandit &amp; the Dreainno team reply promptly within 12–24 hours.</p>
+                            <p>Have a custom theme or need assistance with setup? Mayuresh Pandit &amp; the Dreainno
+                                team reply promptly within 12–24 hours.</p>
                             <div class="faq-support-actions">
                                 <a href="mailto:dreainno@gmail.com" class="faq-support-btn">
                                     <span>✉️ Email Developer</span>
                                 </a>
-                                <a href="https://wordpress.org/support/plugin/affistyle/" target="_blank" rel="noopener noreferrer" class="faq-support-btn" style="background: rgba(255, 255, 255, 0.05); border-color: var(--border-color); color: #cbd5e1;">
+                                <a href="https://wordpress.org/support/plugin/affistyle/" target="_blank"
+                                    rel="noopener noreferrer" class="faq-support-btn"
+                                    style="background: rgba(255, 255, 255, 0.05); border-color: var(--border-color); color: #cbd5e1;">
                                     <span>WP.org Forum &nearr;</span>
                                 </a>
                             </div>
@@ -5059,21 +5592,30 @@
                     <div class="faq-content-col">
                         <!-- Instant Search Filter -->
                         <div class="faq-search-wrapper">
-                            <svg class="faq-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <svg class="faq-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <input type="text" class="faq-search-input" id="faq-search-input" placeholder="Search questions (e.g. licensing, refunds, speed, Gutenberg, cloaking)..." autocomplete="off" aria-label="Search FAQs">
-                            <button type="button" class="faq-search-clear" id="faq-search-clear" aria-label="Clear search input">&times;</button>
+                            <input type="text" class="faq-search-input" id="faq-search-input"
+                                placeholder="Search questions (e.g. licensing, refunds, speed, Gutenberg, cloaking)..."
+                                autocomplete="off" aria-label="Search FAQs">
+                            <button type="button" class="faq-search-clear" id="faq-search-clear"
+                                aria-label="Clear search input">&times;</button>
                         </div>
 
                         <!-- Category Filter Pills -->
                         <div class="faq-filter-bar" role="tablist" aria-label="Filter FAQ by topic">
-                            <button type="button" class="faq-filter-pill active" data-category="all" role="tab" aria-selected="true">All Questions (6)</button>
-                            <button type="button" class="faq-filter-pill" data-category="general" role="tab" aria-selected="false">Getting Started</button>
-                            <button type="button" class="faq-filter-pill" data-category="pro" role="tab" aria-selected="false">Pro License ($40)</button>
-                            <button type="button" class="faq-filter-pill" data-category="perf" role="tab" aria-selected="false">Speed &amp; 0 CLS</button>
-                            <button type="button" class="faq-filter-pill" data-category="comply" role="tab" aria-selected="false">FTC &amp; Cloaking</button>
+                            <button type="button" class="faq-filter-pill active" data-category="all" role="tab"
+                                aria-selected="true">All Questions (6)</button>
+                            <button type="button" class="faq-filter-pill" data-category="general" role="tab"
+                                aria-selected="false">Getting Started</button>
+                            <button type="button" class="faq-filter-pill" data-category="pro" role="tab"
+                                aria-selected="false">Pro License ($40)</button>
+                            <button type="button" class="faq-filter-pill" data-category="perf" role="tab"
+                                aria-selected="false">Speed &amp; 0 CLS</button>
+                            <button type="button" class="faq-filter-pill" data-category="comply" role="tab"
+                                aria-selected="false">FTC &amp; Cloaking</button>
                         </div>
 
                         <!-- FAQ Accordion Pill-Cards (From Reference faq.png) -->
@@ -5083,12 +5625,18 @@
                                 <summary class="faq-question">
                                     <div class="faq-q-content">
                                         <span class="faq-category-tag cat-general">Getting Started</span>
-                                        <span class="faq-q-text">Is the core version really 100% free on WordPress.org?</span>
+                                        <span class="faq-q-text">Is the core version really 100% free on
+                                            WordPress.org?</span>
                                     </div>
                                     <div class="faq-toggle-pill" aria-hidden="true">+</div>
                                 </summary>
                                 <div class="faq-answer">
-                                    <p>Yes, absolutely. The core edition hosted on the official <strong>WordPress.org plugin directory</strong> is 100% free under the open-source GPL-2.0 license. It includes Style 1 (Standard Box) and Style 2 (Compact Card), star ratings, pros &amp; cons highlights, automated FTC disclosures, smart link cloaking (<code>/recommends/slug/</code>), and zero CLS layout guarantees without any expiration date or forced upsells.</p>
+                                    <p>Yes, absolutely. The core edition hosted on the official <strong>WordPress.org
+                                            plugin directory</strong> is 100% free under the open-source GPL-2.0
+                                        license. It includes Style 1 (Standard Box) and Style 2 (Compact Card), star
+                                        ratings, pros &amp; cons highlights, automated FTC disclosures, smart link
+                                        cloaking (<code>/recommends/slug/</code>), and zero CLS layout guarantees
+                                        without any expiration date or forced upsells.</p>
                                 </div>
                             </details>
 
@@ -5097,12 +5645,20 @@
                                 <summary class="faq-question">
                                     <div class="faq-q-content">
                                         <span class="faq-category-tag cat-pro">Pro Edition</span>
-                                        <span class="faq-q-text">What additional features are included in AffiStyle Pro ($40)?</span>
+                                        <span class="faq-q-text">What additional features are included in AffiStyle Pro
+                                            ($40)?</span>
                                     </div>
                                     <div class="faq-toggle-pill" aria-hidden="true">+</div>
                                 </summary>
                                 <div class="faq-answer">
-                                    <p>The $40 Pro license unlocks <strong>all 16+ responsive designer templates</strong>, including Side-by-Side Versus Battle showdowns and full Specification Comparison Matrices. Pro also adds multi-retailer choice buttons (Amazon, Walmart, Direct Store), automated country-specific geo-targeted redirect routing (US, UK, CA, IN), custom cloaking prefixes (e.g. <code>/deal/</code>, <code>/go/</code>), and 1 full year of automatic updates and priority developer support.</p>
+                                    <p>The $40 Pro license unlocks <strong>all 16+ responsive designer
+                                            templates</strong>, including Side-by-Side Versus Battle showdowns and full
+                                        Specification Comparison Matrices. Pro also adds multi-retailer choice buttons
+                                        (Amazon, Walmart, Direct Store), automated country-specific geo-targeted
+                                        redirect routing (US, UK, CA, IN), custom cloaking prefixes (e.g.
+                                        <code>/deal/</code>, <code>/go/</code>), and 1 full year of automatic updates
+                                        and priority developer support.
+                                    </p>
                                 </div>
                             </details>
 
@@ -5111,12 +5667,18 @@
                                 <summary class="faq-question">
                                     <div class="faq-q-content">
                                         <span class="faq-category-tag cat-perf">Performance</span>
-                                        <span class="faq-q-text">Does AffiStyle affect page load speeds or Google Core Web Vitals?</span>
+                                        <span class="faq-q-text">Does AffiStyle affect page load speeds or Google Core
+                                            Web Vitals?</span>
                                     </div>
                                     <div class="faq-toggle-pill" aria-hidden="true">+</div>
                                 </summary>
                                 <div class="faq-answer">
-                                    <p>No. AffiStyle is engineered from the ground up for maximum speed. The total asset footprint is under <strong>15KB</strong> with pure scoped CSS and vanilla JavaScript (zero jQuery or heavy runtime bloat). Styles and scripts are conditionally enqueued only on posts where an affiliate box is actively rendered, preserving your 100/100 PageSpeed scores with zero Cumulative Layout Shift (0 CLS).</p>
+                                    <p>No. AffiStyle is engineered from the ground up for maximum speed. The total asset
+                                        footprint is under <strong>15KB</strong> with pure scoped CSS and vanilla
+                                        JavaScript (zero jQuery or heavy runtime bloat). Styles and scripts are
+                                        conditionally enqueued only on posts where an affiliate box is actively
+                                        rendered, preserving your 100/100 PageSpeed scores with zero Cumulative Layout
+                                        Shift (0 CLS).</p>
                                 </div>
                             </details>
 
@@ -5125,12 +5687,17 @@
                                 <summary class="faq-question">
                                     <div class="faq-q-content">
                                         <span class="faq-category-tag cat-comply">Compliance</span>
-                                        <span class="faq-q-text">How does automated FTC compliance and link cloaking work?</span>
+                                        <span class="faq-q-text">How does automated FTC compliance and link cloaking
+                                            work?</span>
                                     </div>
                                     <div class="faq-toggle-pill" aria-hidden="true">+</div>
                                 </summary>
                                 <div class="faq-answer">
-                                    <p>AffiStyle protects your site's SEO standing by automatically injecting an unobtrusive, FTC-compliant affiliate disclosure beneath product cards and enforcing <code>rel="nofollow sponsored"</code> on all external affiliate URLs. Link cloaking redirects cleanly through your domain without writing tracking cookies to visitor browsers, ensuring total GDPR and ePrivacy compliance.</p>
+                                    <p>AffiStyle protects your site's SEO standing by automatically injecting an
+                                        unobtrusive, FTC-compliant affiliate disclosure beneath product cards and
+                                        enforcing <code>rel="nofollow sponsored"</code> on all external affiliate URLs.
+                                        Link cloaking redirects cleanly through your domain without writing tracking
+                                        cookies to visitor browsers, ensuring total GDPR and ePrivacy compliance.</p>
                                 </div>
                             </details>
 
@@ -5139,12 +5706,17 @@
                                 <summary class="faq-question">
                                     <div class="faq-q-content">
                                         <span class="faq-category-tag cat-pro">Licensing</span>
-                                        <span class="faq-q-text">How is the Pro software delivered and updated after checkout?</span>
+                                        <span class="faq-q-text">How is the Pro software delivered and updated after
+                                            checkout?</span>
                                     </div>
                                     <div class="faq-toggle-pill" aria-hidden="true">+</div>
                                 </summary>
                                 <div class="faq-answer">
-                                    <p>Orders are processed securely via <strong>Lemon Squeezy</strong> (our Merchant of Record). Immediately upon payment, you receive an automated receipt with your downloadable Pro package (<code>.zip</code>) and your license activation key. Once activated in your WordPress dashboard, your site receives one-click background updates just like standard repository plugins.</p>
+                                    <p>Orders are processed securely via <strong>Lemon Squeezy</strong> (our Merchant of
+                                        Record). Immediately upon payment, you receive an automated receipt with your
+                                        downloadable Pro package (<code>.zip</code>) and your license activation key.
+                                        Once activated in your WordPress dashboard, your site receives one-click
+                                        background updates just like standard repository plugins.</p>
                                 </div>
                             </details>
 
@@ -5153,12 +5725,18 @@
                                 <summary class="faq-question">
                                     <div class="faq-q-content">
                                         <span class="faq-category-tag cat-general">Guarantee</span>
-                                        <span class="faq-q-text">What is your refund policy if AffiStyle doesn't fit my theme?</span>
+                                        <span class="faq-q-text">What is your refund policy if AffiStyle doesn't fit my
+                                            theme?</span>
                                     </div>
                                     <div class="faq-toggle-pill" aria-hidden="true">+</div>
                                 </summary>
                                 <div class="faq-answer">
-                                    <p>We stand behind our code with an unconditional <strong>14-day money-back guarantee</strong>. If you experience technical incompatibilities with your WordPress theme or decide it's not the right fit for your editorial workflow, simply email Mayuresh at <a href="mailto:dreainno@gmail.com">dreainno@gmail.com</a> for a swift, courteous refund.</p>
+                                    <p>We stand behind our code with an unconditional <strong>14-day money-back
+                                            guarantee</strong>. If you experience technical incompatibilities with your
+                                        WordPress theme or decide it's not the right fit for your editorial workflow,
+                                        simply email Mayuresh at <a
+                                            href="mailto:dreainno@gmail.com">dreainno@gmail.com</a> for a swift,
+                                        courteous refund.</p>
                                 </div>
                             </details>
                         </div>
@@ -5167,7 +5745,8 @@
                         <div class="faq-empty-state" id="faq-empty-state">
                             <h4>No matching questions found</h4>
                             <p>We couldn't find any questions matching your search term. Have a specific inquiry?</p>
-                            <a href="mailto:dreainno@gmail.com" class="faq-support-btn" style="display: inline-flex; width: auto; padding: 9px 20px; margin: 0 auto;">
+                            <a href="mailto:dreainno@gmail.com" class="faq-support-btn"
+                                style="display: inline-flex; width: auto; padding: 9px 20px; margin: 0 auto;">
                                 <span>Email Support (dreainno@gmail.com)</span>
                             </a>
                         </div>
@@ -5253,6 +5832,7 @@
                         <li><a href="#features">Key Features</a></li>
                         <li><a href="#sandbox">Live Demo Sandbox</a></li>
                         <li><a href="#pricing">Free vs Pro</a></li>
+                        <li><a href="blog/index.html">Blog &amp; Guides</a></li>
                         <li><a href="https://wordpress.org/plugins/affistyle/" target="_blank">WP.org Directory</a></li>
                         <li><a href="#faq">FAQ</a></li>
                     </ul>
@@ -5262,6 +5842,7 @@
                 <div class="footer-col">
                     <h4>Company &amp; Docs</h4>
                     <ul class="footer-menu">
+                        <li><a href="blog/index.html">Publisher Masterclasses</a></li>
                         <li><button type="button" class="footer-btn" id="open-about-modal">About Us</button></li>
                         <li><button type="button" class="footer-btn" id="open-docs-modal">Documentation</button></li>
                         <li><a href="https://dreainno.online" target="_blank" rel="noopener noreferrer">Creator Studio
@@ -5333,6 +5914,7 @@
     </div>
 
     <!-- About Us Modal -->
+    <div id="about"></div>
     <div class="modal-overlay" id="about-modal" role="dialog" aria-modal="true" aria-labelledby="about-title">
         <div class="modal-content">
             <button type="button" class="close-modal" id="close-about-modal"
@@ -5374,6 +5956,7 @@
     </div>
 
     <!-- Complete Dual-Product Documentation Modal -->
+    <div id="docs"></div>
     <div class="modal-overlay" id="docs-modal" role="dialog" aria-modal="true" aria-labelledby="docs-title">
         <div class="modal-content">
             <button type="button" class="close-modal" id="close-docs-modal"
@@ -5420,7 +6003,8 @@
                     </li>
                     <li>Under <strong>Card Styling</strong>, choose between <strong>Style 1 (Standard Box)</strong> or
                         <strong>Style 2 (Compact Minimalist)</strong>, and optionally set custom background and button
-                        colors.</li>
+                        colors.
+                    </li>
                     <li>Click <strong>Publish</strong>.</li>
                 </ol>
 
@@ -5439,7 +6023,8 @@
                         cloaked under <code>yoursite.com/recommends/your-card-slug/</code> with safe 302 redirects.</li>
                     <li><strong>FTC Disclosure:</strong> A legally compliant micro-disclosure is automatically attached
                         beneath the box, and all CTA links have <code>rel="nofollow sponsored noopener"</code> and
-                        <code>target="_blank"</code> applied.</li>
+                        <code>target="_blank"</code> applied.
+                    </li>
                 </ul>
             </div>
 
@@ -5471,7 +6056,8 @@
                 <h4>3. Configuring Side-by-Side Showdown Cards (Product 1 vs Product 2)</h4>
                 <ol>
                     <li>Open an Affiliate Box and choose a comparison template (e.g. <strong>Style 14 Versus</strong> or
-                        <strong>Style 15 Spec Matrix</strong>).</li>
+                        <strong>Style 15 Spec Matrix</strong>).
+                    </li>
                     <li>Check the <strong>[x] Enable Product 2 Comparison</strong> toggle.</li>
                     <li>Fill in Product 2 details: Title, Image, Description, URL, Badge (e.g. <em>"Runner Up"</em>),
                         Star Rating, and Pros/Cons.</li>
@@ -5495,19 +6081,22 @@
                             Kingdom, Canada, and India</strong>).</li>
                     <li>AffiStyle Pro detects visitor country codes via CDN edge headers (Cloudflare
                         <code>CF-IPCountry</code>) and automatically redirects cloaked clicks to the appropriate
-                        regional merchant link.</li>
+                        regional merchant link.
+                    </li>
                 </ol>
 
                 <h4>6. Custom Cloak Prefixes &amp; HTTP Status Codes</h4>
                 <p>In <strong>Affiliate Boxes &rarr; Pro Settings</strong>, customize your site-wide cloak prefix from
                     <code>/recommends/</code> to <code>/go/</code>, <code>/out/</code>, or <code>/deal/</code>, and
                     configure HTTP redirect status codes between <strong>302 (Temporary)</strong>, <strong>301
-                        (Permanent)</strong>, or <strong>307 (Temporary Redirect)</strong>.</p>
+                        (Permanent)</strong>, or <strong>307 (Temporary Redirect)</strong>.
+                </p>
             </div>
         </div>
     </div>
 
     <!-- Detailed Legally Robust Terms of Service Modal -->
+    <div id="terms"></div>
     <div class="modal-overlay" id="terms-modal" role="dialog" aria-modal="true" aria-labelledby="terms-title">
         <div class="modal-content">
             <button type="button" class="close-modal" id="close-terms-modal" aria-label="Close Terms">&times;</button>
@@ -5517,7 +6106,8 @@
             <p>Please review these Terms of Service ("Terms", "Agreement") carefully before purchasing, installing,
                 activating, or utilizing the <strong>AffiStyle</strong> software or services provided via
                 <strong>https://affistyle.shop</strong>. By accessing our software or completing a purchase, you agree
-                to be bound by these Terms.</p>
+                to be bound by these Terms.
+            </p>
 
             <div class="modal-highlight-box">
                 <strong>Legal Summary:</strong> AffiStyle operates under dual-licensing: PHP core components are
@@ -5559,7 +6149,8 @@
             <h3>Article 4: Affiliate Disclosure, FTC Guidelines &amp; User Liability</h3>
             <p>AffiStyle provides software presentation tools for commercial and affiliate product recommendations.
                 <strong>The licensee assumes sole legal responsibility</strong> for ensuring compliance with all local
-                and international marketing regulations, including:</p>
+                and international marketing regulations, including:
+            </p>
             <ul>
                 <li>Federal Trade Commission (FTC) Affiliate Disclosure Directives.</li>
                 <li>Amazon Associates Program Operating Agreement requirements (e.g., maintaining accurate pricing
@@ -5590,6 +6181,7 @@
     </div>
 
     <!-- Legally Robust Privacy Policy Modal -->
+    <div id="privacy"></div>
     <div class="modal-overlay" id="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
         <div class="modal-content">
             <button type="button" class="close-modal" id="close-privacy-modal"
@@ -5600,7 +6192,8 @@
             <p>This Privacy Policy outlines how <strong>AffiStyle</strong> ("we", "our", or "us"), accessible via
                 <strong>https://affistyle.shop</strong>, collects, processes, and protects personal data in compliance
                 with the <strong>General Data Protection Regulation (GDPR)</strong>, the <strong>California Consumer
-                    Privacy Act (CCPA)</strong>, and international privacy standards.</p>
+                    Privacy Act (CCPA)</strong>, and international privacy standards.
+            </p>
 
             <div class="modal-highlight-box">
                 <strong>Zero-Telemetry Policy:</strong> AffiStyle does not harvest, transmit, or monetize reader traffic
@@ -5627,7 +6220,8 @@
                 <li><strong>Local SQL Storage:</strong> Outbound clicks increment aggregate counters locally. No visitor
                     IP addresses, browser cookies, or tracking beacons are transmitted to external servers.</li>
                 <li><strong>Edge Geolocation:</strong> Regional routing utilizes CDN proxy headers (e.g., Cloudflare
-                    <code>CF-IPCountry</code>) locally in memory without tracking or building user profiles.</li>
+                    <code>CF-IPCountry</code>) locally in memory without tracking or building user profiles.
+                </li>
             </ul>
 
             <h3>3. Third-Party Service Providers</h3>
@@ -5646,6 +6240,7 @@
     </div>
 
     <!-- Legally Robust Refund Policy Modal -->
+    <div id="refund"></div>
     <div class="modal-overlay" id="refund-modal" role="dialog" aria-modal="true" aria-labelledby="refund-title">
         <div class="modal-content">
             <button type="button" class="close-modal" id="close-refund-modal" aria-label="Close Refund">&times;</button>
@@ -5807,6 +6402,20 @@
                 if (mobileDrawer) mobileDrawer.classList.remove('open');
             }
         });
+
+        // Auto-open modal on hash navigation (e.g. index.html#terms or #privacy)
+        const handleHashModal = () => {
+            const hash = window.location.hash;
+            if (hash === '#terms' || hash === '#terms-modal') openModal(termsModal);
+            else if (hash === '#privacy' || hash === '#privacy-modal') openModal(privacyModal);
+            else if (hash === '#refund' || hash === '#refund-modal') openModal(refundModal);
+            else if (hash === '#docs' || hash === '#docs-modal') openModal(docsModal);
+            else if (hash === '#about' || hash === '#about-modal') openModal(aboutModal);
+        };
+        window.addEventListener('hashchange', handleHashModal);
+        if (window.location.hash) {
+            handleHashModal();
+        }
 
         // Live Sandbox Canvas Theme Switcher (Light vs Dark)
         const sandboxCanvas = document.getElementById('sandbox-display-canvas');

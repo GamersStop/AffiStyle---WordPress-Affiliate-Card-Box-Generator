@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AffiStyle Blog - High-Converting WordPress Affiliate Guides, SEO &amp; Core Web Vitals</title>
+    <meta name="description"
+        content="Actionable engineering and marketing guides for WordPress affiliate publishers: Fix Cumulative Layout Shift (CLS), automate FTC compliance, and build high-CTR Gutenberg product cards.">
+    <link rel="canonical" href="https://affistyle.shop/blog/index.html">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KGTZ9P3F9Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-KGTZ9P3F9Q');
+    </script>
+
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+        content="AffiStyle Blog - High-Converting WordPress Affiliate Guides, SEO &amp; Core Web Vitals">
+    <meta property="og:description"
+        content="Actionable engineering and marketing guides for WordPress affiliate publishers: Fix Cumulative Layout Shift (CLS), automate FTC compliance, and build high-CTR Gutenberg product cards.">
+    <meta property="og:image" content="https://affistyle.shop/banner.png">
+    <meta property="og:url" content="https://affistyle.shop/blog/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AffiStyle Blog - WordPress Affiliate Optimization Guides">
+    <meta name="twitter:description"
+        content="Actionable guides to eliminate layout shift, automate FTC compliance, and double your affiliate conversion rates in WordPress.">
+    <meta name="twitter:image" content="https://affistyle.shop/banner.png">
+
+    <!-- Schema.org JSON-LD Structured Data: CollectionPage & ItemList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "AffiStyle Blog & Publisher Guides",
+      "description": "Expert engineering, Core Web Vitals optimization, and conversion guides for WordPress affiliate site owners and bloggers.",
+      "url": "https://affistyle.shop/blog/index.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Dreainno",
+        "url": "https://dreainno.online/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://affistyle.shop/icon.png"
+        }
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://affistyle.shop/blog/how-to-fix-cls-affiliate-product-boxes-wordpress.html",
+            "name": "How to Fix Cumulative Layout Shift (CLS) in WordPress Affiliate Product Boxes (2026 Guide)"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "https://affistyle.shop/blog/ftc-affiliate-disclosure-guidelines-wordpress.html",
+            "name": "Complete 2026 FTC Affiliate Disclosure Guide for WordPress Bloggers & Niche Sites"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "url": "https://affistyle.shop/blog/high-converting-product-comparison-tables-wordpress.html",
+            "name": "How to Build High-Converting Product Comparison Tables & Versus Cards in Gutenberg"
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- Google Fonts: Plus Jakarta Sans & Caveat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-main: #060912;
+            --bg-surface: #0c1222;
+            --bg-surface-elevated: #111a30;
+            --bg-card: rgba(14, 21, 38, 0.72);
+            --bg-card-hover: rgba(18, 28, 52, 0.85);
+
+            --border-color: rgba(255, 255, 255, 0.08);
+            --border-glow: rgba(59, 130, 246, 0.35);
+            --border-cyan: rgba(56, 189, 248, 0.45);
+
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-neon: #3b82f6;
+            --accent-cyan: #38bdf8;
+            --accent-emerald: #10b981;
+            --accent-gold: #fbbf24;
+            --accent-gold-hover: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --accent-red: #ef4444;
+
+            --text-main: #f8fafc;
+            --text-body: #cbd5e1;
+            --text-muted: #94a3b8;
+            --text-subtle: #64748b;
+
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-script: 'Caveat', cursive, sans-serif;
+
+            --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+            --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-main);
+            color: var(--text-body);
+            overflow-x: hidden;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-image:
+                radial-gradient(circle at 10% 10%, rgba(59, 130, 246, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 40%, rgba(56, 189, 248, 0.06) 0%, transparent 45%),
+                radial-gradient(circle at 50% 90%, rgba(37, 99, 235, 0.07) 0%, transparent 50%),
+                radial-gradient(rgba(59, 130, 246, 0.08) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 100% 100%, 28px 28px;
+            background-attachment: fixed;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #060912;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 6px;
+            border: 2px solid #060912;
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            background: rgba(6, 9, 18, 0.82);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 74px;
+            gap: 20px;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: #fff;
+            flex-shrink: 0;
+            transition: transform 0.25s var(--ease-spring);
+        }
+
+        .logo-area:hover {
+            transform: scale(1.02);
+        }
+
+        .brand-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 18px rgba(59, 130, 246, 0.45);
+        }
+
+        .brand-title-wrap {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand-title {
+            font-size: 21px;
+            font-weight: 800;
+            letter-spacing: -0.6px;
+            color: #fff;
+            line-height: 1;
+        }
+
+        .version-badge {
+            background: rgba(59, 130, 246, 0.12);
+            color: var(--accent-cyan);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            font-size: 10.5px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 100px;
+            letter-spacing: 0.4px;
+            line-height: 1;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 13.5px;
+            font-weight: 600;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            padding: 8px 14px;
+            border-radius: 9px;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .nav-link.active {
+            color: var(--accent-cyan);
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+        }
+
+        .nav-micro-badge {
+            font-size: 9.5px;
+            font-weight: 800;
+            color: var(--accent-emerald);
+            background: rgba(16, 185, 129, 0.18);
+            border: 1px solid rgba(16, 185, 129, 0.4);
+            padding: 2px 6px;
+            border-radius: 100px;
+            letter-spacing: 0.5px;
+            line-height: 1;
+        }
+
+        .nav-cta-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-nav-free {
+            background: rgba(255, 255, 255, 0.05);
+            color: #e2e8f0;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 8px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-nav-free:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        .btn-nav-pro {
+            background: linear-gradient(135deg, var(--primary) 0%, #1d4ed8 100%);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 700;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+            transition: all 0.2s ease;
+        }
+
+        .btn-nav-pro:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+            background: linear-gradient(135deg, var(--primary-neon) 0%, var(--primary) 100%);
+        }
+
+        .mobile-nav-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            color: #fff;
+            padding: 6px;
+            cursor: pointer;
+        }
+
+        /* Mobile Drawer */
+        .mobile-drawer-overlay {
+            position: fixed;
+            top: 74px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(6, 9, 18, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 99;
+            display: none;
+            flex-direction: column;
+            padding: 24px;
+            overflow-y: auto;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .mobile-drawer-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 16px;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-main);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            background: transparent;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+        }
+
+        .mobile-drawer-link:hover,
+        .mobile-drawer-link.active {
+            color: var(--accent-cyan);
+            background: rgba(56, 189, 248, 0.06);
+        }
+
+        .mobile-drawer-btns {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .mobile-drawer-btns .btn-nav-free,
+        .mobile-drawer-btns .btn-nav-pro {
+            justify-content: center;
+            padding: 12px;
+            font-size: 14px;
+        }
+
+        /* Hero Header */
+        .blog-hero {
+            padding: 72px 0 44px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(59, 130, 246, 0.12);
+            border: 1px solid rgba(59, 130, 246, 0.35);
+            padding: 6px 14px;
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+        }
+
+        .blog-hero h1 {
+            font-size: 46px;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.15;
+            color: var(--text-main);
+            margin-bottom: 16px;
+            max-width: 860px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .blog-hero h1 span.gradient-text {
+            background: linear-gradient(135deg, #ffffff 30%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .blog-hero-sub {
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 720px;
+            margin: 0 auto 32px;
+            line-height: 1.6;
+        }
+
+        /* Search & Filter Controls */
+        .filter-controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 48px;
+            max-width: 780px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .search-box-wrap {
+            position: relative;
+            width: 100%;
+        }
+
+        .search-box-wrap svg {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-subtle);
+            pointer-events: none;
+        }
+
+        .search-input {
+            width: 100%;
+            background: rgba(14, 21, 38, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
+            padding: 14px 20px 14px 48px;
+            font-size: 15px;
+            color: #ffffff;
+            font-family: inherit;
+            outline: none;
+            transition: all 0.25s ease;
+            backdrop-filter: blur(12px);
+        }
+
+        .search-input:focus {
+            border-color: var(--primary-neon);
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.25);
+            background: rgba(18, 28, 52, 0.85);
+        }
+
+        .search-input::placeholder {
+            color: var(--text-subtle);
+        }
+
+        .category-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .category-pill {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            color: var(--text-muted);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+
+        .category-pill:hover {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .category-pill.active {
+            background: rgba(37, 99, 235, 0.25);
+            border-color: var(--primary-neon);
+            color: #ffffff;
+            box-shadow: 0 0 16px rgba(59, 130, 246, 0.3);
+        }
+
+        /* Featured Article Spotlight */
+        .featured-card {
+            background: linear-gradient(135deg, rgba(14, 21, 38, 0.88) 0%, rgba(20, 30, 56, 0.88) 100%);
+            border: 1px solid rgba(59, 130, 246, 0.35);
+            border-radius: 20px;
+            padding: 36px;
+            margin-bottom: 48px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 36px;
+            align-items: center;
+            box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.6), 0 0 30px rgba(59, 130, 246, 0.15);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s var(--ease-spring), border-color 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .featured-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-neon), var(--accent-cyan), var(--accent-emerald));
+        }
+
+        .featured-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-cyan);
+            box-shadow: 0 24px 56px -12px rgba(0, 0, 0, 0.7), 0 0 40px rgba(56, 189, 248, 0.25);
+        }
+
+        .featured-badge-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .badge-spotlight {
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--accent-gold);
+            border: 1px solid rgba(245, 158, 11, 0.4);
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 100px;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-topic {
+            background: rgba(56, 189, 248, 0.15);
+            color: var(--accent-cyan);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 100px;
+        }
+
+        .featured-title {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: var(--text-main);
+            line-height: 1.25;
+            margin-bottom: 16px;
+        }
+
+        .featured-excerpt {
+            font-size: 15px;
+            color: var(--text-body);
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .author-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .author-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--accent-cyan));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            color: #fff;
+            font-size: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .author-info {
+            display: flex;
+            flex-direction: column;
+            font-size: 12.5px;
+        }
+
+        .author-name {
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .author-date {
+            color: var(--text-subtle);
+        }
+
+        .featured-visual {
+            background: rgba(6, 9, 18, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            position: relative;
+        }
+
+        .metric-pill-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .metric-preview-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 16px;
+            background: rgba(14, 21, 38, 0.9);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            font-size: 13.5px;
+        }
+
+        .metric-label {
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .metric-val-bad {
+            color: var(--accent-red);
+            font-weight: 700;
+            background: rgba(239, 68, 68, 0.15);
+            padding: 3px 8px;
+            border-radius: 6px;
+        }
+
+        .metric-val-good {
+            color: var(--accent-emerald);
+            font-weight: 700;
+            background: rgba(16, 185, 129, 0.15);
+            padding: 3px 8px;
+            border-radius: 6px;
+        }
+
+        /* Post Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 32px;
+            margin-bottom: 64px;
+        }
+
+        .post-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s var(--ease-spring);
+            backdrop-filter: blur(14px);
+            position: relative;
+        }
+
+        .post-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--border-glow);
+            box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.6), 0 0 24px rgba(59, 130, 246, 0.2);
+            background: var(--bg-card-hover);
+        }
+
+        .card-visual-header {
+            height: 180px;
+            position: relative;
+            background: linear-gradient(135deg, rgba(12, 18, 34, 0.95), rgba(24, 36, 68, 0.95));
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            overflow: hidden;
+        }
+
+        .card-visual-header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 70% 30%, rgba(56, 189, 248, 0.2), transparent 60%);
+        }
+
+        .card-visual-icon {
+            font-size: 54px;
+            position: relative;
+            z-index: 2;
+            filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.4));
+        }
+
+        .card-category-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            z-index: 3;
+            background: rgba(6, 9, 18, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: var(--accent-cyan);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 100px;
+            backdrop-filter: blur(8px);
+        }
+
+        .card-read-time {
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            z-index: 3;
+            background: rgba(6, 9, 18, 0.75);
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .card-body {
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .post-card-title {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-main);
+            line-height: 1.35;
+            margin-bottom: 12px;
+            transition: color 0.2s ease;
+        }
+
+        .post-card:hover .post-card-title {
+            color: var(--accent-cyan);
+        }
+
+        .post-card-excerpt {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card-author-snippet {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: var(--text-subtle);
+        }
+
+        .card-cta-link {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: gap 0.2s ease;
+        }
+
+        .post-card:hover .card-cta-link {
+            gap: 8px;
+            color: #ffffff;
+        }
+
+        /* Lead Magnet Callout Strip */
+        .blog-lead-magnet {
+            background: linear-gradient(135deg, rgba(14, 21, 38, 0.95), rgba(30, 48, 88, 0.95));
+            border: 1px solid rgba(56, 189, 248, 0.4);
+            border-radius: 20px;
+            padding: 44px;
+            margin-bottom: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 32px;
+            box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.5), 0 0 30px rgba(56, 189, 248, 0.15);
+        }
+
+        .magnet-content-left {
+            max-width: 680px;
+        }
+
+        .magnet-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(16, 185, 129, 0.18);
+            border: 1px solid rgba(16, 185, 129, 0.4);
+            color: var(--accent-emerald);
+            font-size: 11px;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 100px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .blog-lead-magnet h2 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .blog-lead-magnet p {
+            font-size: 15px;
+            color: var(--text-body);
+            line-height: 1.6;
+        }
+
+        .magnet-action-btn {
+            background: linear-gradient(135deg, var(--accent-emerald) 0%, #059669 100%);
+            color: #fff;
+            font-weight: 700;
+            font-size: 15px;
+            padding: 14px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            white-space: nowrap;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
+            transition: all 0.25s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .magnet-action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 26px rgba(16, 185, 129, 0.5);
+            background: linear-gradient(135deg, #34d399 0%, var(--accent-emerald) 100%);
+        }
+
+        /* Footer */
+        footer {
+            background: #04060d;
+            border-top: 1px solid var(--border-color);
+            padding: 64px 0 32px;
+            position: relative;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-top: 14px;
+            line-height: 1.6;
+            max-width: 360px;
+        }
+
+        .footer-col h4 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 18px;
+        }
+
+        .footer-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-menu a,
+        .footer-menu button {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 13.5px;
+            transition: color 0.2s ease;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            text-align: left;
+            font-family: inherit;
+        }
+
+        .footer-menu a:hover,
+        .footer-menu button:hover {
+            color: var(--accent-cyan);
+        }
+
+        .footer-bottom {
+            padding-top: 28px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12.5px;
+            color: var(--text-subtle);
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .footer-bottom a {
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: #ffffff;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 992px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-nav-toggle {
+                display: block;
+            }
+
+            .featured-card {
+                grid-template-columns: 1fr;
+            }
+
+            .blog-lead-magnet {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .blog-hero h1 {
+                font-size: 32px;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-card {
+                padding: 24px;
+            }
+
+            .blog-lead-magnet {
+                padding: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-inner">
+            <a href="../index.html" class="logo-area" aria-label="AffiStyle Home">
+                <img src="../icon.png" alt="AffiStyle Icon" class="brand-icon">
+                <div class="brand-title-wrap">
+                    <span class="brand-title">AffiStyle</span>
+                    <span class="version-badge">v1.0</span>
+                </div>
+            </a>
+
+            <!-- Streamlined Desktop Navigation -->
+            <nav class="nav-links">
+                <a href="../index.html#features" class="nav-link">Features</a>
+                <a href="../index.html#sandbox" class="nav-link">Live Demos</a>
+                <a href="../index.html#leadmagnet" class="nav-link">Free Swipe File</a>
+                <a href="../index.html#pricing" class="nav-link">Pricing</a>
+                <a href="index.html" class="nav-link active">
+                    <span>Blog</span>
+                    <span class="nav-micro-badge">3 GUIDES</span>
+                </a>
+                <a href="../index.html#faq" class="nav-link">FAQ</a>
+            </nav>
+
+            <div class="nav-cta-group">
+                <a href="https://wordpress.org/plugins/affistyle/" class="btn-nav-free" target="_blank" rel="noopener">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    <span>Download Free</span>
+                </a>
+                <a href="https://dreainno.lemonsqueezy.com/" class="btn-nav-pro" target="_blank" rel="noopener">
+                    <span>Get Pro &bull; $40</span>
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+                <button type="button" class="mobile-nav-toggle" id="mobile-toggle-btn"
+                    aria-label="Toggle Navigation Menu">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                        stroke-linecap="round">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Slide Drawer Overlay -->
+    <div class="mobile-drawer-overlay" id="mobile-drawer">
+        <a href="../index.html#features" class="mobile-drawer-link">Features <span>&rarr;</span></a>
+        <a href="../index.html#sandbox" class="mobile-drawer-link">Live Demos <span>&rarr;</span></a>
+        <a href="../index.html#leadmagnet" class="mobile-drawer-link">Free Swipe File <span>&rarr;</span></a>
+        <a href="../index.html#pricing" class="mobile-drawer-link">Pricing &amp; Editions <span>&rarr;</span></a>
+        <a href="index.html" class="mobile-drawer-link active">Blog &amp; Publishing Guides <span>📰</span></a>
+        <a href="../index.html#faq" class="mobile-drawer-link">FAQ <span>&rarr;</span></a>
+
+        <div class="mobile-drawer-btns">
+            <a href="https://wordpress.org/plugins/affistyle/" class="btn-nav-free" target="_blank"
+                rel="noopener">Download Free Plugin</a>
+            <a href="https://dreainno.lemonsqueezy.com/" class="btn-nav-pro" target="_blank" rel="noopener">Get
+                Commercial Pro ($40) &rarr;</a>
+        </div>
+    </div>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="blog-hero">
+            <div class="hero-pill">
+                <span>✦</span> AffiStyle Masterclass &bull; Core Web Vitals &bull; SEO
+            </div>
+            <h1>
+                WordPress Affiliate Engineering &amp;<br>
+                <span class="gradient-text">Conversion Optimization Blog</span>
+            </h1>
+            <p class="blog-hero-sub">
+                In-depth technical teardowns, Google Core Web Vitals optimizations, FTC safe-harbor compliance
+                strategies, and high-converting Gutenberg box architecture for modern publishers.
+            </p>
+
+            <!-- Search & Filters -->
+            <div class="filter-controls">
+                <div class="search-box-wrap">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                        stroke-linecap="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="article-search" class="search-input"
+                        placeholder="Search guides by keyword (e.g. CLS, FTC, Gutenberg, Comparison, CTR)..."
+                        aria-label="Search articles">
+                </div>
+                <div class="category-pills" role="tablist">
+                    <button type="button" class="category-pill active" data-category="all">All Guides (3)</button>
+                    <button type="button" class="category-pill" data-category="web-vitals">Core Web Vitals &amp;
+                        CLS</button>
+                    <button type="button" class="category-pill" data-category="compliance">FTC Compliance</button>
+                    <button type="button" class="category-pill" data-category="conversion">Conversion
+                        Architecture</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Spotlight Post -->
+        <a href="how-to-fix-cls-affiliate-product-boxes-wordpress.html" class="featured-card"
+            data-category="web-vitals">
+            <div>
+                <div class="featured-badge-row">
+                    <span class="badge-spotlight">★ Featured Masterclass</span>
+                    <span class="badge-topic">Core Web Vitals</span>
+                </div>
+                <h2 class="featured-title">How to Fix Cumulative Layout Shift (CLS) in WordPress Affiliate Product Boxes
+                    (2026 Guide)</h2>
+                <p class="featured-excerpt">
+                    Learn why legacy shortcode plugins kill mobile PageSpeed scores by causing sudden layout shifts when
+                    images and scripts pop in. Discover how AffiStyle's native Gutenberg server-rendered architecture
+                    locks in 0.00 CLS.
+                </p>
+                <div class="author-meta">
+                    <div class="author-avatar">MP</div>
+                    <div class="author-info">
+                        <span class="author-name">Mayuresh Pandit &bull; Dreainno</span>
+                        <span class="author-date">Published: Aug 28, 2026 &bull; 8 min read</span>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-visual">
+                <div
+                    style="font-size: 12px; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.5px;">
+                    ⚡ Real-World Layout Shift Benchmark
+                </div>
+                <div class="metric-pill-stack">
+                    <div class="metric-preview-row">
+                        <span class="metric-label">Legacy Shortcode Box CLS:</span>
+                        <span class="metric-val-bad">0.28 (Poor / Failed)</span>
+                    </div>
+                    <div class="metric-preview-row">
+                        <span class="metric-label">AffiStyle Gutenberg Box CLS:</span>
+                        <span class="metric-val-good">0.00 (Perfect / Pass)</span>
+                    </div>
+                    <div class="metric-preview-row">
+                        <span class="metric-label">Mobile Lighthouse Score:</span>
+                        <span class="metric-val-good">99 / 100 Score</span>
+                    </div>
+                </div>
+                <div style="font-size: 12px; color: var(--text-subtle); text-align: center;">
+                    Zero JavaScript dependencies &bull; Native CSS aspect-ratio containment
+                </div>
+            </div>
+        </a>
+
+        <!-- Blog Post Grid -->
+        <section class="blog-grid" id="blog-posts-container">
+            <!-- Card 1: CLS & Web Vitals -->
+            <article class="post-card" data-category="web-vitals"
+                data-keywords="cls cumulative layout shift web vitals speed gutenberg page builder aawp lasso affilatable">
+                <div class="card-visual-header">
+                    <span class="card-category-badge">Core Web Vitals</span>
+                    <div class="card-visual-icon">⚡</div>
+                    <span class="card-read-time">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        8 min read
+                    </span>
+                </div>
+                <div class="card-body">
+                    <h3 class="post-card-title">How to Fix Cumulative Layout Shift (CLS) in WordPress Affiliate Product
+                        Boxes</h3>
+                    <p class="post-card-excerpt">
+                        Step-by-step technical breakdown on diagnosing affiliate card layout shifts in Chrome DevTools,
+                        reserving dimension boxes, and migrating from clunky shortcodes to zero-CLS Gutenberg blocks.
+                    </p>
+                    <div class="card-footer">
+                        <div class="card-author-snippet">
+                            <span>By Mayuresh Pandit</span>
+                            <span>&bull; Aug 28, 2026</span>
+                        </div>
+                        <a href="how-to-fix-cls-affiliate-product-boxes-wordpress.html" class="card-cta-link">
+                            Read Guide <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2: FTC Compliance -->
+            <article class="post-card" data-category="compliance"
+                data-keywords="ftc affiliate disclosure guidelines safe harbor legal compliance disclaimer rel sponsored cloaking">
+                <div class="card-visual-header">
+                    <span class="card-category-badge">Legal &amp; Compliance</span>
+                    <div class="card-visual-icon">⚖️</div>
+                    <span class="card-read-time">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        7 min read
+                    </span>
+                </div>
+                <div class="card-body">
+                    <h3 class="post-card-title">Complete 2026 FTC Affiliate Disclosure Guide for WordPress Bloggers</h3>
+                    <p class="post-card-excerpt">
+                        Why generic footer disclaimers fail FTC audits and put commissions at risk. Learn the 2-line
+                        safe-harbor formula and how automated per-card micro-disclosures build buyer trust.
+                    </p>
+                    <div class="card-footer">
+                        <div class="card-author-snippet">
+                            <span>By Dreainno Studio</span>
+                            <span>&bull; Aug 26, 2026</span>
+                        </div>
+                        <a href="ftc-affiliate-disclosure-guidelines-wordpress.html" class="card-cta-link">
+                            Read Guide <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3: Comparison Tables & CTR -->
+            <article class="post-card" data-category="conversion"
+                data-keywords="product comparison tables versus cards gutenberg multi retailer ctr conversion rate amazon affiliate showdown">
+                <div class="card-visual-header">
+                    <span class="card-category-badge">Conversion Architecture</span>
+                    <div class="card-visual-icon">📊</div>
+                    <span class="card-read-time">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        9 min read
+                    </span>
+                </div>
+                <div class="card-body">
+                    <h3 class="post-card-title">How to Build High-Converting Product Comparison Tables &amp; Versus
+                        Cards</h3>
+                    <p class="post-card-excerpt">
+                        Discover the psychology of choice architecture. How side-by-side showdowns, mobile-friendly spec
+                        grids, and multi-retailer CTA buttons boost outbound affiliate click-throughs by 38%+.
+                    </p>
+                    <div class="card-footer">
+                        <div class="card-author-snippet">
+                            <span>By Mayuresh Pandit</span>
+                            <span>&bull; Aug 24, 2026</span>
+                        </div>
+                        <a href="high-converting-product-comparison-tables-wordpress.html" class="card-cta-link">
+                            Read Guide <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- No Results Fallback -->
+        <div id="no-results"
+            style="display: none; text-align: center; padding: 48px 24px; background: rgba(14, 21, 38, 0.5); border-radius: 16px; border: 1px dashed rgba(255, 255, 255, 0.15); margin-bottom: 64px;">
+            <p style="font-size: 18px; color: var(--text-main); font-weight: 700; margin-bottom: 8px;">No matching
+                articles found</p>
+            <p style="font-size: 14px; color: var(--text-muted);">Try searching for terms like "CLS", "FTC",
+                "Gutenberg", "Comparison", or "Conversion".</p>
+        </div>
+
+        <!-- Free Swipe File Banner -->
+        <section class="blog-lead-magnet">
+            <div class="magnet-content-left">
+                <span class="magnet-pill">Free 7-Page Blueprint</span>
+                <h2>The 2026 High-CTR Affiliate Box Tear-Down</h2>
+                <p>
+                    Download our actionable visual cheat sheet detailing 7 visual tweaks that doubled affiliate clicks
+                    without extra traffic, including the 2-line automated FTC disclaimer formula and 0 CLS checklist.
+                </p>
+            </div>
+            <a href="../index.html#leadmagnet" class="magnet-action-btn">
+                <span>📘 Get Free Swipe File</span>
+                <span aria-hidden="true">&rarr;</span>
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo-area" style="margin-bottom: 12px;">
+                        <img src="../icon.png" alt="AffiStyle Logo" class="brand-icon">
+                        <span class="brand-title">AffiStyle</span>
+                    </a>
+                    <p>
+                        AffiStyle is the lightweight, conversion-focused WordPress affiliate card and showcase plugin
+                        engineered by Dreainno. Zero layout shift, native Gutenberg integration, and automated
+                        compliance.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul class="footer-menu">
+                        <li><a href="../index.html#features">Key Features</a></li>
+                        <li><a href="../index.html#sandbox">Live Demo Sandbox</a></li>
+                        <li><a href="../index.html#pricing">Free vs Pro</a></li>
+                        <li><a href="https://wordpress.org/plugins/affistyle/" target="_blank">WP.org Directory</a></li>
+                        <li><a href="../index.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Publisher Resources</h4>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Blog &amp; Masterclasses</a></li>
+                        <li><a href="how-to-fix-cls-affiliate-product-boxes-wordpress.html">Fix Layout Shift (CLS)</a>
+                        </li>
+                        <li><a href="ftc-affiliate-disclosure-guidelines-wordpress.html">FTC Compliance Guide</a></li>
+                        <li><a href="high-converting-product-comparison-tables-wordpress.html">Product Showdown
+                                Grids</a></li>
+                        <li><a href="https://dreainno.online" target="_blank" rel="noopener">Dreainno Studio</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Legal &amp; Trust</h4>
+                    <ul class="footer-menu">
+                        <li><a href="../index.html#terms">Terms of Service</a></li>
+                        <li><a href="../index.html#privacy">Privacy Policy</a></li>
+                        <li><a href="../index.html#refund">14-Day Refund Policy</a></li>
+                        <li><a href="mailto:dreainno@gmail.com">dreainno@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 AffiStyle. Developed by <a href="https://dreainno.online" target="_blank"
+                        rel="noopener">Dreainno</a>. Custom-crafted for WordPress.</p>
+                <div>
+                    Lemon Squeezy Verified Merchant &bull; 100% Secure Checkout
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Filtering & Search Script -->
+    <script>
+        // Mobile Drawer Toggle
+        const mobileToggleBtn = document.getElementById('mobile-toggle-btn');
+        const mobileDrawer = document.getElementById('mobile-drawer');
+        if (mobileToggleBtn && mobileDrawer) {
+            mobileToggleBtn.addEventListener('click', () => {
+                const isOpen = mobileDrawer.style.display === 'flex';
+                mobileDrawer.style.display = isOpen ? 'none' : 'flex';
+            });
+        }
+
+        // Live Category and Keyword Filtering
+        const searchInput = document.getElementById('article-search');
+        const categoryPills = document.querySelectorAll('.category-pill');
+        const postCards = document.querySelectorAll('#blog-posts-container .post-card');
+        const featuredCard = document.querySelector('.featured-card');
+        const noResults = document.getElementById('no-results');
+
+        let activeCategory = 'all';
+        let searchQuery = '';
+
+        function filterArticles() {
+            let visibleCount = 0;
+            const query = searchQuery.trim().toLowerCase();
+
+            // Filter Featured Card
+            if (featuredCard) {
+                const fCat = featuredCard.getAttribute('data-category');
+                const fText = featuredCard.textContent.toLowerCase();
+                const fCatMatch = (activeCategory === 'all' || fCat === activeCategory);
+                const fQueryMatch = (!query || fText.includes(query));
+
+                if (fCatMatch && fQueryMatch) {
+                    featuredCard.style.display = 'grid';
+                    visibleCount++;
+                } else {
+                    featuredCard.style.display = 'none';
+                }
+            }
+
+            // Filter Grid Cards
+            postCards.forEach(card => {
+                const cat = card.getAttribute('data-category');
+                const keywords = (card.getAttribute('data-keywords') || '') + ' ' + card.textContent.toLowerCase();
+                const catMatch = (activeCategory === 'all' || cat === activeCategory);
+                const queryMatch = (!query || keywords.includes(query));
+
+                if (catMatch && queryMatch) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            if (noResults) {
+                noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+            }
+        }
+
+        categoryPills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                categoryPills.forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                activeCategory = pill.getAttribute('data-category') || 'all';
+                filterArticles();
+            });
+        });
+
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                searchQuery = e.target.value;
+                filterArticles();
+            });
+        }
+    </script>
+</body>
+
+</html>
