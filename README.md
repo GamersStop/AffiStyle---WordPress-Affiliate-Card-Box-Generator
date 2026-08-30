@@ -1,102 +1,167 @@
-# AffiStyle Pro - Custom Affiliate Card Generator for WordPress
+# 🚀 Antigravity Agent Starter Kit
 
-**AffiStyle Pro** is a high-performance, conversion-focused WordPress plugin designed for affiliate marketers, niche bloggers, and product review sites. Create stunning, responsive affiliate product boxes, multi-product comparison tables, vs-cards, and high-converting deal cards with automatic international geo-routing, built-in click analytics, and native Gutenberg block support.
+> A production-ready template for building reliable, self-improving AI agents using a proven 3-layer architecture
 
----
+## 📹 Overview
 
-## 🚀 Key Features
+The Antigravity Agent Starter Kit is a battle-tested framework for building AI agents that actually work in production. Instead of letting LLMs handle everything (which compounds errors), this architecture separates concerns into three layers: directives (what to do), orchestration (decision making), and execution (deterministic code). The result? Agents that self-improve, handle errors gracefully, and maintain 90%+ reliability even across complex multi-step workflows.
 
-- **16+ High-Converting Layout Templates**: Choose from 2 Free minimalist horizontal/vertical styles and 14 Pro templates (Dark Mode Sleek, Rounded Modern Shadow, Tiered 3-Column Comparison Grids, A vs B Versus Cards, Horizontal Spec Sheets, and Minimalist Dark Grids).
-- **🌍 Geo-Targeted Multi-Destination Links**: Automatically detect your visitors' geographic location (US, UK, India, etc.) and route them to regional store URLs (Amazon US, Amazon UK, Amazon IN) to maximize affiliate commissions.
-- **⚡ Native Gutenberg Block & Shortcode Integration**: Insert affiliate boxes seamlessly into any page, post, or custom post type using the native Gutenberg block or simple shortcodes: `[aff_box id="123"]`.
-- **📊 Built-In Click Tracking Analytics**: Monitor affiliate link engagement with an asynchronous AJAX tracker and view total click counts per card directly within your WordPress admin post list table.
-- **🔒 Tamper-Proof Cryptographic Licensing**: Powered by Lemon Squeezy API with HMAC SHA-256 cryptographic signatures tied to your site domain, guarding against unauthorized database option tampering.
-- **🛡️ Privacy-First & GDPR Compliant**: Privacy-by-design architecture that prioritizes CDN/edge server headers (Cloudflare, Cloudfront, GeoIP), validates IP formats, respects loopbacks, and provides developer filter hooks (`affistyle_enable_remote_geo_lookup`) to prevent unauthorized third-party PII transmission.
-- **⚡ Sub-Millisecond Performance**: Single-query metadata compilation, in-memory static status caching, and conditional asset loading ensure zero impact on page load speed or Google Core Web Vitals.
+This template includes:
+- ✅ Pre-configured 3-layer architecture with clear separation of concerns
+- ✅ Self-annealing error recovery system that learns from failures
+- ✅ Modular skills system for extending agent capabilities
+- ✅ Production-ready file organization and best practices
+- ✅ Example skills to get you started immediately
 
----
+It's designed for developers, automation engineers, and AI builders who want to create agents that are reliable, maintainable, and continuously improving.
 
-## 📦 Installation Instructions
+## 🎨 Features
 
-You can install AffiStyle automatically from your WordPress dashboard or upload it manually:
+| Feature | Description |
+|---------|-------------|
+| 🏗️ **3-Layer Architecture** | Separates probabilistic AI decisions from deterministic execution, preventing error compounding and ensuring reliability |
+| 🔄 **Self-Annealing System** | Automatically learns from failures, updates directives, and improves over time without manual intervention |
+| 🧩 **Modular Skills** | Plug-and-play skill system with progressive disclosure - only loads what's needed when it's needed |
+| 📦 **Bundled Resources** | Scripts, references, and assets organized for maximum reusability and minimal context pollution |
+| 🎯 **Production-Ready** | Clear file organization, environment management, and cloud-first deliverables built in from day one |
 
-### Method 1: Automatic Installation (Recommended via WordPress.org)
-1. Log in to your WordPress Admin Dashboard.
-2. Navigate to **Plugins > Add New**.
-3. In the search bar on the top right, type **"AffiStyle"**.
-4. Find **AffiStyle - Custom Affiliate Card Generator** and click **Install Now**.
-5. Once installed, click **Activate** to enable the plugin.
+## 🏛️ Architecture
 
-### Method 2: Manual Installation (Via WordPress Dashboard)
-1. Download the `affistyle.zip` file from the official [WordPress.org Plugin Directory](https://wordpress.org/plugins/).
-2. Go to your WordPress Dashboard and navigate to **Plugins > Add New > Upload Plugin**.
-3. Choose the downloaded `affistyle.zip` file, click **Install Now**, and then click **Activate Plugin**.
+The system follows a clear data flow:
 
----
+**User Request → Directive (SOP) → Agent Orchestration → Execution Scripts → Cloud Deliverables**
 
-## 🔑 Pro License Activation
+### The 3 Layers Explained
 
-To unlock Pro templates (Styles 3 through 16), geo-targeted store links, and click tracking analytics:
+**Layer 1: Directives** (`directives/` folder)
+- Standard Operating Procedures written in Markdown
+- Define goals, inputs, tools to use, outputs, and edge cases
+- Natural language instructions, like you'd give a mid-level employee
+- Living documents that improve over time
 
-1. **Get a License Key**: Visit our official store at [dreainno.lemonsqueezy.com](https://dreainno.lemonsqueezy.com/) to purchase an AffiStyle Pro license key.
-2. **Open License Page**: In your WordPress dashboard, navigate to **AffiStyle > Pro License**.
-3. **Activate License**:
-   - Enter your Lemon Squeezy license key into the **License Key** field.
-   - Click **Activate License**.
-   - Once verified, your status will update to **Active (Pro Unlocked)**, enabling all 16 layout templates and advanced features instantly.
+**Layer 2: Orchestration** (The AI Agent)
+- Intelligent routing and decision-making
+- Reads directives, calls execution tools in the right order
+- Handles errors, asks for clarification, updates directives with learnings
+- The glue between intent and execution
 
-To deactivate or transfer a license to another domain, return to **AffiStyle > Pro License** and click **Deactivate License**.
+**Layer 3: Execution** (`execution/` folder)
+- Deterministic Python scripts
+- Handle API calls, data processing, file operations, database interactions
+- Reliable, testable, fast - no probabilistic behavior
+- Well-commented and production-ready
 
----
+### Why This Works
 
-## 📖 Usage Guide
+If the agent does everything itself, errors compound. 90% accuracy per step = 59% success over 5 steps. The solution? Push complexity into deterministic code. The agent focuses on decision-making, not implementation details.
 
-### 1. Creating an Affiliate Card Box
-1. Navigate to **AffiStyle > Add New Box**.
-2. Enter a title for your affiliate card (e.g., *Sony WH-1000XM5 Wireless Headphones*).
-3. In the **Affiliate Card Builder Details** metabox:
-   - **Template Style**: Select from Free or Pro templates (Styles 1–16).
-   - **Product Description / Snippet**: Add a short review or summary text.
-   - **Default Destination URL**: Set your primary affiliate destination link.
-   - **Button Text**: Customize the CTA button (e.g., *Claim Deal*, *Buy Now*, *Check Price*).
-   - **Geo-Targeted Links (Pro)**: Enter specific regional store URLs for US, UK, and India.
-   - **Badge Text**: Add an optional tag (e.g., *Editor's Choice*, *Best Budget*, *Top Pick*).
-   - **Product Image**: Upload or select a product image via the WordPress Media Library.
-   - **Custom Styling**: Adjust card background and button background colors with native color pickers.
-4. Click **Publish**.
+## 🔧 Setup Instructions
 
-### 2. Embedding via Shortcode
-Copy the auto-generated ID from the post list or editor and place the shortcode anywhere in your content:
-```text
-[aff_box id="123"]
+### 1️⃣ Requirements
+
+You'll need:
+- Python 3.8+ installed
+- A code editor (VS Code, Cursor, etc.)
+- API keys for any services your directives/skills require
+
+### 2️⃣ Download the Template
+
+1. Download or clone this template folder
+2. Navigate to the folder in your terminal:
+   ```bash
+   cd path/to/Antigravity\ Template\ copy
+   ```
+
+### 3️⃣ Set Up Your Environment
+
+1. Create a `.env` file in the root directory:
+   ```bash
+   touch .env
+   ```
+
+2. Add your API keys and environment variables:
+   ```
+   FIRECRAWL_API_KEY=your_key_here
+   # Add other API keys as needed
+   ```
+
+3. Install any required Python dependencies for your execution scripts:
+   ```bash
+   pip install -r requirements.txt  # if you create one
+   ```
+
+### 4️⃣ Configure Your Agent
+
+1. Review `AGENTS.md` to understand the architecture
+2. Create your first directive in `directives/` (or use existing ones)
+3. Add execution scripts to `execution/` as needed
+4. Point your AI agent (Claude, GPT-4, etc.) to read `AGENTS.md` as its system instructions
+
+### 5️⃣ Start Building
+
+Your agent is now ready to:
+- Read directives from `directives/`
+- Execute scripts from `execution/`
+- Use skills from `SKILLS/`
+- Self-improve through the annealing loop
+
+## 🧪 What's Included
+
+### Core Files
+
+- **`AGENTS.md`** - The agent's operating manual and architecture guide
+- **`SKILLS/`** - Pre-built skills for common tasks:
+  - `brand-extractor/` - Extract brand identity from any website
+  - `brand-guidelines/` - Enforce consistent brand styling
+  - `frontend-design/` - Build beautiful web applications
+  - `skill-creator/` - Create new skills following best practices
+
+### Directory Structure
+
+```
+Antigravity Template/
+├── AGENTS.md              # Agent operating instructions
+├── SKILLS/                # Modular skill packages
+│   ├── brand-extractor/
+│   ├── brand-guidelines/
+│   ├── frontend-design/
+│   └── skill-creator/
+├── directives/            # Your SOPs (create this)
+├── execution/             # Your Python scripts (create this)
+├── .tmp/                  # Temporary/intermediate files (create this)
+└── .env                   # Environment variables (create this)
 ```
 
-### 3. Embedding via Gutenberg Block Editor
-1. Edit any page or post in the Block Editor.
-2. Click the **+** (Add Block) icon and search for **Affiliate Box** (`affistyle/aff-box`).
-3. Select your saved affiliate card from the block settings dropdown menu in the sidebar.
-4. The card will automatically render server-side in your layout.
+## 💡 Example Use Cases
+
+- **Automation Engineers**: Build reliable automation workflows that handle errors gracefully and improve over time
+- **AI Developers**: Create specialized agents with domain expertise without retraining models
+- **Product Teams**: Deploy AI agents that maintain consistency across complex multi-step processes
+- **Consultants**: Package your expertise into reusable skills that agents can execute reliably
+- **Startups**: Rapidly prototype AI-powered features with production-ready architecture from day one
+
+## 🎓 Pro Tips
+
+1. **Start Small**: Begin with one directive and one execution script. Test the self-annealing loop before scaling up.
+
+2. **Use Skills Wisely**: The included skills demonstrate best practices. Study `skill-creator/SKILL_SkillCreator.md` before creating your own.
+
+3. **Embrace the Annealing Loop**: When things break, let the agent fix the script, test it, and update the directive. The system gets stronger with each failure.
+
+4. **Keep Directives Lean**: Only include what the agent can't figure out on its own. Assume intelligence, provide context.
+
+5. **Cloud-First Deliverables**: Store outputs in Google Sheets, Slides, or other cloud services. Local files are for processing only.
+
+6. **Progressive Disclosure**: Skills use a 3-level loading system (metadata → SKILL.md → bundled resources). Keep context usage minimal.
 
 ---
 
-## 🛠️ Developer & Technical Notes
+## 🚀 Want to Build & Sell AI Automations Like This?
 
-### Architecture & Standards Compliance
-- **WordPress Coding Standards (WPCS)**: 100% compliant with official WPCS rules, incorporating strict Yoda conditions, `wp_unslash()` superglobal handling, and type-specific sanitization (`sanitize_text_field`, `esc_url_raw`, `sanitize_hex_color`).
-- **Internationalization (i18n)**: Fully translation-ready with text domain `'affistyle'`, `load_plugin_textdomain()` on `plugins_loaded`, and placeholders (`printf`) for global multi-language compatibility.
-- **Single-Query Metadata Fetching**: `AffiStyle_Database::get_box_data()` compiles all custom post meta in a single cached database call (`get_post_meta($post_id)`), eliminating redundant `wp_postmeta` SQL queries.
-- **Bigint Analytics Schema**: Uses a lightweight custom table (`{$wpdb->prefix}affistyle_clicks`) with composite `UNIQUE KEY (post_id, region)` and `bigint(20)` counters for ultra-fast SQL upserts (`INSERT ... ON DUPLICATE KEY UPDATE`).
-- **Conditional Asset Loading**: Frontend stylesheets and tracking scripts are conditionally enqueued only when an affiliate card is rendered on the page, maintaining 100/100 Lighthouse performance scores.
-- **GDPR Privacy Hooks**:
-  ```php
-  // Disable remote third-party IP lookups programmatically if required by privacy policy
-  add_filter( 'affistyle_enable_remote_geo_lookup', '__return_false' );
-  ```
+Join **The Build Room** and learn to build and sell AI automations - from $49 templates to $3K+ clients in 30 days.
+
+[→ Join The Build Room](https://www.skool.com/build-room)
 
 ---
 
-## 📄 License & Credits
-
-- **License**: GPL v2 or later
-- **Author**: Mayuresh Pandit ([GitHub](https://github.com/GamersStop))
-- **Repository**: [AffiStyle on GitHub](https://github.com/GamersStop/AffiStyle---WordPress-Affiliate-Card-Box-Generator)
+Built with ❤️ using Claude, Python, and the power of self-improving systems

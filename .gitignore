@@ -1,0 +1,23 @@
+# Environment variables and secrets
+.env
+.env.local
+credentials.json
+token.json
+
+# Temporary working directory for intermediate files
+.tmp/
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+Desktop.ini
