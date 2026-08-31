@@ -4019,14 +4019,16 @@
 
             .affi-box-grid {
                 grid-template-columns: 1fr;
+                gap: 20px;
             }
 
             .versus-grid {
                 grid-template-columns: 1fr;
+                gap: 16px;
             }
 
             .versus-divider-circle {
-                margin: 10px auto;
+                margin: 0 auto;
             }
 
             .form-row-inputs {
@@ -4048,6 +4050,7 @@
             }
         }
 
+        /* Dedicated Mobile Responsive Styles for Sandbox Demo Section */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 36px;
@@ -4064,6 +4067,343 @@
             .btn-nav-pro {
                 padding: 7px 12px;
                 font-size: 12px;
+            }
+
+            /* Sandbox Section Mobile Architecture */
+            .sandbox-section {
+                padding: 40px 0 68px 0;
+            }
+
+            /* Responsive Tab Bar (Touch-Scrollable Pill Strip) */
+            .sandbox-tab-bar {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                gap: 8px;
+                padding: 4px 4px 10px 4px;
+                margin-bottom: 20px;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+
+            .sandbox-tab-bar::-webkit-scrollbar {
+                display: none;
+            }
+
+            .sandbox-tab {
+                flex: 0 0 auto;
+                padding: 9px 15px;
+                font-size: 13px;
+                white-space: nowrap;
+                border-radius: 10px;
+                gap: 6px;
+            }
+
+            /* Sandbox Surface Display */
+            .sandbox-display {
+                padding: 16px 14px 20px 14px;
+                border-radius: 16px;
+                box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.7);
+            }
+
+            /* Gutenberg Toolbar Mobile Fit */
+            .gutenberg-toolbar {
+                margin: -16px -14px 16px -14px;
+                padding: 10px 12px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 10px;
+            }
+
+            .gb-tools-left {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .gb-btn,
+            .gb-sep {
+                display: none;
+            }
+
+            .gb-tools-right {
+                width: 100%;
+                justify-content: space-between;
+                padding-top: 8px;
+                border-top: 1px solid rgba(255, 255, 255, 0.08);
+            }
+
+            .gb-theme-label {
+                font-size: 11.5px;
+            }
+
+            .gb-theme-pill {
+                display: flex;
+                gap: 4px;
+            }
+
+            .gb-theme-btn {
+                padding: 5px 11px;
+                font-size: 11px;
+            }
+
+            /* Affiliate Card Preview Container */
+            .affi-box-preview {
+                padding: 20px 15px 18px 15px;
+                border-radius: 14px;
+            }
+
+            /* Static Header Badges to Prevent Overlap and Clipping */
+            .affi-ribbon {
+                position: static;
+                display: inline-flex;
+                align-items: center;
+                margin-bottom: 14px;
+                font-size: 10.5px;
+                padding: 4px 10px;
+                border-radius: 6px;
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+
+            .affi-box-grid {
+                margin-top: 0;
+                gap: 16px;
+            }
+
+            /* Compact, Well-Proportioned Product Thumbnail */
+            .affi-prod-thumb {
+                height: 140px;
+                border-radius: 12px;
+            }
+
+            .thumb-gadget-icon {
+                font-size: 40px;
+                margin-bottom: 4px;
+            }
+
+            /* Product Typography and Ratings */
+            .affi-prod-info h3 {
+                font-size: 18px;
+                line-height: 1.32;
+                margin-bottom: 6px;
+            }
+
+            .affi-rating-row {
+                gap: 6px;
+                margin-bottom: 10px;
+            }
+
+            .affi-stars {
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+
+            .rating-score-pill {
+                font-size: 11px;
+                padding: 2px 6px;
+            }
+
+            .affi-rating-text {
+                font-size: 12px;
+            }
+
+            .affi-prod-desc {
+                font-size: 13.5px;
+                line-height: 1.5;
+                margin-bottom: 14px;
+            }
+
+            /* Single-Column Stack for Pros & Cons on Mobile */
+            .affi-pros-cons {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                padding: 12px 14px;
+                margin-bottom: 16px;
+                border-radius: 10px;
+            }
+
+            .affi-pros h5,
+            .affi-cons h5 {
+                font-size: 11.5px;
+                margin-bottom: 6px;
+            }
+
+            .affi-pros ul,
+            .affi-cons ul {
+                font-size: 12.5px;
+                gap: 5px;
+            }
+
+            /* Full-Width Touch-Friendly Mobile Action Bar & CTA */
+            .affi-action-bar {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 10px;
+                padding-top: 14px;
+            }
+
+            .affi-deal-status {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                text-align: center;
+                padding: 7px 12px;
+                font-size: 12px;
+                box-sizing: border-box;
+            }
+
+            .affi-cta-btn {
+                width: 100%;
+                justify-content: center;
+                min-height: 48px;
+                font-size: 14.5px;
+                font-weight: 700;
+                padding: 12px 20px;
+                border-radius: 10px;
+                box-sizing: border-box;
+            }
+
+            .affi-ftc-note {
+                font-size: 11px;
+                line-height: 1.45;
+                margin-top: 12px;
+                align-items: flex-start;
+                gap: 6px;
+            }
+
+            .affi-ftc-note svg {
+                flex-shrink: 0;
+                margin-top: 2px;
+            }
+
+            /* Tab 2: Versus Battle Mobile Layout */
+            .versus-box {
+                padding: 20px 15px;
+                border-radius: 14px;
+            }
+
+            .versus-device-icon {
+                font-size: 38px;
+                margin-bottom: 6px;
+            }
+
+            .versus-title {
+                font-size: 17px;
+            }
+
+            .versus-rating-row {
+                margin-bottom: 10px;
+            }
+
+            .versus-spec-list {
+                font-size: 12.5px;
+                padding: 10px 12px;
+                margin-bottom: 14px;
+                gap: 6px;
+            }
+
+            .versus-spec-list li {
+                align-items: flex-start;
+                line-height: 1.4;
+            }
+
+            .versus-spec-list li span {
+                flex-shrink: 0;
+            }
+
+            .versus-badge-winner,
+            .versus-badge-runner {
+                font-size: 10.5px;
+                padding: 3px 10px;
+                margin-bottom: 10px;
+            }
+
+            .versus-divider-wrap {
+                position: relative;
+                margin: 8px 0;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .versus-divider-wrap::before {
+                content: '';
+                position: absolute;
+                left: 12%;
+                right: 12%;
+                height: 1px;
+                background: rgba(255, 255, 255, 0.14);
+                z-index: 1;
+            }
+
+            .sandbox-display[data-canvas-theme="light"] .versus-divider-wrap::before {
+                background: rgba(0, 0, 0, 0.12);
+            }
+
+            .versus-divider-circle {
+                width: 38px;
+                height: 38px;
+                font-size: 13px;
+                position: relative;
+                z-index: 2;
+            }
+
+            /* Tab 3: Multi-Retailer Responsive Deal Selector */
+            .retailer-btn-group {
+                grid-template-columns: 1fr;
+                gap: 8px;
+                margin-top: 14px;
+            }
+
+            .retailer-btn {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 11px 14px;
+                font-size: 13.5px;
+                border-radius: 10px;
+            }
+
+            .retailer-btn strong {
+                font-size: 13.5px;
+            }
+
+            .retailer-btn span.tag-price {
+                font-size: 11.5px;
+                margin-top: 0;
+            }
+        }
+
+        /* Extra Mobile Optimization for Screens <= 480px (iPhone SE, Small Androids) */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .sandbox-display {
+                padding: 12px 10px 16px 10px;
+                border-radius: 14px;
+            }
+
+            .gutenberg-toolbar {
+                margin: -12px -10px 14px -10px;
+                padding: 8px 10px;
+                border-top-left-radius: 13px;
+                border-top-right-radius: 13px;
+            }
+
+            .affi-box-preview {
+                padding: 16px 12px 16px 12px;
+                border-radius: 12px;
+            }
+
+            .versus-box {
+                padding: 18px 12px;
             }
         }
 
