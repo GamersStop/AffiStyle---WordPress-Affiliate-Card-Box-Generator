@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AffiStyle - Modern Affiliate Card &amp; Review Box Generator for WordPress</title>
+    <title>AffiStyle - WordPress Affiliate Box &amp; Review Card Plugin</title>
     <meta name="description"
         content="Build clean, fast affiliate boxes and comparison cards in WordPress. Zero layout shift, native Gutenberg blocks, automated FTC compliance, and link cloaking.">
     <link rel="canonical" href="https://affistyle.shop">
@@ -20,51 +20,129 @@
 
     <!-- Open Graph / Social Meta -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="AffiStyle - Modern Affiliate Card &amp; Review Box Generator for WordPress">
+    <meta property="og:title" content="AffiStyle - WordPress Affiliate Box &amp; Review Card Plugin">
     <meta property="og:description"
-        content="Build clean, fast, and responsive affiliate boxes directly inside WordPress with zero coding required.">
-    <meta property="og:image" content="banner.png">
+        content="Build clean, fast affiliate boxes and comparison cards in WordPress. Zero layout shift, native Gutenberg blocks, automated FTC compliance, and link cloaking.">
+    <meta property="og:image" content="https://affistyle.shop/banner.png">
     <meta property="og:url" content="https://affistyle.shop">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="AffiStyle - WordPress Affiliate Card Engine">
+    <meta name="twitter:title" content="AffiStyle - WordPress Affiliate Box &amp; Review Card Plugin">
     <meta name="twitter:description"
-        content="Turn plain affiliate links into high-CTR product boxes, review cards, and showdown matrices.">
-    <meta name="twitter:image" content="banner.png">
+        content="Build clean, fast affiliate boxes and comparison cards in WordPress. Zero layout shift, native Gutenberg blocks, automated FTC compliance, and link cloaking.">
+    <meta name="twitter:image" content="https://affistyle.shop/banner.png">
 
     <!-- Schema.org JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "AffiStyle",
-      "operatingSystem": "WordPress 6.3+",
-      "applicationCategory": "BusinessApplication",
-      "description": "Modern open-source affiliate product cards and review box builder for WordPress with link cloaking, zero CLS, and automated FTC compliance.",
-      "url": "https://affistyle.shop",
-      "downloadUrl": "https://wordpress.org/plugins/affistyle/",
-      "offers": [
+      "@graph": [
         {
-          "@type": "Offer",
-          "name": "Free / Open-Source Edition",
-          "price": "0.00",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://wordpress.org/plugins/affistyle/"
+          "@type": "SoftwareApplication",
+          "@id": "https://affistyle.shop/#software",
+          "name": "AffiStyle",
+          "operatingSystem": "WordPress 6.3+",
+          "applicationCategory": "BusinessApplication",
+          "applicationSubCategory": "WordPress Affiliate & Performance Plugin",
+          "description": "Modern open-source affiliate product cards and review box builder for WordPress with link cloaking, zero CLS, and automated FTC compliance.",
+          "url": "https://affistyle.shop",
+          "downloadUrl": "https://wordpress.org/plugins/affistyle/",
+          "featureList": [
+            "Zero Cumulative Layout Shift (0.000 CLS)",
+            "Native WordPress Gutenberg Block Engine",
+            "Zero Frontend JavaScript Execution",
+            "Automated FTC Affiliate Disclosures & Sponsored Tag Injection",
+            "Smart Internal Link Cloaking with 302/307 Redirects",
+            "Local SQL Click Tracking with Zero External Telemetry",
+            "Multi-Retailer Choice Buttons",
+            "Automated Schema.org Product & Review Rich Snippets"
+          ],
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Free / Open-Source Edition",
+              "price": "0.00",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://wordpress.org/plugins/affistyle/"
+            },
+            {
+              "@type": "Offer",
+              "name": "Pro Commercial License",
+              "price": "40.00",
+              "priceCurrency": "USD",
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://dreainno.lemonsqueezy.com/",
+              "seller": {
+                "@type": "Organization",
+                "name": "AffiStyle",
+                "email": "dreainno@gmail.com",
+                "url": "https://affistyle.shop"
+              }
+            }
+          ]
         },
         {
-          "@type": "Offer",
-          "name": "Pro Commercial License",
-          "price": "40.00",
-          "priceCurrency": "USD",
-          "priceValidUntil": "2027-12-31",
-          "availability": "https://schema.org/InStock",
-          "url": "https://dreainno.lemonsqueezy.com/",
-          "seller": {
-            "@type": "Organization",
-            "name": "AffiStyle",
-            "email": "dreainno@gmail.com",
-            "url": "https://affistyle.shop"
-          }
+          "@type": "FAQPage",
+          "@id": "https://affistyle.shop/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does AffiStyle compare to plugins like AAWP, Lasso, or Pretty Links?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Unlike legacy plugins that rely on heavy external scripts, dynamic shortcode bloat, and mandatory Amazon API keys, AffiStyle is a lightweight, zero-JS Gutenberg block plugin. It guarantees 0.000 CLS on mobile, offers automated FTC compliance, and handles clean link cloaking locally in your WordPress SQL database without slowing down your site or requiring expensive monthly subscriptions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the core version of AffiStyle really 100% free on WordPress.org?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. The core edition hosted on the official WordPress.org plugin directory is 100% free under the open-source GPL-2.0 license. It includes Style 1 (Standard Box), Style 2 (Compact Card), star ratings, pros & cons highlights, automated FTC disclosures, smart link cloaking (/recommends/slug/), and zero CLS layout guarantees without any expiration date or forced upsells."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What additional features are included in AffiStyle Pro ($40)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The $40 Pro license unlocks all 16+ responsive designer templates, including Side-by-Side Versus Battle showdowns and full Specification Comparison Matrices. Pro also adds multi-retailer choice buttons (Amazon, Walmart, Direct Store), automated country-specific geo-targeted redirect routing (US, UK, CA, IN), custom cloaking prefixes (e.g. /deal/, /go/), and 1 full year of automatic updates and priority developer support."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does AffiStyle affect page load speeds or Google Core Web Vitals?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. AffiStyle is engineered for speed with a total asset footprint under 15KB with pure scoped CSS and vanilla JavaScript (zero jQuery or heavy runtime bloat). Styles and scripts are conditionally enqueued only on posts where an affiliate box is actively rendered, preserving 100/100 PageSpeed scores with zero Cumulative Layout Shift (0.000 CLS)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you fix affiliate plugin layout shifts on mobile?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Affiliate plugins cause Cumulative Layout Shift (CLS) on mobile when they use fixed-width table wrappers and late-loading scripts. The permanent fix is switching to native Gutenberg blocks powered by fluid CSS Grid. AffiStyle renders responsive product boxes server-side with zero frontend JavaScript, preventing layout shifts and eliminating broken mobile displays entirely."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does automated FTC compliance and link cloaking work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AffiStyle protects site SEO by automatically injecting an FTC-compliant affiliate disclosure beneath product cards and enforcing rel='nofollow sponsored' on external affiliate URLs. Link cloaking redirects cleanly through your domain without writing tracking cookies to visitor browsers, ensuring total GDPR compliance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is your refund policy if AffiStyle doesn't fit my theme?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We provide an unconditional 14-day money-back guarantee. If you experience technical incompatibilities with your WordPress theme or decide it is not the right fit for your workflow, email support at dreainno@gmail.com for a swift, courteous refund."
+              }
+            }
+          ]
         }
       ]
     }
@@ -6306,9 +6384,7 @@
                         <div class="flagship-content">
                             <div>
                                 <h3>Automated FTC &amp; Smart Link Cloaking.</h3>
-                                <p>Protect domain authority with clean, branded 302 internal redirects while automated
-                                    <code>rel="sponsored"</code> tags and FTC notices keep your site 100% compliant.
-                                </p>
+                                <p>Built to satisfy strict Amazon Associates Operating Agreement guidelines, including automated FTC disclosures, nofollow sponsored tags, and clean redirect cloaking.</p>
                             </div>
                             <button type="button" class="flagship-action-chip" id="feature-open-docs">
                                 <span>View Compliance Specs</span>
@@ -6354,7 +6430,7 @@
                             <div>
                                 <h3>Edge CDN Geo-Routing &amp; Multi-Store Deals.</h3>
                                 <p>Capture lost international commissions by dynamically routing visitors to regional
-                                    partner storefronts while offering multi-retailer purchase freedom.</p>
+                                    Amazon Associates storefronts (US, UK, CA) and localized retail partners.</p>
                             </div>
                             <a href="#sandbox" class="flagship-action-chip" data-tab-target="retailer">
                                 <span>Test Multi-Store Switcher</span>
@@ -6600,7 +6676,7 @@
                                             <div class="roadmap-feature-row">
                                                 <span class="roadmap-tier-badge tier-free">Free Core</span>
                                                 <div class="roadmap-feature-text">
-                                                    <strong>1-Click Metadata &amp; OG Importer:</strong> Extracts title, high-res image, "Check Price" shield + admin preview modal.
+                                                    <strong>1-Click URL Importer for Amazon Associates &amp; eCommerce Stores (Zero API required):</strong> Extracts title, high-res image, "Check Price" shield + admin preview modal.
                                                 </div>
                                             </div>
                                             <div class="roadmap-feature-row">
@@ -6915,7 +6991,7 @@
                                         <div class="roadmap-feature-row">
                                             <span class="roadmap-tier-badge tier-free">Free Core</span>
                                             <div class="roadmap-feature-text">
-                                                <strong>1-Click Metadata &amp; OG Importer:</strong> Extracts title, high-res image, "Check Price" shield + admin preview modal.
+                                                <strong>1-Click URL Importer for Amazon Associates &amp; eCommerce Stores (Zero API required):</strong> Extracts title, high-res image, "Check Price" shield + admin preview modal.
                                             </div>
                                         </div>
                                         <div class="roadmap-feature-row">
@@ -7543,7 +7619,7 @@
                         <!-- Category Filter Pills -->
                         <div class="faq-filter-bar" role="tablist" aria-label="Filter FAQ by topic">
                             <button type="button" class="faq-filter-pill active" data-category="all" role="tab"
-                                aria-selected="true">All Questions (6)</button>
+                                aria-selected="true">All Questions (7)</button>
                             <button type="button" class="faq-filter-pill" data-category="general" role="tab"
                                 aria-selected="false">Getting Started</button>
                             <button type="button" class="faq-filter-pill" data-category="pro" role="tab"
@@ -7573,6 +7649,20 @@
                                         ratings, pros &amp; cons highlights, automated FTC disclosures, smart link
                                         cloaking (<code>/recommends/slug/</code>), and zero CLS layout guarantees
                                         without any expiration date or forced upsells.</p>
+                                </div>
+                            </details>
+
+                            <!-- Question 1b: Competitor Comparison -->
+                            <details class="faq-item" data-category="general">
+                                <summary class="faq-question">
+                                    <div class="faq-q-content">
+                                        <span class="faq-category-tag cat-general">Comparison</span>
+                                        <span class="faq-q-text">How does AffiStyle compare to plugins like AAWP, Lasso, or Pretty Links?</span>
+                                    </div>
+                                    <div class="faq-toggle-pill" aria-hidden="true">+</div>
+                                </summary>
+                                <div class="faq-answer">
+                                    <p>Unlike legacy plugins that rely on heavy external scripts, dynamic shortcode bloat, and mandatory Amazon API keys, AffiStyle is a lightweight, zero-JS Gutenberg block plugin. It guarantees 0.000 CLS on mobile, offers automated FTC compliance, and handles clean link cloaking locally in your WordPress SQL database without slowing down your site or requiring expensive monthly subscriptions.</p>
                                 </div>
                             </details>
 
