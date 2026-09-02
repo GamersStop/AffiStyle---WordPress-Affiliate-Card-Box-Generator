@@ -2848,6 +2848,736 @@
             width: 100%;
         }
 
+        /* ==========================================================================
+           Product Roadmap Section (#roadmap) - Compact Headings + Hover Popovers
+           ========================================================================== */
+        .roadmap-section {
+            padding: 60px 0 85px 0;
+            position: relative;
+            overflow: visible;
+        }
+
+        .roadmap-serpentine-wrapper {
+            position: relative;
+            margin: 36px auto 36px auto;
+            max-width: 1200px;
+            overflow: visible;
+        }
+
+        /* Desktop Serpentine Grid (>= 992px) */
+        .roadmap-serpentine-desktop {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: visible;
+        }
+
+        .timeline-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            overflow: visible;
+            position: relative;
+        }
+
+        .timeline-row-top {
+            align-items: end;
+            margin-bottom: 0;
+            min-height: 105px;
+        }
+
+        .timeline-row-bottom {
+            align-items: start;
+            margin-top: 0;
+            min-height: 105px;
+        }
+
+        .timeline-col {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            position: relative;
+            overflow: visible;
+        }
+
+        .timeline-col.timeline-spacer {
+            visibility: hidden;
+            pointer-events: none;
+            min-height: 10px;
+        }
+
+        /* Central Pipeline Track Row */
+        .timeline-track-row {
+            position: relative;
+            height: 180px;
+            margin: 2px 0;
+            width: 100%;
+        }
+
+        .timeline-pipeline-svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .timeline-nodes-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .timeline-node-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            pointer-events: auto;
+            cursor: pointer;
+        }
+
+        .timeline-node-circle {
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            cursor: pointer;
+            transition: transform 0.35s var(--ease-spring), box-shadow 0.35s ease;
+            border: 3px solid rgba(255, 255, 255, 0.28);
+            position: relative;
+            z-index: 3;
+        }
+
+        .timeline-node-circle:hover,
+        .timeline-node-item:hover .timeline-node-circle {
+            transform: scale(1.14);
+        }
+
+        .timeline-node-circle svg {
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
+        }
+
+        /* Node Gradient Variations */
+        .node-cyan .timeline-node-circle {
+            background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.55), inset 0 2px 4px rgba(255, 255, 255, 0.4);
+        }
+        .node-cyan .timeline-node-circle:hover,
+        .node-cyan:hover .timeline-node-circle {
+            box-shadow: 0 0 45px rgba(56, 189, 248, 0.9);
+        }
+
+        .node-purple .timeline-node-circle {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            box-shadow: 0 0 30px rgba(139, 92, 246, 0.55), inset 0 2px 4px rgba(255, 255, 255, 0.4);
+        }
+        .node-purple .timeline-node-circle:hover,
+        .node-purple:hover .timeline-node-circle {
+            box-shadow: 0 0 45px rgba(139, 92, 246, 0.9);
+        }
+
+        .node-gold .timeline-node-circle {
+            background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+            box-shadow: 0 0 30px rgba(251, 191, 36, 0.55), inset 0 2px 4px rgba(255, 255, 255, 0.4);
+        }
+        .node-gold .timeline-node-circle:hover,
+        .node-gold:hover .timeline-node-circle {
+            box-shadow: 0 0 45px rgba(251, 191, 36, 0.9);
+        }
+
+        .node-emerald .timeline-node-circle {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            box-shadow: 0 0 30px rgba(16, 185, 129, 0.55), inset 0 2px 4px rgba(255, 255, 255, 0.4);
+        }
+        .node-emerald .timeline-node-circle:hover,
+        .node-emerald:hover .timeline-node-circle {
+            box-shadow: 0 0 45px rgba(16, 185, 129, 0.9);
+        }
+
+        .timeline-node-badge {
+            position: absolute;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            padding: 3px 9px;
+            border-radius: 100px;
+            background: rgba(15, 23, 42, 0.92);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+            white-space: nowrap;
+            pointer-events: none;
+        }
+
+        .node-cyan .timeline-node-badge {
+            color: #38bdf8;
+            border-color: rgba(56, 189, 248, 0.45);
+            bottom: 12px;
+        }
+
+        .node-purple .timeline-node-badge {
+            color: #c084fc;
+            border-color: rgba(139, 92, 246, 0.45);
+            top: 12px;
+        }
+
+        .node-gold .timeline-node-badge {
+            color: #fbbf24;
+            border-color: rgba(251, 191, 36, 0.45);
+            bottom: 12px;
+        }
+
+        .node-emerald .timeline-node-badge {
+            color: #34d399;
+            border-color: rgba(16, 185, 129, 0.45);
+            top: 12px;
+        }
+
+        /* Milestone Item Wrapper */
+        .roadmap-item-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: visible;
+        }
+
+        /* 1. Compact Resting Heading Card (Always visible, fits on screen) */
+        .roadmap-heading-card {
+            border-radius: 16px;
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.65);
+            padding: 13px 15px;
+            cursor: pointer;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            transition: all 0.3s var(--ease-spring);
+            position: relative;
+            z-index: 5;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .roadmap-item-wrapper:hover .roadmap-heading-card,
+        .roadmap-item-wrapper.is-node-hovered .roadmap-heading-card {
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 15px 35px -8px rgba(0, 0, 0, 0.85);
+            transform: translateY(-2px);
+        }
+
+        .roadmap-card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .roadmap-version-tag {
+            font-size: 10.5px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            border-radius: 6px;
+            border: 1px solid;
+        }
+
+        .roadmap-status-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            border-radius: 100px;
+        }
+
+        .roadmap-pulse-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            display: inline-block;
+            animation: roadmapPulse 1.8s infinite ease-in-out;
+        }
+
+        @keyframes roadmapPulse {
+            0%, 100% {
+                transform: scale(0.9);
+                opacity: 0.6;
+            }
+            50% {
+                transform: scale(1.35);
+                opacity: 1;
+            }
+        }
+
+        .roadmap-card-headline {
+            font-size: 14.5px;
+            font-weight: 800;
+            letter-spacing: -0.01em;
+            line-height: 1.25;
+            color: #ffffff;
+            margin: 2px 0 0 0;
+        }
+
+        .roadmap-hover-trigger {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 10.5px;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-top: 3px;
+            transition: color 0.2s ease;
+        }
+
+        .roadmap-item-wrapper:hover .roadmap-hover-trigger,
+        .roadmap-item-wrapper.is-node-hovered .roadmap-hover-trigger {
+            color: #ffffff;
+        }
+
+        .hover-icon {
+            font-size: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .roadmap-item-wrapper:hover .hover-icon,
+        .roadmap-item-wrapper.is-node-hovered .hover-icon {
+            transform: scale(1.3);
+        }
+
+        /* 2. Full Popover Card (Opens on Hover/Tap) */
+        .roadmap-popover-card {
+            position: absolute;
+            width: 330px;
+            max-width: 90vw;
+            border-radius: 18px;
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.95), 0 0 35px -5px rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 16px 18px;
+            display: flex;
+            flex-direction: column;
+            z-index: 60;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Top Row Cards pop up upwards from the stem */
+        .timeline-row-top .roadmap-popover-card {
+            bottom: 0;
+        }
+
+        /* Bottom Row Cards pop down downwards from the stem */
+        .timeline-row-bottom .roadmap-popover-card {
+            top: 0;
+        }
+
+        /* Col 1 (Node 1): Left-Aligned with Column */
+        [data-roadmap-node="1"] .roadmap-popover-card {
+            left: 0;
+            transform: translateY(6px) scale(0.97);
+        }
+        [data-roadmap-node="1"]:hover .roadmap-popover-card,
+        [data-roadmap-node="1"].is-node-hovered .roadmap-popover-card {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0) scale(1);
+        }
+
+        /* Col 2 (Node 2): Centered */
+        [data-roadmap-node="2"] .roadmap-popover-card {
+            left: 50%;
+            transform: translateX(-50%) translateY(-6px) scale(0.97);
+        }
+        [data-roadmap-node="2"]:hover .roadmap-popover-card,
+        [data-roadmap-node="2"].is-node-hovered .roadmap-popover-card {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateX(-50%) translateY(0) scale(1);
+        }
+
+        /* Col 3 (Node 3): Centered */
+        [data-roadmap-node="3"] .roadmap-popover-card {
+            left: 50%;
+            transform: translateX(-50%) translateY(6px) scale(0.97);
+        }
+        [data-roadmap-node="3"]:hover .roadmap-popover-card,
+        [data-roadmap-node="3"].is-node-hovered .roadmap-popover-card {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateX(-50%) translateY(0) scale(1);
+        }
+
+        /* Col 4 (Node 4): Right-Aligned with Column */
+        [data-roadmap-node="4"] .roadmap-popover-card {
+            right: 0;
+            left: auto;
+            transform: translateY(-6px) scale(0.97);
+        }
+        [data-roadmap-node="4"]:hover .roadmap-popover-card,
+        [data-roadmap-node="4"].is-node-hovered .roadmap-popover-card {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0) scale(1);
+        }
+
+        /* Theme Styling for Popovers & Heading Cards */
+        .theme-v1-1 .roadmap-heading-card,
+        .theme-v1-1 .roadmap-popover-card {
+            background:
+                radial-gradient(ellipse at 30% 10%, rgba(56, 189, 248, 0.22) 0%, transparent 60%),
+                radial-gradient(ellipse at 85% 30%, rgba(37, 99, 235, 0.16) 0%, transparent 55%),
+                #0b1324;
+        }
+        .theme-v1-1 .roadmap-trim {
+            background: linear-gradient(90deg, #06b6d4 0%, #3b82f6 100%);
+        }
+        .theme-v1-1 .roadmap-version-tag {
+            color: var(--accent-cyan);
+            border-color: rgba(56, 189, 248, 0.35);
+            background: rgba(56, 189, 248, 0.12);
+        }
+        .theme-v1-1 .roadmap-status-pill {
+            color: #38bdf8;
+            background: rgba(56, 189, 248, 0.14);
+            border: 1px solid rgba(56, 189, 248, 0.4);
+        }
+        .theme-v1-1 .roadmap-pulse-dot {
+            background: #38bdf8;
+            box-shadow: 0 0 10px #38bdf8;
+        }
+        .theme-v1-1 .roadmap-popover-card {
+            box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.95), 0 0 35px -5px rgba(56, 189, 248, 0.3);
+        }
+
+        .theme-v1-2 .roadmap-heading-card,
+        .theme-v1-2 .roadmap-popover-card {
+            background:
+                radial-gradient(ellipse at 30% 10%, rgba(139, 92, 246, 0.22) 0%, transparent 60%),
+                radial-gradient(ellipse at 85% 30%, rgba(236, 72, 153, 0.16) 0%, transparent 55%),
+                #140e24;
+        }
+        .theme-v1-2 .roadmap-trim {
+            background: linear-gradient(90deg, #a855f7 0%, #ec4899 100%);
+        }
+        .theme-v1-2 .roadmap-version-tag {
+            color: var(--accent-purple);
+            border-color: rgba(139, 92, 246, 0.35);
+            background: rgba(139, 92, 246, 0.12);
+        }
+        .theme-v1-2 .roadmap-status-pill {
+            color: #c084fc;
+            background: rgba(139, 92, 246, 0.14);
+            border: 1px solid rgba(139, 92, 246, 0.4);
+        }
+        .theme-v1-2 .roadmap-pulse-dot {
+            background: #c084fc;
+            box-shadow: 0 0 10px #c084fc;
+        }
+        .theme-v1-2 .roadmap-popover-card {
+            box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.95), 0 0 35px -5px rgba(139, 92, 246, 0.3);
+        }
+
+        .theme-v1-3 .roadmap-heading-card,
+        .theme-v1-3 .roadmap-popover-card {
+            background:
+                radial-gradient(ellipse at 30% 10%, rgba(251, 191, 36, 0.22) 0%, transparent 60%),
+                radial-gradient(ellipse at 85% 30%, rgba(245, 158, 11, 0.16) 0%, transparent 55%),
+                #16130e;
+        }
+        .theme-v1-3 .roadmap-trim {
+            background: linear-gradient(90deg, #f59e0b 0%, #fbbf24 100%);
+        }
+        .theme-v1-3 .roadmap-version-tag {
+            color: var(--accent-gold);
+            border-color: rgba(251, 191, 36, 0.35);
+            background: rgba(251, 191, 36, 0.12);
+        }
+        .theme-v1-3 .roadmap-status-pill {
+            color: #fbbf24;
+            background: rgba(251, 191, 36, 0.14);
+            border: 1px solid rgba(251, 191, 36, 0.4);
+        }
+        .theme-v1-3 .roadmap-pulse-dot {
+            background: #fbbf24;
+            box-shadow: 0 0 10px #fbbf24;
+        }
+        .theme-v1-3 .roadmap-popover-card {
+            box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.95), 0 0 35px -5px rgba(251, 191, 36, 0.3);
+        }
+
+        .theme-v1-4 .roadmap-heading-card,
+        .theme-v1-4 .roadmap-popover-card {
+            background:
+                radial-gradient(ellipse at 30% 10%, rgba(16, 185, 129, 0.22) 0%, transparent 60%),
+                radial-gradient(ellipse at 85% 30%, rgba(6, 182, 212, 0.16) 0%, transparent 55%),
+                #0c1815;
+        }
+        .theme-v1-4 .roadmap-trim {
+            background: linear-gradient(90deg, #10b981 0%, #06b6d4 100%);
+        }
+        .theme-v1-4 .roadmap-version-tag {
+            color: var(--accent-emerald);
+            border-color: rgba(16, 185, 129, 0.35);
+            background: rgba(16, 185, 129, 0.12);
+        }
+        .theme-v1-4 .roadmap-status-pill {
+            color: #34d399;
+            background: rgba(16, 185, 129, 0.14);
+            border: 1px solid rgba(16, 185, 129, 0.4);
+        }
+        .theme-v1-4 .roadmap-pulse-dot {
+            background: #34d399;
+            box-shadow: 0 0 10px #34d399;
+        }
+        .theme-v1-4 .roadmap-popover-card {
+            box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.95), 0 0 35px -5px rgba(16, 185, 129, 0.3);
+        }
+
+        .roadmap-card-desc {
+            font-size: 12.5px;
+            color: #cbd5e1;
+            line-height: 1.45;
+            margin: 6px 0 10px 0;
+        }
+
+        .roadmap-comparison {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            background: rgba(6, 10, 20, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            padding: 10px 12px;
+        }
+
+        .roadmap-feature-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 11.5px;
+            line-height: 1.4;
+            line-height: 1.45;
+        }
+
+        .roadmap-tier-badge {
+            font-size: 9.5px;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 2px 6px;
+            border-radius: 5px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .roadmap-tier-badge.tier-free {
+            background: rgba(148, 163, 184, 0.15);
+            color: #94a3b8;
+            border: 1px solid rgba(148, 163, 184, 0.25);
+        }
+
+        .roadmap-tier-badge.tier-pro {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.35) 0%, rgba(139, 92, 246, 0.35) 100%);
+            color: #93c5fd;
+            border: 1px solid rgba(59, 130, 246, 0.5);
+            box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
+        }
+
+        .roadmap-feature-text {
+            color: #cbd5e1;
+            flex: 1;
+        }
+
+        .roadmap-feature-text strong {
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        .roadmap-trim {
+            height: 3px;
+            width: 100%;
+            border-radius: 2px;
+        }
+
+        /* Mobile Serpentine Pipeline (< 992px) */
+        .roadmap-serpentine-mobile {
+            display: none;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+            padding-left: 64px;
+        }
+
+        .roadmap-mobile-track-line {
+            position: absolute;
+            left: 26px;
+            top: 20px;
+            bottom: 20px;
+            width: 3px;
+            background: linear-gradient(180deg, #06b6d4 0%, #3b82f6 30%, #8b5cf6 60%, #f59e0b 85%, #10b981 100%);
+            box-shadow: 0 0 12px rgba(59, 130, 246, 0.4);
+            border-radius: 3px;
+        }
+
+        .roadmap-mobile-step {
+            position: relative;
+        }
+
+        .roadmap-mobile-node {
+            position: absolute;
+            left: -64px;
+            top: 14px;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            z-index: 2;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+        }
+
+        .roadmap-mobile-step .roadmap-popover-card {
+            position: static;
+            width: 100%;
+            opacity: 1;
+            pointer-events: auto;
+            transform: none;
+            box-shadow: none;
+            margin-top: 8px;
+            display: none;
+        }
+
+        .roadmap-mobile-step.is-open .roadmap-popover-card {
+            display: flex;
+        }
+
+        /* Community Feedback Action Strip */
+        .roadmap-feedback-bar {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 18px;
+            padding: 22px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.65);
+        }
+
+        .roadmap-feedback-copy {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .roadmap-feedback-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            background: rgba(56, 189, 248, 0.12);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 19px;
+            color: var(--accent-cyan);
+            flex-shrink: 0;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.18);
+        }
+
+        .roadmap-feedback-copy p {
+            font-size: 14.5px;
+            font-weight: 600;
+            color: #f1f5f9;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .roadmap-feedback-copy p span.hand-script {
+            color: var(--accent-gold);
+            font-size: 1.25em;
+            margin-left: 4px;
+        }
+
+        /* Responsive Breakpoints for Serpentine Roadmap */
+        @media (max-width: 991px) {
+            .roadmap-serpentine-desktop {
+                display: none;
+            }
+            .roadmap-serpentine-mobile {
+                display: flex;
+            }
+            .roadmap-feedback-bar {
+                flex-direction: column;
+                text-align: center;
+                padding: 22px 18px;
+            }
+            .roadmap-feedback-copy {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 540px) {
+            .roadmap-serpentine-mobile {
+                padding-left: 52px;
+                gap: 18px;
+            }
+            .roadmap-mobile-track-line {
+                left: 20px;
+            }
+            .roadmap-mobile-node {
+                left: -52px;
+                top: 12px;
+                width: 42px;
+                height: 42px;
+            }
+            .roadmap-mobile-node svg {
+                width: 18px;
+                height: 18px;
+            }
+            .roadmap-heading-card {
+                padding: 12px 14px;
+            }
+            .roadmap-card-headline {
+                font-size: 14.5px;
+            }
+            .roadmap-feedback-bar .flagship-action-chip {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
         /* Lead Magnet Section (leadmagenet.txt) */
         .leadmagnet-section {
             padding: 90px 0;
@@ -4846,6 +5576,7 @@
             <!-- Streamlined Desktop Navigation -->
             <nav class="nav-links">
                 <a href="#features" class="nav-link">Features</a>
+                <a href="#roadmap" class="nav-link">Roadmap</a>
                 <a href="#sandbox" class="nav-link">Live Demos</a>
                 <a href="#leadmagnet" class="nav-link nav-link-magnet">
                     <span>Free Swipe File</span>
@@ -4931,6 +5662,7 @@
     <div class="mobile-drawer-overlay" id="mobile-drawer">
         <div class="mobile-drawer-content">
             <a href="#features" class="mobile-drawer-link mobile-nav-close">Features <span>&rarr;</span></a>
+            <a href="#roadmap" class="mobile-drawer-link mobile-nav-close">Product Roadmap <span>&rarr;</span></a>
             <a href="#sandbox" class="mobile-drawer-link mobile-nav-close">Live Demos <span>&rarr;</span></a>
             <a href="#leadmagnet" class="mobile-drawer-link mobile-nav-close">
                 <span>Free Swipe File <span class="nav-micro-badge">NEW</span></span>
@@ -5809,6 +6541,538 @@
                         </div>
                         <div class="flagship-trim"></div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Roadmap Section (#roadmap) -->
+        <section class="roadmap-section" id="roadmap" style="position: relative; overflow: hidden;">
+            <div class="ghost-watermark" aria-hidden="true">ROADMAP</div>
+            <div class="container" style="position: relative; z-index: 1;">
+                <div class="section-header">
+                    <div class="section-script-kicker">
+                        <span class="hand-script">building in public</span>
+                        <span style="color: var(--accent-gold); font-size: 14px;">✦</span>
+                    </div>
+                    <span class="section-tag">Product Evolution</span>
+                    <h2>AffiStyle Product Roadmap: The Flywheel</h2>
+                    <p>Solving the real headaches of WordPress publishers: elimination of manual data entry, ban-proof Amazon compliance, and zero-leak revenue protection.</p>
+                </div>
+
+                <div class="roadmap-serpentine-wrapper">
+                    <!-- Desktop Serpentine Pipeline (>= 992px) -->
+                    <div class="roadmap-serpentine-desktop">
+                        <!-- Top Row: Compact Heading Cards for Node 1 and Node 3 -->
+                        <div class="timeline-row timeline-row-top">
+                            <!-- Col 1: Milestone v1.1 Heading Card + Popover -->
+                            <div class="timeline-col">
+                                <div class="roadmap-item-wrapper theme-v1-1" data-roadmap-node="1">
+                                    <!-- Compact Heading Card (Visible by default) -->
+                                    <div class="roadmap-heading-card" tabindex="0" role="button" aria-expanded="false" aria-label="Milestone v1.1: Friction-Killer &amp; Mobile Sticky CTA">
+                                        <div class="roadmap-card-header">
+                                            <span class="roadmap-version-tag">Milestone v1.1</span>
+                                            <span class="roadmap-status-pill">
+                                                <span class="roadmap-pulse-dot" aria-hidden="true"></span>
+                                                <span>In Dev</span>
+                                            </span>
+                                        </div>
+                                        <h3 class="roadmap-card-headline">Friction-Killer &amp; Mobile Sticky CTA</h3>
+                                        <div class="roadmap-hover-trigger">
+                                            <span>Hover to explore features</span>
+                                            <span class="hover-icon">✦</span>
+                                        </div>
+                                        <div class="roadmap-trim"></div>
+                                    </div>
+
+                                    <!-- Full Card Popover (Revealed on hover) -->
+                                    <div class="roadmap-popover-card" role="tooltip">
+                                        <div class="roadmap-card-header">
+                                            <span class="roadmap-version-tag">Milestone v1.1</span>
+                                            <span class="roadmap-status-pill">
+                                                <span class="roadmap-pulse-dot" aria-hidden="true"></span>
+                                                <span>In Dev &bull; Next Release</span>
+                                            </span>
+                                        </div>
+                                        <h3 class="roadmap-card-headline" style="font-size: 16px; margin-bottom: 6px;">Friction-Killer &amp; Mobile Sticky CTA</h3>
+                                        <p class="roadmap-card-desc">Instant automated product importing without fragile API keys, paired with high-converting mobile viewport retention docks.</p>
+                                        
+                                        <div class="roadmap-comparison">
+                                            <div class="roadmap-feature-row">
+                                                <span class="roadmap-tier-badge tier-free">Free Core</span>
+                                                <div class="roadmap-feature-text">
+                                                    <strong>1-Click Metadata &amp; OG Importer:</strong> Extracts title, high-res image, "Check Price" shield + admin preview modal.
+                                                </div>
+                                            </div>
+                                            <div class="roadmap-feature-row">
+                                                <span class="roadmap-tier-badge tier-pro">Pro ($40)</span>
+                                                <div class="roadmap-feature-text">
+                                                    <strong>Mobile Floating Sticky CTA Dock:</strong> Recovers 70%+ mobile bounce traffic + multi-store 1-click fetch.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-trim" style="margin-top: 14px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Col 2: Spacer for Bottom Node 2 -->
+                            <div class="timeline-col timeline-spacer" aria-hidden="true"></div>
+
+                            <!-- Col 3: Milestone v1.3 Heading Card + Popover -->
+                            <div class="timeline-col">
+                                <div class="roadmap-item-wrapper theme-v1-3" data-roadmap-node="3">
+                                    <!-- Compact Heading Card (Visible by default) -->
+                                    <div class="roadmap-heading-card" tabindex="0" role="button" aria-expanded="false" aria-label="Milestone v1.3: High-Ticket Multi-Product Comparison">
+                                        <div class="roadmap-card-header">
+                                            <span class="roadmap-version-tag">Milestone v1.3</span>
+                                            <span class="roadmap-status-pill">
+                                                <span class="roadmap-pulse-dot" aria-hidden="true"></span>
+                                                <span>Planned</span>
+                                            </span>
+                                        </div>
+                                        <h3 class="roadmap-card-headline">High-Ticket Multi-Product Comparison</h3>
+                                        <div class="roadmap-hover-trigger">
+                                            <span>Hover to explore features</span>
+                                            <span class="hover-icon">✦</span>
+                                        </div>
+                                        <div class="roadmap-trim"></div>
+                                    </div>
+
+                                    <!-- Full Card Popover (Revealed on hover) -->
+                                    <div class="roadmap-popover-card" role="tooltip">
+                                        <div class="roadmap-card-header">
+                                            <span class="roadmap-version-tag">Milestone v1.3</span>
+                                            <span class="roadmap-status-pill">
+                                                <span class="roadmap-pulse-dot" aria-hidden="true"></span>
+                                                <span>Planned</span>
+                                            </span>
+                                        </div>
+                                        <h3 class="roadmap-card-headline" style="font-size: 16px; margin-bottom: 6px;">High-Ticket Multi-Product Comparison</h3>
+                                        <p class="roadmap-card-desc">Maximize commission values for roundups and buyer guides with interactive showdown matrices and deal timers.</p>
+                                        
+                                        <div class="roadmap-comparison">
+                                            <div class="roadmap-feature-row">
+                                                <span class="roadmap-tier-badge tier-free">Free Core</span>
+                                                <div class="roadmap-feature-text">
+                                                    <strong>Interactive Coupon Box:</strong> High-CTR voucher box featuring instant "Click to Copy" animated visual feedback.
+                                                </div>
+                                            </div>
+                                            <div class="roadmap-feature-row">
+                                                <span class="roadmap-tier-badge tier-pro">Pro ($40)</span>
+                                                <div class="roadmap-feature-text">
+                                                    <strong>3–5 Product Showdown Table:</strong> Fluid side-by-side spec comparison + flash deal countdown urgency timers.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-trim" style="margin-top: 14px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Col 4: Spacer for Bottom Node 4 -->
+                            <div class="timeline-col timeline-spacer" aria-hidden="true"></div>
+                        </div>
+
+                        <!-- Center Row: Visual Pipeline Track with Nodes, Arcs & Stems -->
+                        <div class="timeline-track-row">
+                            <svg class="timeline-pipeline-svg" viewBox="0 0 1192 180" fill="none" preserveAspectRatio="none">
+                                <defs>
+                                    <linearGradient id="pipe-grad-global" x1="0" y1="90" x2="1192" y2="90" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#06b6d4" />
+                                        <stop offset="12%" stop-color="#38bdf8" />
+                                        <stop offset="38%" stop-color="#8b5cf6" />
+                                        <stop offset="63%" stop-color="#fbbf24" />
+                                        <stop offset="88%" stop-color="#10b981" />
+                                        <stop offset="100%" stop-color="#059669" />
+                                    </linearGradient>
+                                    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+                                        <feGaussianBlur stdDeviation="3.5" result="blur" />
+                                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                    </filter>
+                                    <filter id="glow-purple" x="-30%" y="-30%" width="160%" height="160%">
+                                        <feGaussianBlur stdDeviation="3.5" result="blur" />
+                                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                    </filter>
+                                    <filter id="glow-gold" x="-30%" y="-30%" width="160%" height="160%">
+                                        <feGaussianBlur stdDeviation="3.5" result="blur" />
+                                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                    </filter>
+                                    <filter id="glow-emerald" x="-30%" y="-30%" width="160%" height="160%">
+                                        <feGaussianBlur stdDeviation="3.5" result="blur" />
+                                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                    </filter>
+                                </defs>
+
+                                <!-- Continuous Flow Baseline through Center (y = 90) -->
+                                <line x1="0" y1="90" x2="1192" y2="90" stroke="url(#pipe-grad-global)" stroke-width="3.5" opacity="0.85" />
+
+                                <!-- Node 1 (cx=140): Concentric Arc wrapping over top + Vertical Stem UP + Terminal Dot -->
+                                <path d="M 92 90 A 48 48 0 0 1 140 42 L 140 18" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" fill="none" filter="url(#glow-cyan)" />
+                                <circle cx="140" cy="14" r="5" fill="#38bdf8" filter="url(#glow-cyan)" />
+
+                                <!-- Node 2 (cx=444): Concentric Arc wrapping under bottom + Vertical Stem DOWN + Terminal Dot -->
+                                <path d="M 396 90 A 48 48 0 0 0 444 138 L 444 162" stroke="#c084fc" stroke-width="3" stroke-linecap="round" fill="none" filter="url(#glow-purple)" />
+                                <circle cx="444" cy="166" r="5" fill="#c084fc" filter="url(#glow-purple)" />
+
+                                <!-- Node 3 (cx=748): Concentric Arc wrapping over top + Vertical Stem UP + Terminal Dot -->
+                                <path d="M 700 90 A 48 48 0 0 1 748 42 L 748 18" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" fill="none" filter="url(#glow-gold)" />
+                                <circle cx="748" cy="14" r="5" fill="#fbbf24" filter="url(#glow-gold)" />
+
+                                <!-- Node 4 (cx=1052): Concentric Arc wrapping under bottom + Vertical Stem DOWN + Terminal Dot -->
+                                <path d="M 1004 90 A 48 48 0 0 0 1052 138 L 1052 162" stroke="#34d399" stroke-width="3" stroke-linecap="round" fill="none" filter="url(#glow-emerald)" />
+                                <circle cx="1052" cy="166" r="5" fill="#34d399" filter="url(#glow-emerald)" />
+                            </svg>
+
+                            <!-- Node Circles with Custom Icons & Version Badges -->
+                            <div class="timeline-nodes-overlay">
+                                <!-- Node 1 Item -->
+                                <div class="timeline-node-item node-cyan" data-roadmap-node="1" title="Milestone v1.1 - Hover to view features">
+                                    <div class="timeline-node-circle">
+                                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                        </svg>
+                                    </div>
+                                    <span class="timeline-node-badge">v1.1</span>
+                                </div>
+
+                                <!-- Node 2 Item -->
+                                <div class="timeline-node-item node-purple" data-roadmap-node="2" title="Milestone v1.2 - Hover to view features">
+                                    <div class="timeline-node-circle">
+                                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="timeline-node-badge">v1.2</span>
+                                </div>
+
+                                <!-- Node 3 Item -->
+                                <div class="timeline-node-item node-gold" data-roadmap-node="3" title="Milestone v1.3 - Hover to view features">
+                                    <div class="timeline-node-circle">
+                                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                                        </svg>
+                                    </div>
+                                    <span class="timeline-node-badge">v1.3</span>
+                                </div>
+
+                                <!-- Node 4 Item -->
+                                <div class="timeline-node-item node-emerald" data-roadmap-node="4" title="Milestone v1.4 - Hover to view features">
+                                    <div class="timeline-node-circle">
+                                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                        </svg>
+                                    </div>
+                                    <span class="timeline-node-badge">v1.4</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Row: Compact Heading Cards for Node 2 and Node 4 -->
+                        <div class="timeline-row timeline-row-bottom">
+                            <!-- Col 1: Spacer for Top Node 1 -->
+                            <div class="timeline-col timeline-spacer" aria-hidden="true"></div>
+
+                            <!-- Col 2: Milestone v1.2 Heading Card + Popover -->
+                            <div class="timeline-col">
+                                <div class="roadmap-item-wrapper theme-v1-2" data-roadmap-node="2">
+                                    <!-- Compact Heading Card (Visible by default) -->
+                                    <div class="roadmap-heading-card" tabindex="0" role="button" aria-expanded="false" aria-label="Milestone v1.2: Sitewide Passive Auto-Monetization">
+                                        <div class="roadmap-trim" style="margin-bottom: 2px;"></div>
+                                        <div class="roadmap-card-header">
+                                            <span class="roadmap-version-tag">Milestone v1.2</span>
+                                            <span class="roadmap-status-pill">
+                                                <span class="roadmap-pulse-dot" aria-hidden="true"></span>
+                                                <span>Planned</span>
+                                            </span>
+                                        </div>
+                                        <h3 class="roadmap-card-headline">Sitewide Passive Auto-Monetization</h3>
+                                        <div class="roadmap-hover-trigger">
+                                            <span>Hover to explore features</span>
+                                            <span class="hover-icon">✦</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Full Card Popover (Revealed on hover) -->
+                                    <div class="roadmap-popover-card" role="tooltip">
+                                        <div class="roadmap-card-header">
+                                            <span class="roadmap-version-tag">Milestone v1.2</span>
+                                            <span class="roadmap-status-pill">
+                                                <span class="roadmap-pulse-dot" aria-hidden="true"></span>
+                                                <span>Planned</span>
+                                            </span>
+                                        </div>
+                                        <h3 class="roadmap-card-headline" style="font-size: 16px; margin-bottom: 6px;">Sitewide Passive Auto-Monetization</h3>
+                                        <p class="roadmap-card-desc">Turn unmonetized editorial archives into automated commission streams with non-intrusive interactive preview cards.</p>
+                                        
+                                        <div class="roadmap-comparison">
+                                            <div class="roadmap-feature-row">
+                                                <span class="roadmap-tier-badge tier-free">Free Core</span>
+                                                <div class="roadmap-feature-text">
+                                                    <strong>Keyword Auto-Linker:</strong> Turns target mentions across archives into cloaked links with strict frequency caps.
+                                                </div>
+                                            </div>
+                                            <div class="roadmap-feature-row">
+                                                <span class="roadmap-tier-badge tier-pro">Pro ($40)</span>
+                                                <div class="roadmap-feature-text">
+                                                    <strong>Hover Popover Micro-Cards:</strong> Animated rich card previews on hover/tap + granular post exclusions.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-trim" style="margin-top: 14px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Col 3: Spacer for Top Node 3 -->
+                            <div class="timeline-col timeline-spacer" aria-hidden="true"></div>
+
+                            <!-- Col 4: Milestone v1.4 Heading Card + Popover -->
+                            <div class="timeline-col">
+                                <div class="roadmap-item-wrapper theme-v1-4" data-roadmap-node="4">
+                                    <!-- Compact Heading Card (Visible by default) -->
+                                    <div class="roadmap-heading-card" tabindex="0" role="button" aria-expanded="false" aria-label="Milestone v1.4: Zero-Leak Revenue Protection">
+                                        <div class="roadmap-trim" style="margin-bottom: 2px;"></div>
+                                        <div class="roadmap-card-header">
+                                            <span class="roadmap-version-tag">Milestone v1.4</span>
+                                            <span class="roadmap-status-pill">
+                                                <span class="roadmap-pulse-dot" aria-hidden="true"></span>
+                                                <span>Architecting</span>
+                                            </span>
+                                        </div>
+                                        <h3 class="roadmap-card-headline">Zero-Leak Revenue Protection</h3>
+                                        <div class="roadmap-hover-trigger">
+                                            <span>Hover to explore features</span>
+                                            <span class="hover-icon">✦</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Full Card Popover (Revealed on hover) -->
+                                    <div class="roadmap-popover-card" role="tooltip">
+                                        <div class="roadmap-card-header">
+                                            <span class="roadmap-version-tag">Milestone v1.4</span>
+                                            <span class="roadmap-status-pill">
+                                                <span class="roadmap-pulse-dot" aria-hidden="true"></span>
+                                                <span>Architecting</span>
+                                            </span>
+                                        </div>
+                                        <h3 class="roadmap-card-headline" style="font-size: 16px; margin-bottom: 6px;">Zero-Leak Revenue Protection</h3>
+                                        <p class="roadmap-card-desc">Eliminate silent affiliate revenue leaks from discontinued Amazon stock, dead links, and geo-mismatches.</p>
+                                        
+                                        <div class="roadmap-comparison">
+                                            <div class="roadmap-feature-row">
+                                                <span class="roadmap-tier-badge tier-free">Free Core</span>
+                                                <div class="roadmap-feature-text">
+                                                    <strong>Admin Dead Link Warning Center:</strong> Weekly background health monitor flagging 404/broken merchant links.
+                                                </div>
+                                            </div>
+                                            <div class="roadmap-feature-row">
+                                                <span class="roadmap-tier-badge tier-pro">Pro ($40)</span>
+                                                <div class="roadmap-feature-text">
+                                                    <strong>Smart Out-of-Stock Auto-Fallback:</strong> Auto-routes dead Amazon clicks to Walmart/Target + geo-routing 2.0.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-trim" style="margin-top: 14px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Serpentine Pipeline (< 992px) -->
+                    <div class="roadmap-serpentine-mobile">
+                        <div class="roadmap-mobile-track-line" aria-hidden="true"></div>
+
+                        <!-- Step 1 (v1.1) -->
+                        <div class="roadmap-mobile-step" data-roadmap-mobile="1">
+                            <div class="roadmap-mobile-node node-cyan" data-roadmap-mobile-toggle="1">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                </svg>
+                            </div>
+                            <div class="roadmap-item-wrapper theme-v1-1">
+                                <div class="roadmap-heading-card" data-roadmap-mobile-toggle="1">
+                                    <div class="roadmap-card-header">
+                                        <span class="roadmap-version-tag">Milestone v1.1</span>
+                                        <span class="roadmap-status-pill">
+                                            <span class="roadmap-pulse-dot" aria-hidden="true"></span>
+                                            <span>In Dev</span>
+                                        </span>
+                                    </div>
+                                    <h3 class="roadmap-card-headline">Friction-Killer &amp; Mobile Sticky CTA</h3>
+                                    <div class="roadmap-hover-trigger">
+                                        <span>Tap to expand full details</span>
+                                        <span class="hover-icon">▾</span>
+                                    </div>
+                                    <div class="roadmap-trim"></div>
+                                </div>
+                                <div class="roadmap-popover-card">
+                                    <p class="roadmap-card-desc" style="margin-top: 0;">Instant automated product importing without fragile API keys, paired with high-converting mobile viewport retention docks.</p>
+                                    <div class="roadmap-comparison">
+                                        <div class="roadmap-feature-row">
+                                            <span class="roadmap-tier-badge tier-free">Free Core</span>
+                                            <div class="roadmap-feature-text">
+                                                <strong>1-Click Metadata &amp; OG Importer:</strong> Extracts title, high-res image, "Check Price" shield + admin preview modal.
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-feature-row">
+                                            <span class="roadmap-tier-badge tier-pro">Pro ($40)</span>
+                                            <div class="roadmap-feature-text">
+                                                <strong>Mobile Floating Sticky CTA Dock:</strong> Recovers 70%+ mobile bounce traffic + multi-store 1-click fetch.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 (v1.2) -->
+                        <div class="roadmap-mobile-step" data-roadmap-mobile="2">
+                            <div class="roadmap-mobile-node node-purple" data-roadmap-mobile-toggle="2">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                                </svg>
+                            </div>
+                            <div class="roadmap-item-wrapper theme-v1-2">
+                                <div class="roadmap-heading-card" data-roadmap-mobile-toggle="2">
+                                    <div class="roadmap-card-header">
+                                        <span class="roadmap-version-tag">Milestone v1.2</span>
+                                        <span class="roadmap-status-pill">
+                                            <span class="roadmap-pulse-dot" aria-hidden="true"></span>
+                                            <span>Planned</span>
+                                        </span>
+                                    </div>
+                                    <h3 class="roadmap-card-headline">Sitewide Passive Auto-Monetization</h3>
+                                    <div class="roadmap-hover-trigger">
+                                        <span>Tap to expand full details</span>
+                                        <span class="hover-icon">▾</span>
+                                    </div>
+                                    <div class="roadmap-trim"></div>
+                                </div>
+                                <div class="roadmap-popover-card">
+                                    <p class="roadmap-card-desc" style="margin-top: 0;">Turn unmonetized editorial archives into automated commission streams with non-intrusive interactive preview cards.</p>
+                                    <div class="roadmap-comparison">
+                                        <div class="roadmap-feature-row">
+                                            <span class="roadmap-tier-badge tier-free">Free Core</span>
+                                            <div class="roadmap-feature-text">
+                                                <strong>Keyword Auto-Linker:</strong> Turns target mentions across archives into cloaked links with strict frequency caps.
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-feature-row">
+                                            <span class="roadmap-tier-badge tier-pro">Pro ($40)</span>
+                                            <div class="roadmap-feature-text">
+                                                <strong>Hover Popover Micro-Cards:</strong> Animated rich card previews on hover/tap + granular post exclusions.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 (v1.3) -->
+                        <div class="roadmap-mobile-step" data-roadmap-mobile="3">
+                            <div class="roadmap-mobile-node node-gold" data-roadmap-mobile-toggle="3">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                                </svg>
+                            </div>
+                            <div class="roadmap-item-wrapper theme-v1-3">
+                                <div class="roadmap-heading-card" data-roadmap-mobile-toggle="3">
+                                    <div class="roadmap-card-header">
+                                        <span class="roadmap-version-tag">Milestone v1.3</span>
+                                        <span class="roadmap-status-pill">
+                                            <span class="roadmap-pulse-dot" aria-hidden="true"></span>
+                                            <span>Planned</span>
+                                        </span>
+                                    </div>
+                                    <h3 class="roadmap-card-headline">High-Ticket Multi-Product Comparison</h3>
+                                    <div class="roadmap-hover-trigger">
+                                        <span>Tap to expand full details</span>
+                                        <span class="hover-icon">▾</span>
+                                    </div>
+                                    <div class="roadmap-trim"></div>
+                                </div>
+                                <div class="roadmap-popover-card">
+                                    <p class="roadmap-card-desc" style="margin-top: 0;">Maximize commission values for roundups and buyer guides with interactive showdown matrices and deal timers.</p>
+                                    <div class="roadmap-comparison">
+                                        <div class="roadmap-feature-row">
+                                            <span class="roadmap-tier-badge tier-free">Free Core</span>
+                                            <div class="roadmap-feature-text">
+                                                <strong>Interactive Coupon Box:</strong> High-CTR voucher box featuring instant "Click to Copy" animated visual feedback.
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-feature-row">
+                                            <span class="roadmap-tier-badge tier-pro">Pro ($40)</span>
+                                            <div class="roadmap-feature-text">
+                                                <strong>3–5 Product Showdown Table:</strong> Fluid side-by-side spec comparison + flash deal countdown urgency timers.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 (v1.4) -->
+                        <div class="roadmap-mobile-step" data-roadmap-mobile="4">
+                            <div class="roadmap-mobile-node node-emerald" data-roadmap-mobile-toggle="4">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <div class="roadmap-item-wrapper theme-v1-4">
+                                <div class="roadmap-heading-card" data-roadmap-mobile-toggle="4">
+                                    <div class="roadmap-card-header">
+                                        <span class="roadmap-version-tag">Milestone v1.4</span>
+                                        <span class="roadmap-status-pill">
+                                            <span class="roadmap-pulse-dot" aria-hidden="true"></span>
+                                            <span>Architecting</span>
+                                        </span>
+                                    </div>
+                                    <h3 class="roadmap-card-headline">Zero-Leak Revenue Protection</h3>
+                                    <div class="roadmap-hover-trigger">
+                                        <span>Tap to expand full details</span>
+                                        <span class="hover-icon">▾</span>
+                                    </div>
+                                    <div class="roadmap-trim"></div>
+                                </div>
+                                <div class="roadmap-popover-card">
+                                    <p class="roadmap-card-desc" style="margin-top: 0;">Eliminate silent affiliate revenue leaks from discontinued Amazon stock, dead links, and geo-mismatches.</p>
+                                    <div class="roadmap-comparison">
+                                        <div class="roadmap-feature-row">
+                                            <span class="roadmap-tier-badge tier-free">Free Core</span>
+                                            <div class="roadmap-feature-text">
+                                                <strong>Admin Dead Link Warning Center:</strong> Weekly background health monitor flagging 404/broken merchant links.
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-feature-row">
+                                            <span class="roadmap-tier-badge tier-pro">Pro ($40)</span>
+                                            <div class="roadmap-feature-text">
+                                                <strong>Smart Out-of-Stock Auto-Fallback:</strong> Auto-routes dead Amazon clicks to Walmart/Target + geo-routing 2.0.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Community Feedback Action Strip -->
+                <div class="roadmap-feedback-bar">
+                    <div class="roadmap-feedback-copy">
+                        <div class="roadmap-feedback-icon" aria-hidden="true">💡</div>
+                        <p>Have a custom card style or workflow feature you need? We build what publishers actually use. <span class="hand-script">suggest a feature &rarr;</span></p>
+                    </div>
+                    <a href="mailto:dreainno@gmail.com?subject=AffiStyle%20Roadmap%20Suggestion" class="flagship-action-chip">
+                        <span>Submit Feature Request</span>
+                        <span aria-hidden="true">➔</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -7305,6 +8569,37 @@
                             otherItem.removeAttribute('open');
                         }
                     });
+                }
+            });
+        // Product Roadmap Interactivity (Node Hover/Focus & Mobile Toggles)
+        const roadmapNodeItems = document.querySelectorAll('.timeline-node-item[data-roadmap-node]');
+        roadmapNodeItems.forEach(nodeItem => {
+            const nodeId = nodeItem.getAttribute('data-roadmap-node');
+            const targetWrapper = document.querySelector(`.roadmap-item-wrapper[data-roadmap-node="${nodeId}"]`);
+            if (!targetWrapper) return;
+
+            nodeItem.addEventListener('mouseenter', () => {
+                targetWrapper.classList.add('is-node-hovered');
+            });
+            nodeItem.addEventListener('mouseleave', () => {
+                targetWrapper.classList.remove('is-node-hovered');
+            });
+            nodeItem.addEventListener('focus', () => {
+                targetWrapper.classList.add('is-node-hovered');
+            });
+            nodeItem.addEventListener('blur', () => {
+                targetWrapper.classList.remove('is-node-hovered');
+            });
+        });
+
+        // Mobile Roadmap Accordion Toggle
+        const mobileToggles = document.querySelectorAll('[data-roadmap-mobile-toggle]');
+        mobileToggles.forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const step = toggle.closest('.roadmap-mobile-step');
+                if (step) {
+                    step.classList.toggle('is-open');
                 }
             });
         });
