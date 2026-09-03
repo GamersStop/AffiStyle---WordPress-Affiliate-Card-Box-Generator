@@ -1,14 +1,18 @@
 User-agent: *
 Allow: /
 
-# AI Crawlers & Search Engines Directives
+# Search Engines
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
+# AI Crawlers & Search Engines Directives
 User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ClaudeBot
@@ -21,6 +25,15 @@ User-agent: Google-Extended
 Allow: /
 
 User-agent: Applebot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
 Allow: /
 
 Sitemap: https://affistyle.shop/sitemap.xml
