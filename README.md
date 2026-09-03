@@ -23,6 +23,8 @@ This repository hosts the static landing page, documentation guides, and blog ar
 ```text
 .
 ├── index.html        # Main landing page for AffiStyle (https://affistyle.shop)
+├── llms.txt          # Structured LLM/AI context file for ChatGPT, Gemini, Claude
+├── llm.txt           # Alias context file for AI crawlers
 ├── blog/             # SEO articles, guides, and comparison tutorials
 │   ├── index.html
 │   ├── ftc-affiliate-disclosure-guidelines-wordpress.html
