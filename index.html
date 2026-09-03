@@ -8314,7 +8314,7 @@
         const refundModal = document.getElementById('refund-modal');
         const magnetModal = document.getElementById('magnet-modal');
 
-        const allModals = [aboutModal, docsModal, termsModal, privacyModal, refundModal, magnetModal];
+        const allModals = [aboutModal, docsModal, termsModal, privacyModal, refundModal, magnetModal].filter(Boolean);
 
         const openModal = (modal) => {
             if (!modal) return;
@@ -8328,25 +8328,66 @@
             document.body.style.overflow = '';
         };
 
+        const bindClick = (id, fn) => {
+            const el = document.getElementById(id);
+            if (el) el.addEventListener('click', fn);
+        };
+
         // Modal Triggers
-        const openAboutBtn = document.getElementById('open-about-nav');
-        if (openAboutBtn) openAboutBtn.addEventListener('click', () => openModal(aboutModal));
-        document.getElementById('open-about-modal').addEventListener('click', () => openModal(aboutModal));
-        document.getElementById('close-about-modal').addEventListener('click', () => closeModal(aboutModal));
+        bindClick('open-about-nav', () => openModal(aboutModal));
+        bindClick('open-about-modal', () => openModal(aboutModal));
+        bindClick('close-about-modal', () => closeModal(aboutModal));
 
-        const openDocsBtn = document.getElementById('open-docs-nav');
-        if (openDocsBtn) openDocsBtn.addEventListener('click', () => openModal(docsModal));
-        document.getElementById('open-docs-modal').addEventListener('click', () => openModal(docsModal));
-        document.getElementById('close-docs-modal').addEventListener('click', () => closeModal(docsModal));
+        bindClick('open-docs-nav', () => openModal(docsModal));
+        bindClick('open-docs-modal', () => openModal(docsModal));
+        bindClick('close-docs-modal', () => closeModal(docsModal));
 
-        document.getElementById('open-terms-modal').addEventListener('click', () => openModal(termsModal));
-        document.getElementById('close-terms-modal').addEventListener('click', () => closeModal(termsModal));
+        bindClick('open-terms-modal', () => openModal(termsModal));
+        bindClick('close-terms-modal', () => closeModal(termsModal));
 
-        document.getElementById('open-privacy-modal').addEventListener('click', () => openModal(privacyModal));
-        document.getElementById('close-privacy-modal').addEventListener('click', () => closeModal(privacyModal));
+        bindClick('open-privacy-modal', () => openModal(privacyModal));
+        bindClick('close-privacy-modal', () => closeModal(privacyModal));
 
-        document.getElementById('open-refund-modal').addEventListener('click', () => openModal(refundModal));
-        document.getElementById('close-refund-modal').addEventListener('click', () => closeModal(refundModal));
+        bindClick('open-refund-modal', () => openModal(refundModal));
+        bindClick('close-refund-modal', () => closeModal(refundModal));
+
+        bindClick('open-magnet-hero-btn', () => {
+            const magnetSection = document.getElementById('leadmagnet');
+            if (magnetSection) {
+                magnetSection.scrollIntoView({ behavior: 'smooth' });
+                const leadName = document.getElementById('lead-name');
+                if (leadName) leadName.focus();
+            }
+        });
+        bindClick('close-magnet-modal', () => closeModal(magnetModal));
+
+        // Intercept all hash-based links for modals (e.g. href="#privacy", href="#terms", href="#refund")
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', (e) => {
+                const targetHash = anchor.getAttribute('href');
+                if (targetHash === '#privacy' || targetHash === '#privacy-modal') {
+                    e.preventDefault();
+                    history.pushState(null, '', '#privacy');
+                    openModal(privacyModal);
+                } else if (targetHash === '#terms' || targetHash === '#terms-modal') {
+                    e.preventDefault();
+                    history.pushState(null, '', '#terms');
+                    openModal(termsModal);
+                } else if (targetHash === '#refund' || targetHash === '#refund-modal') {
+                    e.preventDefault();
+                    history.pushState(null, '', '#refund');
+                    openModal(refundModal);
+                } else if (targetHash === '#docs' || targetHash === '#docs-modal') {
+                    e.preventDefault();
+                    history.pushState(null, '', '#docs');
+                    openModal(docsModal);
+                } else if (targetHash === '#about' || targetHash === '#about-modal') {
+                    e.preventDefault();
+                    history.pushState(null, '', '#about');
+                    openModal(aboutModal);
+                }
+            });
+        });
 
         // Resources Nav Dropdown
         const resourcesDropdown = document.getElementById('resources-nav-dropdown');
@@ -8393,16 +8434,6 @@
                 });
             }
         }
-
-        document.getElementById('open-magnet-hero-btn').addEventListener('click', () => {
-            const magnetSection = document.getElementById('leadmagnet');
-            if (magnetSection) {
-                magnetSection.scrollIntoView({ behavior: 'smooth' });
-                document.getElementById('lead-name').focus();
-            }
-        });
-
-        document.getElementById('close-magnet-modal').addEventListener('click', () => closeModal(magnetModal));
 
         // Backdrop Dismissal & Dropdown Close
         window.addEventListener('click', (e) => {
@@ -8552,8 +8583,10 @@
         if (leadForm) {
             leadForm.addEventListener('submit', (e) => {
                 e.preventDefault();
-                const name = document.getElementById('lead-name').value.trim();
-                const email = document.getElementById('lead-email').value.trim();
+                const nameInput = document.getElementById('lead-name');
+                const emailInput = document.getElementById('lead-email');
+                const name = nameInput ? nameInput.value.trim() : '';
+                const email = emailInput ? emailInput.value.trim() : '';
 
                 if (!email) return;
 
@@ -8600,7 +8633,6 @@
                 if (matchesCategory && matchesSearch) {
                     item.style.display = 'block';
                     visibleCount++;
-                    // Highlight or auto-open if specific search query matches
                     if (query && (questionText.includes(query) || answerText.includes(query))) {
                         item.setAttribute('open', '');
                     }
@@ -8661,6 +8693,8 @@
                     });
                 }
             });
+        });
+
         // Product Roadmap Interactivity (Node Hover/Focus & Mobile Toggles)
         const roadmapNodeItems = document.querySelectorAll('.timeline-node-item[data-roadmap-node]');
         roadmapNodeItems.forEach(nodeItem => {
