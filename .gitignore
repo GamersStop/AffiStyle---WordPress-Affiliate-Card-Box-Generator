@@ -1,13 +1,15 @@
 # Environment variables and secrets
 .env
-.env.local
+.env.*
+.env.example
 credentials.json
 token.json
 
 # Temporary working directory for intermediate files
 .tmp/
 
-# Python cache & virtual environments
+# Python files, cache & virtual environments
+*.py
 __pycache__/
 *.py[cod]
 *$py.class
@@ -17,7 +19,22 @@ env/
 venv/
 .venv/
 
+# AI Agent & Internal Tooling / Directives
+AGENTS.md
+directives/
+execution/
+reference/
+SKILLS/
+skills/
+*.skill
+
+# Internal notes and drafts
+leadmagenet.txt
+leadmagnet.txt
+
 # OS specific files
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+
