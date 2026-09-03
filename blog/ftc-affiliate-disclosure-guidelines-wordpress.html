@@ -10,6 +10,7 @@
     <link rel="canonical" href="https://affistyle.shop/blog/ftc-affiliate-disclosure-guidelines-wordpress.html">
     <link rel="icon" type="image/png" href="/icon.png">
     <link rel="apple-touch-icon" href="/icon.png">
+    <link rel="alternate" type="text/markdown" title="LLMs.txt" href="https://affistyle.shop/llms.txt">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KGTZ9P3F9Q"></script>
@@ -132,12 +133,14 @@
     }
     </script>
 
-    <!-- Google Fonts: Plus Jakarta Sans & Caveat -->
+    <!-- Google Fonts: Plus Jakarta Sans & Caveat (Non-render-blocking with async preload) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
-        rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+    </noscript>
 
     <style>
         :root {
@@ -656,7 +659,7 @@
     <header>
         <div class="container nav-inner">
             <a href="../index.html" class="logo-area" aria-label="AffiStyle Home">
-                <img src="../icon.png" alt="AffiStyle Icon" class="brand-icon">
+                <img src="../icon.webp" alt="AffiStyle Icon" class="brand-icon" width="38" height="38" decoding="async">
                 <span class="brand-title">AffiStyle</span>
             </a>
 
