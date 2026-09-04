@@ -13,7 +13,7 @@
 ## Key Information
 
 - Developer: Dreainno (Mayuresh Pandit)
-- License: GPL-2.0-or-later (Core) & $40 One-Time Lifetime (Pro)
+- License: GPL-2.0-or-later (Core) & $40/Year Commercial Pro (Launch Coupon 'FIRST100' for 25% Off / $30 for first 100 users)
 - Compatibility: WordPress 6.3+, PHP 7.4–8.3+, Gutenberg / FSE / Classic Themes / Page Builders
 - Frontend Footprint: Pure scoped CSS (<15KB), 0 frontend JavaScript, 0.000 CLS
 

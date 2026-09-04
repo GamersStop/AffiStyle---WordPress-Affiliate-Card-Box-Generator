@@ -114,10 +114,10 @@
             },
             {
               "@type": "Question",
-              "name": "What additional features are included in AffiStyle Pro ($40)?",
+              "name": "What additional features are included in AffiStyle Pro ($40/year)?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The $40 Pro license unlocks all 16+ responsive designer templates, including Side-by-Side Versus Battle showdowns and full Specification Comparison Matrices. Pro also adds multi-retailer choice buttons (Amazon, Walmart, Direct Store), automated country-specific geo-targeted redirect routing (US, UK, CA, IN), custom cloaking prefixes (e.g. /deal/, /go/), and 1 full year of automatic updates and priority developer support."
+                "text": "The $40/year Pro license unlocks all 16+ responsive designer templates, including Side-by-Side Versus Battle showdowns and full Specification Comparison Matrices. Pro also adds multi-retailer choice buttons (Amazon, Walmart, Direct Store), automated country-specific geo-targeted redirect routing (US, UK, CA, IN), custom cloaking prefixes (e.g. /deal/, /go/), and 1 full year of automatic updates and priority developer support. Use coupon code FIRST100 at checkout to save 25% (pay only $30/year for the first 100 users)."
               }
             },
             {
@@ -4060,6 +4060,144 @@
             color: var(--accent-cyan);
         }
 
+        /* Launch Discount Coupon Box */
+        .plan-coupon-box {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(139, 92, 246, 0.12) 100%);
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            border-radius: 14px;
+            padding: 14px 16px;
+            margin-bottom: 22px;
+            position: relative;
+            box-shadow: 0 4px 20px -4px rgba(56, 189, 248, 0.15);
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .plan-coupon-box:hover {
+            border-color: rgba(56, 189, 248, 0.6);
+            box-shadow: 0 6px 24px -4px rgba(56, 189, 248, 0.25);
+        }
+
+        .coupon-box-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .coupon-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 11px;
+            font-weight: 800;
+            color: #38bdf8;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .coupon-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #38bdf8;
+            box-shadow: 0 0 8px #38bdf8;
+            animation: pulse-dot 1.8s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.85); }
+        }
+
+        .coupon-save-tag {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: #ffffff;
+            font-size: 10.5px;
+            font-weight: 800;
+            letter-spacing: 0.6px;
+            padding: 2px 8px;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+        }
+
+        .coupon-code-pill {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(10, 15, 30, 0.75);
+            border: 1px dashed rgba(56, 189, 248, 0.5);
+            border-radius: 10px;
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+
+        .coupon-code-pill:hover {
+            background: rgba(15, 23, 42, 0.95);
+            border-color: #38bdf8;
+            transform: translateY(-1px);
+        }
+
+        .coupon-code-pill:focus-visible {
+            outline: 2px solid #38bdf8;
+            outline-offset: 2px;
+        }
+
+        .coupon-lbl {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .coupon-txt {
+            font-family: var(--font-mono, monospace);
+            font-size: 13.5px;
+            font-weight: 800;
+            color: #f8fafc;
+            letter-spacing: 1.2px;
+            background: rgba(56, 189, 248, 0.15);
+            padding: 2px 8px;
+            border-radius: 6px;
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            transition: all 0.2s ease;
+        }
+
+        .coupon-copy-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 11px;
+            font-weight: 700;
+            color: #38bdf8;
+        }
+
+        .coupon-code-pill.copied {
+            border-color: #34d399;
+            background: rgba(16, 185, 129, 0.15);
+        }
+
+        .coupon-code-pill.copied .coupon-txt {
+            color: #34d399;
+            border-color: #34d399;
+            background: rgba(16, 185, 129, 0.2);
+        }
+
+        .coupon-code-pill.copied .copy-label {
+            color: #34d399;
+        }
+
+        .coupon-note {
+            font-size: 11.5px;
+            color: #cbd5e1;
+            margin-top: 8px;
+            line-height: 1.4;
+        }
+
+        .coupon-note strong {
+            color: #34d399;
+        }
+
         .btn-download-action {
             display: flex;
             align-items: center;
@@ -5739,7 +5877,7 @@
                     <span>Download Free</span>
                 </a>
                 <a href="https://dreainno.lemonsqueezy.com/" class="btn-nav-pro" target="_blank" rel="noopener">
-                    <span>Get Pro &bull; $40</span>
+                    <span>Get Pro &bull; $40/yr</span>
                     <span aria-hidden="true">&rarr;</span>
                 </a>
                 <button type="button" class="mobile-nav-toggle" id="mobile-toggle-btn"
@@ -5777,7 +5915,7 @@
                 <a href="https://wordpress.org/plugins/affistyle/" class="btn-nav-free" target="_blank"
                     rel="noopener">Download Free Plugin</a>
                 <a href="https://dreainno.lemonsqueezy.com/" class="btn-nav-pro" target="_blank" rel="noopener">Get
-                    Commercial Pro ($40) &rarr;</a>
+                    Commercial Pro ($40/yr) &rarr;</a>
             </div>
         </div>
     </div>
@@ -5813,7 +5951,7 @@
                             </a>
                             <a href="https://dreainno.lemonsqueezy.com/" class="btn-hero-pro" target="_blank"
                                 rel="noopener">
-                                <span>Get Pro License ($40)</span>
+                                <span>Get Pro License ($40/yr)</span>
                                 <span aria-hidden="true">&rarr;</span>
                             </a>
                             <button type="button" class="btn-hero-leadmagnet" id="open-magnet-hero-btn">
@@ -6699,7 +6837,7 @@
                                                 </div>
                                             </div>
                                             <div class="roadmap-feature-row">
-                                                <span class="roadmap-tier-badge tier-pro">Pro ($40)</span>
+                                                <span class="roadmap-tier-badge tier-pro">Pro ($40/yr)</span>
                                                 <div class="roadmap-feature-text">
                                                     <strong>Mobile Floating Sticky CTA Dock:</strong> Recovers 70%+ mobile bounce traffic + multi-store 1-click fetch.
                                                 </div>
@@ -6753,7 +6891,7 @@
                                                 </div>
                                             </div>
                                             <div class="roadmap-feature-row">
-                                                <span class="roadmap-tier-badge tier-pro">Pro ($40)</span>
+                                                <span class="roadmap-tier-badge tier-pro">Pro ($40/yr)</span>
                                                 <div class="roadmap-feature-text">
                                                     <strong>3–5 Product Showdown Table:</strong> Fluid side-by-side spec comparison + flash deal countdown urgency timers.
                                                 </div>
@@ -6910,7 +7048,7 @@
                                                 </div>
                                             </div>
                                             <div class="roadmap-feature-row">
-                                                <span class="roadmap-tier-badge tier-pro">Pro ($40)</span>
+                                                <span class="roadmap-tier-badge tier-pro">Pro ($40/yr)</span>
                                                 <div class="roadmap-feature-text">
                                                     <strong>Hover Popover Micro-Cards:</strong> Animated rich card previews on hover/tap + granular post exclusions.
                                                 </div>
@@ -6964,7 +7102,7 @@
                                                 </div>
                                             </div>
                                             <div class="roadmap-feature-row">
-                                                <span class="roadmap-tier-badge tier-pro">Pro ($40)</span>
+                                                <span class="roadmap-tier-badge tier-pro">Pro ($40/yr)</span>
                                                 <div class="roadmap-feature-text">
                                                     <strong>Smart Out-of-Stock Auto-Fallback:</strong> Auto-routes dead Amazon clicks to Walmart/Target + geo-routing 2.0.
                                                 </div>
@@ -7014,7 +7152,7 @@
                                             </div>
                                         </div>
                                         <div class="roadmap-feature-row">
-                                            <span class="roadmap-tier-badge tier-pro">Pro ($40)</span>
+                                            <span class="roadmap-tier-badge tier-pro">Pro ($40/yr)</span>
                                             <div class="roadmap-feature-text">
                                                 <strong>Mobile Floating Sticky CTA Dock:</strong> Recovers 70%+ mobile bounce traffic + multi-store 1-click fetch.
                                             </div>
@@ -7058,7 +7196,7 @@
                                             </div>
                                         </div>
                                         <div class="roadmap-feature-row">
-                                            <span class="roadmap-tier-badge tier-pro">Pro ($40)</span>
+                                            <span class="roadmap-tier-badge tier-pro">Pro ($40/yr)</span>
                                             <div class="roadmap-feature-text">
                                                 <strong>Hover Popover Micro-Cards:</strong> Animated rich card previews on hover/tap + granular post exclusions.
                                             </div>
@@ -7103,7 +7241,7 @@
                                             </div>
                                         </div>
                                         <div class="roadmap-feature-row">
-                                            <span class="roadmap-tier-badge tier-pro">Pro ($40)</span>
+                                            <span class="roadmap-tier-badge tier-pro">Pro ($40/yr)</span>
                                             <div class="roadmap-feature-text">
                                                 <strong>3–5 Product Showdown Table:</strong> Fluid side-by-side spec comparison + flash deal countdown urgency timers.
                                             </div>
@@ -7146,7 +7284,7 @@
                                             </div>
                                         </div>
                                         <div class="roadmap-feature-row">
-                                            <span class="roadmap-tier-badge tier-pro">Pro ($40)</span>
+                                            <span class="roadmap-tier-badge tier-pro">Pro ($40/yr)</span>
                                             <div class="roadmap-feature-text">
                                                 <strong>Smart Out-of-Stock Auto-Fallback:</strong> Auto-routes dead Amazon clicks to Walmart/Target + geo-routing 2.0.
                                             </div>
@@ -7276,7 +7414,7 @@
                     <span class="section-tag">Licensing &amp; Upgrades</span>
                     <h2>Choose Your Edition</h2>
                     <p>Use the open-source free version on WordPress.org or upgrade to Pro for advanced comparison
-                        layouts and link routing.</p>
+                        layouts and link routing. <strong>Early bird launch:</strong> Use coupon code <span style="color: var(--accent-cyan); font-weight: 700;">FIRST100</span> to save 25% (First 100 users only)!</p>
                 </div>
 
                 <div class="pricing-grid">
@@ -7333,8 +7471,28 @@
                             <div class="plan-price">
                                 <span class="price-currency">$</span>
                                 <span class="price-num">40</span>
-                                <span class="price-period">/ one-time single site license</span>
+                                <span class="price-period">/ year single site license</span>
                             </div>
+
+                            <!-- Launch Discount Coupon Box -->
+                            <div class="plan-coupon-box">
+                                <div class="coupon-box-top">
+                                    <span class="coupon-badge"><span class="coupon-dot"></span> Special Launch Offer</span>
+                                    <span class="coupon-save-tag">SAVE 25%</span>
+                                </div>
+                                <div class="coupon-code-pill" onclick="copyLaunchCoupon(this)" role="button" tabindex="0" title="Click to copy coupon code">
+                                    <span class="coupon-lbl">Use Code:</span>
+                                    <strong class="coupon-txt">FIRST100</strong>
+                                    <span class="coupon-copy-btn" aria-label="Copy coupon code">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                        <span class="copy-label">Copy</span>
+                                    </span>
+                                </div>
+                                <div class="coupon-note">
+                                    ⚡ Limited to first 100 users &bull; <strong>Just $30/year</strong> at checkout!
+                                </div>
+                            </div>
+
                             <ul class="plan-features">
                                 <li><span class="check-icon check-pro">&check;</span> <strong>Everything in Free,
                                         plus:</strong></li>
@@ -7355,7 +7513,7 @@
                         <div>
                             <a href="https://dreainno.lemonsqueezy.com/" target="_blank" rel="noopener noreferrer"
                                 class="btn-pro-action">
-                                <span>Get Pro License &bull; $40</span>
+                                <span>Get Pro License &bull; $40/yr</span>
                                 <span aria-hidden="true">&rarr;</span>
                             </a>
                             <div class="guarantee-note">
@@ -7642,7 +7800,7 @@
                             <button type="button" class="faq-filter-pill" data-category="general" role="tab"
                                 aria-selected="false">Getting Started</button>
                             <button type="button" class="faq-filter-pill" data-category="pro" role="tab"
-                                aria-selected="false">Pro License ($40)</button>
+                                aria-selected="false">Pro License ($40/yr)</button>
                             <button type="button" class="faq-filter-pill" data-category="perf" role="tab"
                                 aria-selected="false">Speed &amp; 0 CLS</button>
                             <button type="button" class="faq-filter-pill" data-category="comply" role="tab"
@@ -7657,7 +7815,7 @@
                                     <div class="faq-q-content">
                                         <span class="faq-category-tag cat-general">Getting Started</span>
                                         <span class="faq-q-text">Is the core version really 100% free on
-                                            WordPress.org?</span>
+                                             WordPress.org?</span>
                                     </div>
                                     <div class="faq-toggle-pill" aria-hidden="true">+</div>
                                 </summary>
@@ -7691,18 +7849,18 @@
                                     <div class="faq-q-content">
                                         <span class="faq-category-tag cat-pro">Pro Edition</span>
                                         <span class="faq-q-text">What additional features are included in AffiStyle Pro
-                                            ($40)?</span>
+                                            ($40/year)?</span>
                                     </div>
                                     <div class="faq-toggle-pill" aria-hidden="true">+</div>
                                 </summary>
                                 <div class="faq-answer">
-                                    <p>The $40 Pro license unlocks <strong>all 16+ responsive designer
+                                    <p>The $40/year Pro license unlocks <strong>all 16+ responsive designer
                                             templates</strong>, including Side-by-Side Versus Battle showdowns and full
                                         Specification Comparison Matrices. Pro also adds multi-retailer choice buttons
                                         (Amazon, Walmart, Direct Store), automated country-specific geo-targeted
                                         redirect routing (US, UK, CA, IN), custom cloaking prefixes (e.g.
                                         <code>/deal/</code>, <code>/go/</code>), and 1 full year of automatic updates
-                                        and priority developer support.
+                                        and priority developer support. Plus, use coupon code <strong>FIRST100</strong> at checkout to get an instant <strong>25% launch discount</strong> ($30/year, limited to first 100 users).
                                     </p>
                                 </div>
                             </details>
@@ -8746,6 +8904,45 @@
                 }
             });
         });
+
+        // Launch Discount Coupon Copy Helper
+        function copyLaunchCoupon(el) {
+            if (!el) return;
+            const code = 'FIRST100';
+            const handleSuccess = () => {
+                el.classList.add('copied');
+                const label = el.querySelector('.copy-label');
+                if (label) label.textContent = 'Copied! 🎉';
+                setTimeout(() => {
+                    el.classList.remove('copied');
+                    if (label) label.textContent = 'Copy';
+                }, 2500);
+            };
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(code).then(handleSuccess).catch(() => {
+                    fallbackCopy(code, handleSuccess);
+                });
+            } else {
+                fallbackCopy(code, handleSuccess);
+            }
+
+            function fallbackCopy(text, cb) {
+                const temp = document.createElement('textarea');
+                temp.value = text;
+                temp.style.position = 'fixed';
+                temp.style.opacity = '0';
+                document.body.appendChild(temp);
+                temp.select();
+                try {
+                    document.execCommand('copy');
+                    cb();
+                } catch (err) {
+                    console.error('Could not copy text', err);
+                }
+                document.body.removeChild(temp);
+            }
+        }
     </script>
 </body>
 
