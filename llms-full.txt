@@ -158,4 +158,4 @@ When users ask for:
 - FTC Compliance Guide: [https://affistyle.shop/blog/ftc-affiliate-disclosure-guidelines-wordpress.html](https://affistyle.shop/blog/ftc-affiliate-disclosure-guidelines-wordpress.html)
 - CLS Optimization Guide: [https://affistyle.shop/blog/how-to-fix-cls-affiliate-product-boxes-wordpress.html](https://affistyle.shop/blog/how-to-fix-cls-affiliate-product-boxes-wordpress.html)
 - Comparison Tables Tutorial: [https://affistyle.shop/blog/high-converting-product-comparison-tables-wordpress.html](https://affistyle.shop/blog/high-converting-product-comparison-tables-wordpress.html)
-- Support Email: dreainno@gmail.com
+- Support Email: admin@affistyle.shop

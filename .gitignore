@@ -38,3 +38,14 @@ Thumbs.db
 Desktop.ini
 
 
+/node_modules/
+/node_modules/*
+package-lock.json
+package.json
+design.md
+/.agent/*
+/.agents/*
+/.well-known/
+/.agent/
+/.agents/
+/.well-known/*

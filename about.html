@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About AffiStyle - High-Converting WordPress Affiliate Card & Box Generator</title>
+    <meta name="description"
+        content="Learn about AffiStyle, founded by Mayuresh Pandit at Dreainno. Discover our mission to build fast, zero-CLS, Gutenberg-native WordPress affiliate showcase cards.">
+    <link rel="canonical" href="https://affistyle.shop/about.html">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KGTZ9P3F9Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-KGTZ9P3F9Q');
+    </script>
+
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About AffiStyle - Built for Speed, Trust & Conversions">
+    <meta property="og:description"
+        content="AffiStyle replaces heavy, bloated affiliate shortcodes with lightweight, zero-CLS Gutenberg review boxes. Built by Dreainno Studio.">
+    <meta property="og:image" content="https://affistyle.shop/banner.png">
+    <meta property="og:url" content="https://affistyle.shop/about.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About AffiStyle - WordPress Affiliate Box Plugin">
+    <meta name="twitter:description"
+        content="Discover our engineering mission: Zero Cumulative Layout Shift, 100% Gutenberg integration, and maximum affiliate conversions.">
+    <meta name="twitter:image" content="https://affistyle.shop/banner.png">
+
+    <!-- Google Fonts: Plus Jakarta Sans & Caveat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+
+    <style>
+        :root {
+            --ocean-darkest: #03045e;
+            --ocean-deep: #023e8a;
+            --ocean-mid: #0077b6;
+            --ocean-bright: #0096c7;
+            --ocean-cyan: #00b4d8;
+            --ocean-foam: #ade8f4;
+            --ocean-mist: #caf0f8;
+            --ocean-ice: #f6fbfe;
+            --ocean-card: #ffffff;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-script: 'Caveat', cursive, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--ocean-ice);
+            color: var(--ocean-deep);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            background-image:
+                radial-gradient(circle at 10% 8%, rgba(173, 232, 244, 0.4) 0%, transparent 40%),
+                radial-gradient(circle at 90% 25%, rgba(202, 240, 248, 0.5) 0%, transparent 45%),
+                radial-gradient(rgba(0, 119, 182, 0.05) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 28px 28px;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Unified Professional Frost Oceanic Navbar */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.92);
+            border-bottom: 1px solid #ade8f4;
+            box-shadow: 0 4px 20px -2px rgba(0, 119, 182, 0.10), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease;
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 68px;
+            gap: 20px;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: #03045e;
+            flex-shrink: 0;
+            transition: transform 0.2s ease;
+        }
+
+        .logo-area:hover {
+            transform: scale(1.02);
+        }
+
+        .brand-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 14px rgba(0, 119, 182, 0.25);
+        }
+
+        .brand-title-wrap {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand-title {
+            font-size: 21px;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            color: #03045e;
+            line-height: 1;
+        }
+
+        .version-badge {
+            background: #caf0f8;
+            color: #023e8a;
+            border: 1px solid #90e0ef;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 100px;
+            letter-spacing: 0.3px;
+            line-height: 1;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-link {
+            color: #023e8a;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+        }
+
+        .nav-link:hover {
+            color: #0077b6;
+            background: rgba(202, 240, 248, 0.6);
+        }
+
+        .nav-link.active {
+            color: #0077b6;
+            background: #caf0f8;
+            border: 1px solid #90e0ef;
+            font-weight: 700;
+        }
+
+        .nav-cta-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .btn-nav-free {
+            background: #ffffff;
+            color: #0077b6;
+            border: 1.5px solid #ade8f4;
+            box-shadow: 0 2px 8px rgba(0, 119, 182, 0.08);
+            padding: 8px 15px;
+            font-size: 13.5px;
+            font-weight: 700;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .btn-nav-free:hover {
+            background: #caf0f8;
+            border-color: #0096c7;
+            color: #023e8a;
+        }
+
+        .btn-nav-pro {
+            background: linear-gradient(135deg, #0077b6 0%, #0096c7 100%);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 16px rgba(0, 119, 182, 0.35);
+            padding: 8px 18px;
+            font-size: 13.5px;
+            font-weight: 700;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .btn-nav-pro:hover {
+            background: linear-gradient(135deg, #023e8a 0%, #0077b6 100%);
+            box-shadow: 0 6px 22px rgba(0, 119, 182, 0.5);
+            color: #ffffff;
+        }
+
+        .mobile-nav-toggle {
+            display: none;
+            background: #caf0f8;
+            border: 1px solid #ade8f4;
+            color: #023e8a;
+            padding: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mobile-nav-toggle:hover {
+            background: #ade8f4;
+            color: #03045e;
+        }
+
+        /* Mobile Slide Drawer */
+        .mobile-drawer-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(3, 4, 94, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.25s ease;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .mobile-drawer-overlay.open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-drawer-content {
+            background: #ffffff;
+            border-left: 1px solid #ade8f4;
+            width: 85%;
+            max-width: 340px;
+            height: 100%;
+            padding: 24px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            overflow-y: auto;
+            transform: translateX(100%);
+            transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: -10px 0 30px rgba(3, 4, 94, 0.2);
+        }
+
+        .mobile-drawer-overlay.open .mobile-drawer-content {
+            transform: translateX(0);
+        }
+
+        .mobile-drawer-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #ade8f4;
+        }
+
+        .close-drawer-btn {
+            background: #caf0f8;
+            border: 1px solid #ade8f4;
+            color: #03045e;
+            font-size: 24px;
+            line-height: 1;
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .close-drawer-btn:hover {
+            background: #ade8f4;
+            color: #023e8a;
+        }
+
+        .mobile-drawer-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .mobile-drawer-link {
+            color: #023e8a;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 12px 14px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #f6fbfe;
+            border: 1px solid #ade8f4;
+            transition: all 0.2s ease;
+        }
+
+        .mobile-drawer-link:hover,
+        .mobile-drawer-link.active {
+            background: #caf0f8;
+            border-color: #0096c7;
+            color: #0077b6;
+        }
+
+        .mobile-drawer-btns {
+            margin-top: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 16px;
+            border-top: 1px solid #ade8f4;
+        }
+
+        .mobile-drawer-btns .btn-nav-free,
+        .mobile-drawer-btns .btn-nav-pro {
+            justify-content: center;
+            padding: 12px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 1024px) {
+            .nav-links {
+                display: none;
+            }
+            .mobile-nav-toggle {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .btn-nav-free {
+                display: none;
+            }
+            .nav-inner {
+                height: 60px;
+            }
+            .brand-title {
+                font-size: 18px;
+            }
+            .brand-icon {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            padding: 24px 0 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.86rem;
+            color: #64748b;
+        }
+
+        .breadcrumbs a {
+            text-decoration: none;
+            color: var(--ocean-mid);
+            font-weight: 600;
+        }
+
+        /* Page Hero */
+        .page-hero {
+            padding: 30px 0 40px 0;
+            text-align: center;
+        }
+
+        .hand-script {
+            font-family: var(--font-script);
+            font-size: 1.45rem;
+            color: var(--ocean-mid);
+            font-weight: 700;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .page-hero h1 {
+            font-size: clamp(2rem, 3.2vw, 2.75rem);
+            font-weight: 800;
+            color: var(--ocean-darkest);
+            letter-spacing: -0.03em;
+            line-height: 1.25;
+            margin-bottom: 14px;
+        }
+
+        .page-hero p {
+            font-size: 1.08rem;
+            color: var(--ocean-deep);
+            max-width: 680px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Content Sections */
+        .page-card {
+            background: var(--ocean-card);
+            border: 1.5px solid var(--ocean-foam);
+            border-radius: 18px;
+            padding: 40px 48px;
+            box-shadow: 0 14px 40px rgba(0, 119, 182, 0.06);
+            margin-bottom: 36px;
+        }
+
+        @media (max-width: 768px) {
+            .page-card {
+                padding: 28px 20px;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+
+        .page-card h2 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--ocean-darkest);
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+
+        .page-card h3 {
+            font-size: 1.22rem;
+            font-weight: 700;
+            color: var(--ocean-darkest);
+            margin: 28px 0 10px 0;
+        }
+
+        .page-card p {
+            font-size: 0.98rem;
+            color: #1e293b;
+            margin-bottom: 16px;
+            line-height: 1.75;
+        }
+
+        .page-card ul, .page-card ol {
+            margin: 0 0 20px 24px;
+            color: #1e293b;
+            font-size: 0.98rem;
+            line-height: 1.8;
+        }
+
+        .highlight-box {
+            background: #f0f9ff;
+            border-left: 4px solid var(--ocean-mid);
+            border-radius: 0 12px 12px 0;
+            padding: 18px 24px;
+            margin: 24px 0;
+            color: var(--ocean-darkest);
+            font-size: 0.96rem;
+            line-height: 1.65;
+        }
+
+        .highlight-box strong {
+            color: var(--ocean-mid);
+        }
+
+        /* Two-Column Grid for Products/Features */
+        .two-col-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin: 28px 0 16px 0;
+        }
+
+        @media (max-width: 768px) {
+            .two-col-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .sub-card {
+            background: #f8fafc;
+            border: 1px solid var(--ocean-foam);
+            border-radius: 14px;
+            padding: 24px;
+            transition: all 0.2s ease;
+        }
+
+        .sub-card:hover {
+            background: #ffffff;
+            border-color: var(--ocean-mid);
+            box-shadow: 0 8px 24px rgba(0, 119, 182, 0.08);
+        }
+
+        .sub-card-badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            padding: 3px 10px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+
+        .badge-free {
+            background: var(--ocean-mist);
+            color: var(--ocean-mid);
+            border: 1px solid #90e0ef;
+        }
+
+        .badge-pro {
+            background: #ede9fe;
+            color: #7c3aed;
+            border: 1px solid #ddd6fe;
+        }
+
+        .sub-card h4 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--ocean-darkest);
+            margin-bottom: 8px;
+        }
+
+        .sub-card p {
+            font-size: 0.9rem;
+            color: #475569;
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+
+        /* Founder Callout */
+        .founder-box {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: linear-gradient(135deg, rgba(202, 240, 248, 0.4) 0%, rgba(246, 251, 254, 0.9) 100%);
+            border: 1.5px dashed var(--ocean-foam);
+            border-radius: 14px;
+            padding: 24px;
+            margin: 28px 0;
+        }
+
+        .founder-avatar,
+        .founder-avatar-img {
+            width: 76px;
+            height: 76px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2.5px solid var(--ocean-mid);
+            box-shadow: 0 6px 20px rgba(0, 119, 182, 0.25);
+            flex-shrink: 0;
+        }
+
+        .founder-info h4 {
+            font-size: 1.1rem;
+            color: var(--ocean-darkest);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .founder-info p {
+            font-size: 0.88rem;
+            color: var(--ocean-deep);
+            margin-bottom: 0;
+            line-height: 1.5;
+        }
+
+        /* Multi-Column Professional Footer (Synced from Landing Page) */
+        footer {
+            background: #03045e;
+            border-top: 2px solid #0077b6;
+            color: #caf0f8;
+            padding: 56px 0 32px 0;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: 1.8fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .footer-brand-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 22px;
+            font-weight: 800;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer-brand-header img {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+        }
+
+        .footer-desc {
+            color: #caf0f8;
+            opacity: 0.9;
+            font-size: 14px;
+            line-height: 1.6;
+            max-width: 330px;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-top: 4px;
+        }
+
+        .social-link {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(173, 232, 244, 0.3);
+            color: #ade8f4;
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .social-link svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+            transition: fill 0.2s ease;
+        }
+
+        .social-link:hover {
+            background: #0077b6;
+            color: #ffffff;
+            border-color: #00b4d8;
+            transform: translateY(-2px);
+        }
+
+        .footer-col h3,
+        .footer-col h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 16px;
+            letter-spacing: 0.3px;
+        }
+
+        .footer-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-menu li {
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-menu a,
+        .footer-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
+            color: #ade8f4;
+            text-decoration: none;
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.2s ease;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-menu a:hover,
+        .footer-btn:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(72, 202, 228, 0.6);
+        }
+
+        .footer-bottom {
+            padding-top: 28px;
+            border-top: 1px solid rgba(173, 232, 244, 0.15);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .footer-bottom p {
+            color: #90e0ef;
+            font-size: 13px;
+            margin: 0;
+        }
+
+        .footer-bottom p a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-bottom p a:hover {
+            color: #ade8f4;
+            text-decoration: underline;
+        }
+
+        .footer-badge-note {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #90e0ef;
+            font-size: 13px;
+        }
+
+        .footer-badge-note span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #2dd4bf;
+        }
+
+        @media (max-width: 960px) {
+            .footer-container {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+        }
+
+        @media (max-width: 540px) {
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container nav-inner">
+            <a href="index.html" class="logo-area" aria-label="AffiStyle Home">
+                <img src="icon.webp" alt="AffiStyle Icon" class="brand-icon" width="38" height="38" decoding="async">
+                <div class="brand-title-wrap">
+                    <span class="brand-title">AffiStyle</span>
+                    <span class="version-badge">v1.0</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" aria-label="Main Navigation">
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="index.html#sandbox" class="nav-link">Live Demos</a>
+                <a href="docs.html" class="nav-link">Docs</a>
+                <a href="index.html#pricing" class="nav-link">Pricing</a>
+                <a href="blog/index.html" class="nav-link">Blog</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="index.html#faq" class="nav-link">FAQ</a>
+            </nav>
+
+            <div class="nav-cta-group">
+                <a href="https://wordpress.org/plugins/affistyle/" class="btn-nav-free" target="_blank" rel="noopener" aria-label="Download AffiStyle Free on WordPress.org">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    <span>Download Free</span>
+                </a>
+                <a href="https://dreainno.lemonsqueezy.com/checkout/buy/102f1e34-3002-4c8d-bf57-aba236a09921" class="btn-nav-pro" target="_blank" rel="noopener" aria-label="Buy AffiStyle Pro">
+                    <span>Get Pro &bull; $40/yr</span>
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+                <button type="button" class="mobile-nav-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Slide Drawer Overlay -->
+    <div class="mobile-drawer-overlay" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+        <div class="mobile-drawer-content">
+            <div class="mobile-drawer-header">
+                <a href="index.html" class="logo-area" aria-label="AffiStyle Home">
+                    <img src="icon.webp" alt="AffiStyle Icon" class="brand-icon" width="32" height="32">
+                    <span class="brand-title">AffiStyle</span>
+                </a>
+                <button type="button" class="close-drawer-btn" id="close-drawer-btn" aria-label="Close Navigation Menu">&times;</button>
+            </div>
+            <nav class="mobile-drawer-nav">
+                <a href="index.html#features" class="mobile-drawer-link mobile-nav-close">Features <span>&rarr;</span></a>
+                <a href="index.html#sandbox" class="mobile-drawer-link mobile-nav-close">Live Demos <span>&rarr;</span></a>
+                <a href="docs.html" class="mobile-drawer-link">Documentation <span>📖</span></a>
+                <a href="index.html#pricing" class="mobile-drawer-link mobile-nav-close">Pricing &amp; Editions <span>&rarr;</span></a>
+                <a href="blog/index.html" class="mobile-drawer-link">Blog &amp; Guides <span>📰</span></a>
+                <a href="about.html" class="mobile-drawer-link active">About Us <span>🏢</span></a>
+                <a href="index.html#faq" class="mobile-drawer-link mobile-nav-close">FAQ &amp; Help <span>❓</span></a>
+                <a href="index.html#contact" class="mobile-drawer-link mobile-nav-close">Contact Support <span>✉️</span></a>
+            </nav>
+            <div class="mobile-drawer-btns">
+                <a href="https://wordpress.org/plugins/affistyle/" class="btn-nav-free" target="_blank" rel="noopener">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    <span>Download Free Plugin</span>
+                </a>
+                <a href="https://dreainno.lemonsqueezy.com/checkout/buy/102f1e34-3002-4c8d-bf57-aba236a09921" class="btn-nav-pro" target="_blank" rel="noopener">Get Commercial Pro ($40/yr) &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a>
+            <span>&rsaquo;</span>
+            <span>About Us</span>
+        </div>
+
+        <!-- Hero -->
+        <section class="page-hero">
+            <span class="hand-script">engineering principles &bull; mission ✦</span>
+            <h1>About AffiStyle &amp; Dreainno Studio</h1>
+            <p>We build lightweight, compliant, zero-CLS WordPress affiliate tools engineered for creators who care about site speed and reader trust.</p>
+        </section>
+
+        <!-- Main Card -->
+        <article class="page-card">
+            <h2>Our Origin &amp; Mission</h2>
+            <p><strong>AffiStyle</strong> was founded by <strong>Mayuresh Pandit</strong> and the software engineering team at <a href="https://dreainno.online" target="_blank" rel="noopener noreferrer" style="color: var(--ocean-mid); font-weight: 700;">Dreainno Studio</a> to solve a pervasive problem across the affiliate publishing industry: <em>bloated, unoptimized shortcodes that ruin Core Web Vitals</em>.</p>
+            
+            <p>For years, affiliate bloggers and review websites were forced to choose between ugly plain Amazon links or heavy, shortcode-based plugins like Lasso and AAWP that inject hundreds of kilobytes of unoptimized JavaScript, ruin Cumulative Layout Shift (CLS) on mobile devices, and require expensive ongoing monthly software subscriptions.</p>
+
+            <div class="highlight-box">
+                <strong>Our Philosophy:</strong> Zero external script dependencies, native Gutenberg block architecture, automated FTC disclosure compliance, and total performance preservation (guaranteed 0.000 CLS impact).
+            </div>
+
+            <h3>Who We Are</h3>
+            <p>We are independent software craftsmen specializing in the WordPress ecosystem. Every line of PHP, CSS, and block markup is written following the official WordPress Plugin Developer Handbook and WordPress Coding Standards (WPCS). We believe commercial software should be dependable, transparent, and completely free of tracking telemetry.</p>
+
+            <!-- Product Ecosystem -->
+            <div class="two-col-grid">
+                <div class="sub-card">
+                    <span class="sub-card-badge badge-free">Open Source</span>
+                    <h4>AffiStyle Core (Free)</h4>
+                    <p>Community-driven Gutenberg block plugin hosted on the official WordPress.org plugin directory. Provides Style 1 & Style 2 affiliate boxes, smart <code>/recommends/</code> cloaking, pros/cons list badges, and automatic FTC disclosures under GPL-2.0.</p>
+                </div>
+
+                <div class="sub-card">
+                    <span class="sub-card-badge badge-pro">Commercial</span>
+                    <h4>AffiStyle Pro ($40/yr)</h4>
+                    <p>Commercial powerhouse designed for professional niche blogs and publishers. Unlocks 16+ responsive designer templates, Side-by-Side Versus battle showdowns, multi-retailer choice buttons, and Cloudflare edge geo-targeted redirect routing.</p>
+                </div>
+            </div>
+
+            <!-- Founder Box -->
+            <div class="founder-box">
+                <img src="assets/Mayuresh_Pandit.png" alt="Mayuresh Pandit - Founder &amp; Lead Developer" class="founder-avatar-img" width="76" height="76" decoding="async">
+                <div class="founder-info">
+                    <h4>Direct Founder &amp; Developer Access</h4>
+                    <p>Lead developer Mayuresh Pandit personally oversees core plugin architecture, compatibility updates with modern WordPress major releases, and developer desk inquiries. You get answers straight from the person who wrote the code.</p>
+                </div>
+            </div>
+
+            <h3>Development &amp; Privacy Standards</h3>
+            <ul>
+                <li><strong>Gutenberg Native:</strong> Built using modern WordPress Block Editor APIs. No visual builders or external jQuery required.</li>
+                <li><strong>Zero Layout Shift (0.00 CLS):</strong> All image containers and layout grids use explicit CSS aspect ratios to ensure rock-solid stability during initial paint.</li>
+                <li><strong>Local SQL Analytics:</strong> Click analytics and redirect metrics are stored privately in your site's local database (<code>wp_affistyle_clicks</code>). No data is harvested, phoned home, or shared with third parties.</li>
+                <li><strong>Automated FTC Safe Harbor:</strong> Built-in micro-disclaimers automatically inform readers of sponsored links, adhering to Federal Trade Commission transparency mandates.</li>
+            </ul>
+
+            <h3>Direct Contact &amp; Studio Inquiries</h3>
+            <p>Have questions about WordPress theme compatibility, custom CSS block restyling, or license keys? Feel free to reach out directly:</p>
+            <ul>
+                <li><strong>Direct Developer Desk:</strong> <a href="mailto:admin@affistyle.shop" style="color: var(--ocean-mid); font-weight: 700;">admin@affistyle.shop</a> (Replies within 12–24 hours)</li>
+                <li><strong>Creator Studio:</strong> <a href="https://dreainno.online" target="_blank" rel="noopener noreferrer" style="color: var(--ocean-mid); font-weight: 700;">Dreainno.online</a></li>
+                <li><strong>Open Source Repository:</strong> <a href="https://github.com/GamersStop" target="_blank" rel="noopener noreferrer" style="color: var(--ocean-mid); font-weight: 700;">GitHub Profile</a></li>
+                <li><strong>WordPress.org Support Forum:</strong> <a href="https://wordpress.org/support/plugin/affistyle/" target="_blank" rel="noopener noreferrer" style="color: var(--ocean-mid); font-weight: 700;">Plugin Support Forum &nearr;</a></li>
+            </ul>
+        </article>
+    </main>
+
+    <!-- Multi-Column Professional Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-brand-header">
+                        <img src="icon.webp" alt="AffiStyle Logo" width="32" height="32" decoding="async" loading="lazy">
+                        <span>AffiStyle</span>
+                    </a>
+                    <p class="footer-desc">
+                        AffiStyle is a modern WordPress plugin dedicated to helping bloggers, creators, and affiliate
+                        publishers build high-converting review cards and showdown grids effortlessly.
+                    </p>
+                    <div class="footer-socials">
+                        <!-- GitHub -->
+                        <a href="https://github.com/GamersStop" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="GitHub Profile">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="https://www.youtube.com/@dreainno" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="YouTube Channel">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/dreainno" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="Instagram Profile">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/drea-inno-39314b39a/" target="_blank"
+                            rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/profile.php?id=61574999421966" target="_blank"
+                            rel="noopener noreferrer" class="social-link" aria-label="Facebook Page">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Column -->
+                <div class="footer-col">
+                    <h3>Product</h3>
+                    <ul class="footer-menu">
+                        <li><a href="index.html#features">Key Features</a></li>
+                        <li><a href="index.html#sandbox">Live Demo Sandbox</a></li>
+                        <li><a href="index.html#pricing">Free vs Pro</a></li>
+                        <li><a href="blog/index.html">Blog &amp; Guides</a></li>
+                        <li><a href="https://wordpress.org/plugins/affistyle/" target="_blank" rel="noopener">WP.org Directory</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources & Support Column -->
+                <div class="footer-col">
+                    <h3>Company &amp; Docs</h3>
+                    <ul class="footer-menu">
+                        <li><a href="blog/index.html">Publisher Masterclasses</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="docs.html">Documentation</a></li>
+                        <li><a href="https://dreainno.online" target="_blank" rel="noopener noreferrer">Creator Studio (Dreainno)</a></li>
+                        <li><a href="index.html#contact">Technical Support</a></li>
+                        <li><a href="mailto:admin@affistyle.shop">Contact Developer</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal & Trust Column -->
+                <div class="footer-col">
+                    <h3>Legal &amp; Trust</h3>
+                    <ul class="footer-menu">
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="refund.html">Refund Policy (14 Days)</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright Row -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 AffiStyle. Built by <a href="https://dreainno.online" target="_blank"
+                        rel="noopener noreferrer">Dreainno</a>. Custom-developed for WordPress.</p>
+                <div class="footer-badge-note">
+                    <span></span>
+                    Lemon Squeezy Verified Merchant &bull; 100% Secure Checkout
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Drawer Controller
+        const mobileToggleBtn = document.getElementById('mobile-toggle-btn');
+        const mobileDrawer = document.getElementById('mobile-drawer');
+        const closeDrawerBtn = document.getElementById('close-drawer-btn');
+        const mobileCloseLinks = document.querySelectorAll('.mobile-nav-close');
+
+        if (mobileToggleBtn && mobileDrawer) {
+            mobileToggleBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                mobileDrawer.classList.toggle('open');
+            });
+
+            if (closeDrawerBtn) {
+                closeDrawerBtn.addEventListener('click', () => {
+                    mobileDrawer.classList.remove('open');
+                });
+            }
+
+            mobileCloseLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileDrawer.classList.remove('open');
+                });
+            });
+
+            mobileDrawer.addEventListener('click', (e) => {
+                if (e.target === mobileDrawer) mobileDrawer.classList.remove('open');
+            });
+
+            window.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && mobileDrawer.classList.contains('open')) {
+                    mobileDrawer.classList.remove('open');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
