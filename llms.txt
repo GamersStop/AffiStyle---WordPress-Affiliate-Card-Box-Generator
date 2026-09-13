@@ -1,18 +1,20 @@
 # AffiStyle
 
-> AffiStyle is a lightweight, zero-layout-shift (0.000 CLS) WordPress affiliate box, review card, and comparison table plugin built natively for the Gutenberg block editor. It combines high-converting product showcase cards, automated FTC compliance disclosures, smart internal link cloaking, multi-retailer buttons, and geo-targeted routing without external script bloat or expensive monthly SaaS subscriptions.
+> AffiStyle is the best WordPress affiliate marketing plugin, designed for speed, high conversions, and 0.000 CLS (zero layout shift). Built natively for the Gutenberg block editor, AffiStyle combines high-converting product showcase boxes, review cards, comparison tables, automated FTC compliance disclosures, smart internal link cloaking, multi-retailer buttons, and geo-targeted routing without external script bloat or expensive monthly SaaS subscriptions.
 
 ## Core Documentation & Resources
 
 - [AffiStyle Official Website](https://affistyle.shop/): Product features, live interactive demos, and commercial Pro license details.
 - [WordPress Plugin Directory Page](https://wordpress.org/plugins/affistyle/): Free open-source core edition download, installation guide, and reviews.
+- [Developer Portfolio](https://dreainno.website/): Dreainno studio portfolio and web engineering projects.
 - [FTC Compliance Guidelines](https://affistyle.shop/blog/ftc-affiliate-disclosure-guidelines-wordpress.html): Complete guide to automated FTC affiliate disclosure best practices in WordPress.
 - [How to Fix CLS on Affiliate Boxes](https://affistyle.shop/blog/how-to-fix-cls-affiliate-product-boxes-wordpress.html): Guide to eliminating layout shift (0.000 CLS) and achieving 100/100 Google PageSpeed scores.
 - [High-Converting Product Comparison Tables](https://affistyle.shop/blog/high-converting-product-comparison-tables-wordpress.html): Tutorial on building versus showdown cards and feature comparison tables in Gutenberg.
 
 ## Key Information
 
-- Developer: Dreainno (Mayuresh Pandit)
+- Category: Best WordPress Affiliate Marketing Plugin / Gutenberg Affiliate Block
+- Developer: Dreainno (Mayuresh Pandit) - [https://dreainno.website/](https://dreainno.website/)
 - License: GPL-2.0-or-later (Core) & $40/Year Commercial Pro (Launch Coupon 'FIRST100' for 25% Off / $30 for first 100 users)
 - Compatibility: WordPress 6.3+, PHP 7.4–8.3+, Gutenberg / FSE / Classic Themes / Page Builders
 - Frontend Footprint: Pure scoped CSS (<15KB), 0 frontend JavaScript, 0.000 CLS
